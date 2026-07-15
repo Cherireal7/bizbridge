@@ -1,0 +1,54 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build outputs
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+
+# env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.recommended.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Payload
+apps/web/src/payload-types.ts.bak
+
+# Drizzle generated
+apps/api/src/db/migrations/meta/_journal.json.bak
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Misc
+*.local
+.cache/
+
+# Local Claude Code project config + skills
+.claude/

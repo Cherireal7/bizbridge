@@ -1,0 +1,5192 @@
+[
+  {
+    "serial": 1,
+    "serial_repeat": 1,
+    "mor_code": "11111",
+    "mor_code_alt": null,
+    "name_am": "የብርዕናየአገዳሰብሎችማልማት",
+    "name_en": "Growingofcereals",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 2,
+    "serial_repeat": 2,
+    "mor_code": "11112",
+    "mor_code_alt": null,
+    "name_am": "ሸንኮራአገዳማልማት",
+    "name_en": "Growingsugarcane",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 3,
+    "serial_repeat": 3,
+    "mor_code": "11113",
+    "mor_code_alt": null,
+    "name_am": "የቅባትእህሎችማልማት",
+    "name_en": "Growingof Oil Seeds",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 4,
+    "serial_repeat": 4,
+    "mor_code": "11114",
+    "mor_code_alt": null,
+    "name_am": "የጥራጥሬእህሎችማልማት",
+    "name_en": "Growingofpulses",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 5,
+    "serial_repeat": 5,
+    "mor_code": "11115",
+    "mor_code_alt": null,
+    "name_am": "ቡናናሻይቅጠልማልማት",
+    "name_en": "Growingof Coffeeandtea",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 6,
+    "serial_repeat": 6,
+    "mor_code": "11116",
+    "mor_code_alt": null,
+    "name_am": "በርበሬናቅመማቅመምማልማት",
+    "name_en": "Growingofpepperand spices",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 7,
+    "serial_repeat": 7,
+    "mor_code": "11117",
+    "mor_code_alt": null,
+    "name_am": "አበባማልማት",
+    "name_en": "Floriculture",
+    "verif_lic_am": "ኢ/ሆ/ግ/ኢ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "EHAIARTB"
+  },
+  {
+    "serial": 8,
+    "serial_repeat": 8,
+    "mor_code": "11118",
+    "mor_code_alt": null,
+    "name_am": "አትክልት፣ፍራፍሬ፣የዕፅዋትእናየእጽዋትዘርማልማት",
+    "name_en": "Vegetable, fruit, plantand plantseedproduction",
+    "verif_lic_am": "ኢ/ሆ/ግ/ኢ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "EHAIARTB"
+  },
+  {
+    "serial": 9,
+    "serial_repeat": 9,
+    "mor_code": "11119",
+    "mor_code_alt": null,
+    "name_am": "የእንሰሳትመኖማልማት",
+    "name_en": "Growingof Animal feed (fodder)",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 10,
+    "serial_repeat": 10,
+    "mor_code": "11121",
+    "mor_code_alt": null,
+    "name_am": "የቁምእንስሳትእርባታ",
+    "name_en": "Cattleandpackanimals husbandery",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 11,
+    "serial_repeat": 11,
+    "mor_code": "11122",
+    "mor_code_alt": null,
+    "name_am": "የዶሮናአዕዋፋትእርባታ",
+    "name_en": "Raisingbirdsandpoultry",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 12,
+    "serial_repeat": 12,
+    "mor_code": "11123",
+    "mor_code_alt": null,
+    "name_am": "ንብማነብ",
+    "name_en": "Beekeeping",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 13,
+    "serial_repeat": 13,
+    "mor_code": "11124",
+    "mor_code_alt": null,
+    "name_am": "የሐርትልማልማት",
+    "name_en": "Silkwormdevelopment",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 14,
+    "serial_repeat": 14,
+    "mor_code": "11131",
+    "mor_code_alt": null,
+    "name_am": "የግብርናድጋፍስራዎች",
+    "name_en": "Agricultural Support Service",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 15,
+    "serial_repeat": 15,
+    "mor_code": "11211",
+    "mor_code_alt": null,
+    "name_am": "አደን፤ማጥመድ፤ጌምፕሮፓጌሽንእናተዛማጅስራዎች",
+    "name_en": "Hunting, trappinggame propagation, andrelated activities",
+    "verif_lic_am": "ኢ/ዱ/ል/ጥ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "EWCPARTB"
+  },
+  {
+    "serial": 16,
+    "serial_repeat": 16,
+    "mor_code": "11212",
+    "mor_code_alt": null,
+    "name_am": "ደንማልማትእናተዛማጅስራዎች",
+    "name_en": "Forestry And Related activities",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 17,
+    "serial_repeat": 17,
+    "mor_code": "11311",
+    "mor_code_alt": null,
+    "name_am": "የባህርእንስሳትየማስገር፤የማርባትናየማልማትስራዎች",
+    "name_en": "Seaanimals, hatcheries, breedingandgrowing activities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 18,
+    "serial_repeat": 18,
+    "mor_code": "21112",
+    "mor_code_alt": null,
+    "name_am": "ድፍድፍነዳጅናየተፈጥሮጋዝማዉጣት",
+    "name_en": "Extractionofcrude petroleumandnaturalgas",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 19,
+    "serial_repeat": 19,
+    "mor_code": "21112",
+    "mor_code_alt": null,
+    "name_am": "ከነዳጅናጋዝማውጣትጋርየተያያዘአገልግሎት",
+    "name_en": "Activitiesrelatedtooil andgasextraction",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 20,
+    "serial_repeat": 20,
+    "mor_code": "21121",
+    "mor_code_alt": null,
+    "name_am": "የማዕድንፍለጋስራዎች",
+    "name_en": "Explorationofminerals",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 21,
+    "serial_repeat": 21,
+    "mor_code": "21122",
+    "mor_code_alt": null,
+    "name_am": "የማዕድንቁፋሮስራዎች",
+    "name_en": "Excavationofminerals",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 22,
+    "serial_repeat": 22,
+    "mor_code": "21123",
+    "mor_code_alt": null,
+    "name_am": "ማዕድንየማውጣትስራዎች",
+    "name_en": "Quarryingofminerals",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 23,
+    "serial_repeat": 23,
+    "mor_code": "21212",
+    "mor_code_alt": null,
+    "name_am": "የድንጋይካባ፤ሸክላ፤አሸዋናተመሳሳይየማዕድንቁፋሮዎችናኳሪይንግ",
+    "name_en": "Stonecarvings, clay, sand, andsimilarminingand quarrying",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 24,
+    "serial_repeat": 24,
+    "mor_code": "21222",
+    "mor_code_alt": null,
+    "name_am": "የኬሚካልናየማዳበሪያማዕድንቁፋሮ",
+    "name_en": "Diggingofchemicalsand fertilizers",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 25,
+    "serial_repeat": 25,
+    "mor_code": "21232",
+    "mor_code_alt": null,
+    "name_am": "ጨዉማውጣት",
+    "name_en": "Extractionandevaporation ofsalt",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 26,
+    "serial_repeat": 26,
+    "mor_code": "21242",
+    "mor_code_alt": null,
+    "name_am": "የማዕድናትደጋፊስራዎችአገልግሎቶች",
+    "name_en": "Miningsupportiveactivities",
+    "verif_lic_am": "ማ/ነ/ሚማ/ነ/ሚ",
+    "verif_lic_en": "MOMPMOMP"
+  },
+  {
+    "serial": 27,
+    "serial_repeat": 27,
+    "mor_code": "31111",
+    "mor_code_alt": null,
+    "name_am": "ሥጋናየስጋዉጤቶችማቀነባበርናመጠበቅ",
+    "name_en": "Producing, processingand preservingofmeatand meatproducts",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 28,
+    "serial_repeat": 28,
+    "mor_code": "31112",
+    "mor_code_alt": null,
+    "name_am": "ለምግብነትየሚዉሉየባህርእንስሳትናምርታቸውንማቀነባበርናመጠበቅ",
+    "name_en": "Processingandpreserving ofseafoodanimalsand theirproducts",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 29,
+    "serial_repeat": 29,
+    "mor_code": "31113",
+    "mor_code_alt": null,
+    "name_am": "አትክልትናፍራፍሬማቀነባበርናመጠበቅ",
+    "name_en": "Processingandpreserving offruitandvegetables",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 30,
+    "serial_repeat": 30,
+    "mor_code": "31114",
+    "mor_code_alt": null,
+    "name_am": "የምግብዘይትመፈብረክ",
+    "name_en": "Manufacturingofedibleoil",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 31,
+    "serial_repeat": 31,
+    "mor_code": "31115",
+    "mor_code_alt": null,
+    "name_am": "ወተትናየወተትተዋፅኦመፈብረክ",
+    "name_en": "Manufacturingofdairyand dairyproducts",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 32,
+    "serial_repeat": 32,
+    "mor_code": "31116",
+    "mor_code_alt": null,
+    "name_am": "የእህልምርትውጤቶችንመፈብረክ",
+    "name_en": "Grinding/manufacturingof grains",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 33,
+    "serial_repeat": 33,
+    "mor_code": "31117",
+    "mor_code_alt": null,
+    "name_am": "ስታርችናየስታርችዉጤቶችንመፈብረክ",
+    "name_en": "Manufacturingofstarches andstarchproducts",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 34,
+    "serial_repeat": 34,
+    "mor_code": "31118",
+    "mor_code_alt": null,
+    "name_am": "ፈጣንምግቦችንመፈብረክ",
+    "name_en": "Manufacturingoffast foods",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 35,
+    "serial_repeat": 35,
+    "mor_code": "31121",
+    "mor_code_alt": null,
+    "name_am": "ዳቦናኬክመፈብረክ",
+    "name_en": "Manufacturingofbakery products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 36,
+    "serial_repeat": 36,
+    "mor_code": "31122",
+    "mor_code_alt": null,
+    "name_am": "ስኳርመፈብረክ",
+    "name_en": "Manufacturingofsugar",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 37,
+    "serial_repeat": 37,
+    "mor_code": "31123",
+    "mor_code_alt": null,
+    "name_am": "ጣፋጭምግቦችንመፈብረክ(ብስኩት፣ቸኮሌት፣ካካዎ፣ካራሜላንናማስቲካንይጨምራል)",
+    "name_en": "Manufacturingof confectioneryfoods (includingbiscuits, cocoa, chocolate, candyand chewinggum)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 38,
+    "serial_repeat": 38,
+    "mor_code": "31124",
+    "mor_code_alt": null,
+    "name_am": "ጨውመፈብረክ",
+    "name_en": "Saltproduction",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 39,
+    "serial_repeat": 39,
+    "mor_code": "31125",
+    "mor_code_alt": null,
+    "name_am": "ፓሰታ፣ማካሮኒእናተመሳሳይምርቶችንመፈብረክ",
+    "name_en": "Manufacturingofpasta, macaroni, noodles, couscousandsimilar products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 40,
+    "serial_repeat": 40,
+    "mor_code": "31126",
+    "mor_code_alt": null,
+    "name_am": "ማርናየማርውጤቶችንመፈብረክ",
+    "name_en": "Manufacturingofhoney andhoneyproducts",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 41,
+    "serial_repeat": 41,
+    "mor_code": "31127",
+    "mor_code_alt": null,
+    "name_am": "ቡናናየሻይቅጠልመፈብረክ",
+    "name_en": "Manufacturingof Coffee andtea",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 42,
+    "serial_repeat": 42,
+    "mor_code": "31128",
+    "mor_code_alt": null,
+    "name_am": "የመኖጥሬዕቃመፈብረክ",
+    "name_en": "Manufacturingofanimal feedrawproducts",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 43,
+    "serial_repeat": 43,
+    "mor_code": "31129",
+    "mor_code_alt": null,
+    "name_am": "የእንሰሳትመኖመፈብረክ",
+    "name_en": "Manufacturingofanimal feeds",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 44,
+    "serial_repeat": 44,
+    "mor_code": "32111",
+    "mor_code_alt": null,
+    "name_am": "የመጠጥውኃመፈብረክ",
+    "name_en": "Manufacturingofpotable water",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 45,
+    "serial_repeat": 45,
+    "mor_code": "32112",
+    "mor_code_alt": null,
+    "name_am": "ከአልኮልነፃየሆኑመጠጦችንመፈብረክ(የመጠጥውኃንሳይጨምር)",
+    "name_en": "Manufacturingofalcohol freedrinks (Exceptpotable water)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 46,
+    "serial_repeat": 46,
+    "mor_code": "32113",
+    "mor_code_alt": null,
+    "name_am": "የአልኮልመጠጦችንመፈብረክ",
+    "name_en": "Manufacturingofalcohol drinks",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 47,
+    "serial_repeat": 47,
+    "mor_code": "32211",
+    "mor_code_alt": null,
+    "name_am": "የትምባሆምርቶችመፈብረክ",
+    "name_en": "Manufacturingoftobacco products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 48,
+    "serial_repeat": 48,
+    "mor_code": "33111",
+    "mor_code_alt": null,
+    "name_am": "መፍተል፤መሸመንናየጨርቃጨርቅምርቶችንማጠናቀቅናመፈብረክ(አልባሳትንሳይጨምር)",
+    "name_en": "Manufactureofmade-up textilearticles, spinning andweaving (except apparel)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 49,
+    "serial_repeat": 49,
+    "mor_code": "33112",
+    "mor_code_alt": null,
+    "name_am": "አልበሳትንመፈብረክ(የፀጉርአልባሳትንጨምሮ)",
+    "name_en": "Manufactureoftextile articles (includingfur apparel)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 50,
+    "serial_repeat": 50,
+    "mor_code": "33113",
+    "mor_code_alt": null,
+    "name_am": "ምንጣፍእናስጋጃማምረት",
+    "name_en": "Manufactureofcarpets, rugsandmats",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 51,
+    "serial_repeat": 51,
+    "mor_code": "33114",
+    "mor_code_alt": null,
+    "name_am": "ከጭረትናከጭረትውጤቶችየተሰሩመያዣዎችናማሸጊያዎችመፈብረክ",
+    "name_en": "Manufactureofbags, sacks, rappingand packingmaterialsfrom yarnsandtheproductof yarns",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 52,
+    "serial_repeat": 52,
+    "mor_code": "33115",
+    "mor_code_alt": null,
+    "name_am": "የሹራብናየኪሮሽፋብሪክስናአርቲክልስመፈብረክ",
+    "name_en": "Manufactureofknittedand crocheted fabricsandarticles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 53,
+    "serial_repeat": 53,
+    "mor_code": "33211",
+    "mor_code_alt": null,
+    "name_am": "ቆዳናሌጦማለስለስናማጠናቀቅ",
+    "name_en": "Tanningandfinishingof leatherandhides",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 54,
+    "serial_repeat": 54,
+    "mor_code": "33212",
+    "mor_code_alt": null,
+    "name_am": "ሰዉሰራሽየሆኑየቆዳምትክምርቶችመፈብረክ",
+    "name_en": "Manufactureofartificial leather Substitutes",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 55,
+    "serial_repeat": 55,
+    "mor_code": "33213",
+    "mor_code_alt": null,
+    "name_am": "የተዘጋጁየቆዳናየቆዳምትክአልባሳትናውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofleatherand leathersubstitutes wearings",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 56,
+    "serial_repeat": 56,
+    "mor_code": "33214",
+    "mor_code_alt": null,
+    "name_am": "ጫማመፈብረክ",
+    "name_en": "Manufactureoffootwear",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 57,
+    "serial_repeat": 57,
+    "mor_code": "34111",
+    "mor_code_alt": null,
+    "name_am": "እንጨትናየእንጨትውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofwooden andwoodenproducts",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 58,
+    "serial_repeat": 58,
+    "mor_code": "34211",
+    "mor_code_alt": null,
+    "name_am": "ወረቀትናየወረቀትውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofpaperand paperproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 59,
+    "serial_repeat": 59,
+    "mor_code": "34212",
+    "mor_code_alt": null,
+    "name_am": "ፐልፕ፣ወረቀትናየወረቀትቦርድመፈብረክ",
+    "name_en": "Manufactureofpulp, paper andpaperboards",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 60,
+    "serial_repeat": 60,
+    "mor_code": "34311",
+    "mor_code_alt": null,
+    "name_am": "ህትመትናተያያዥሥራዎች",
+    "name_en": "Printingandrelated activities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 61,
+    "serial_repeat": 61,
+    "mor_code": "34411",
+    "mor_code_alt": null,
+    "name_am": "የትምህርትመርጃመሣሪያዎችመፈብረክ",
+    "name_en": "Manufacturingof educationalsupport equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 62,
+    "serial_repeat": 62,
+    "mor_code": "35111",
+    "mor_code_alt": null,
+    "name_am": "የኮክኦቨንምርቶችመፈብረክ",
+    "name_en": "Manufactureofcokeoven products",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 63,
+    "serial_repeat": 63,
+    "mor_code": "35112",
+    "mor_code_alt": null,
+    "name_am": "የተጣራየነዳጅውጤቶችማምረት",
+    "name_en": "Manufactureofrefined petroleumproducts",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 64,
+    "serial_repeat": 64,
+    "mor_code": "35211",
+    "mor_code_alt": null,
+    "name_am": "መሰረታዊኬሚካሎችንመፈብረክ",
+    "name_en": "Manufactureofbasic chemicals",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 65,
+    "serial_repeat": 65,
+    "mor_code": "35212",
+    "mor_code_alt": null,
+    "name_am": "ማዳበሪያእናየናይትሮጂንውህዶችመፈብረከ",
+    "name_en": "Manufactureoffertilizers andnitrogencompounds",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 66,
+    "serial_repeat": 66,
+    "mor_code": "35213",
+    "mor_code_alt": null,
+    "name_am": "መሰረታዊ(የመጀመሪያደረጃ)ፕላስቲኮችንናሲንቴቲክ(ሰዉሰራሽ)ጎማመፈብረክ",
+    "name_en": "Manufactureofbasic plastics (inprimaryform) andofsyntheticrubber",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 67,
+    "serial_repeat": 67,
+    "mor_code": "35214",
+    "mor_code_alt": null,
+    "name_am": "ጎማናየፕላስቲክውጤቶችማምረት",
+    "name_en": "Manufactureoftiresand plasticproducts",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 68,
+    "serial_repeat": 68,
+    "mor_code": "35215",
+    "mor_code_alt": null,
+    "name_am": "ባትሪዎችማምረት",
+    "name_en": "Manufactureofbatteries",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 69,
+    "serial_repeat": 69,
+    "mor_code": "35216",
+    "mor_code_alt": null,
+    "name_am": "ጸረተባይናየግብርናኬሚካሎችንመፈብረክ",
+    "name_en": "Manufactureofpesticides andotheragrochemical products",
+    "verif_lic_am": "ግ/ሚን/ኢ/ሚ",
+    "verif_lic_en": "MOAMOTI"
+  },
+  {
+    "serial": 70,
+    "serial_repeat": 70,
+    "mor_code": "35217",
+    "mor_code_alt": null,
+    "name_am": "ቀለም፣ቫርኒሽእናተመሳሳይምርቶችእናማጣበቂያመፈብረክ",
+    "name_en": "Manufactureofpaints, varnishesand similarcoatings, printing inkand mastic",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 71,
+    "serial_repeat": 71,
+    "mor_code": "35311",
+    "mor_code_alt": null,
+    "name_am": "ለሰዉአገልግሎትየሚዉሉየህክምናየመድኃኒትናኬሚካሎችመፈብረክ",
+    "name_en": "Manufactureof pharmaceuticalsand medicinalchemicalsfor humanuse",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 72,
+    "serial_repeat": 72,
+    "mor_code": "35312",
+    "mor_code_alt": null,
+    "name_am": "ለእንሰሳትአገልግሎትየሚዉሉየህክምናየመድኃኒትናኬሚካሎችመፈብረክ",
+    "name_en": "Manufactureof pharmaceuticalsand medicinalchemicalsfor veterinaryuse",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 73,
+    "serial_repeat": 73,
+    "mor_code": "35313",
+    "mor_code_alt": null,
+    "name_am": "ሌሎችለመድኃኒትግብዓትነትየሚዉሉመሰረታዊየመድኃኒትዉጤቶችንማምረት",
+    "name_en": "Manufactureofchemicals usedforothermedical manufacture, foodand medicine includingprecursor chemicals",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 74,
+    "serial_repeat": 74,
+    "mor_code": "35411",
+    "mor_code_alt": null,
+    "name_am": "የንፅህናናየኮስሞቲክስእቃዎችእናግብአቶችመፈብረክ",
+    "name_en": "Manufactureofcleaning, cosmeticsandinputs",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 75,
+    "serial_repeat": 75,
+    "mor_code": "36111",
+    "mor_code_alt": null,
+    "name_am": "ብረት፣የአረብብረትእናየብረትማዕድናትውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofiron, steel andmetallicmineral products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 76,
+    "serial_repeat": 76,
+    "mor_code": "36112",
+    "mor_code_alt": null,
+    "name_am": "ብረታብረትመጠቅለል፣ማተም፣የብረትዱቄትናየመሳሰሉትንጨምሮመፈብረክ",
+    "name_en": "Forging, pressing, stampingand roll-formingofmetaland powder metallurgy",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 77,
+    "serial_repeat": 77,
+    "mor_code": "36211",
+    "mor_code_alt": null,
+    "name_am": "መስታወትእናየመስታወትውጤቶችመፈብረከ",
+    "name_en": "Manufactureofglassand glassesproduct",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 78,
+    "serial_repeat": 78,
+    "mor_code": "36212",
+    "mor_code_alt": null,
+    "name_am": "ሲሚንቶ፣ኖራእናለመለሰኛየሚያገለግሉምርቶችንመፈብረክ",
+    "name_en": "Manufactureofcement, lime andplaster",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 79,
+    "serial_repeat": 79,
+    "mor_code": "36213",
+    "mor_code_alt": null,
+    "name_am": "ከኮንክሪት፣ከሲሚንቶናከመለሰኛየሚሰሩውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofarticlesof concrete, cementandplaster",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 80,
+    "serial_repeat": 80,
+    "mor_code": "36214",
+    "mor_code_alt": null,
+    "name_am": "ለስትራክቸርስራየሚውሉየሸክላናየሴራሚክውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofstructural clay andceramicproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 81,
+    "serial_repeat": 81,
+    "mor_code": "36215",
+    "mor_code_alt": null,
+    "name_am": "የድንጋይውጤቶችንመፈብረክ",
+    "name_en": "Manufacturingofstone products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 82,
+    "serial_repeat": 82,
+    "mor_code": "36216",
+    "mor_code_alt": null,
+    "name_am": "ብረታብረትያልሆኑየማዕድናትውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofnon metallicmineralproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 83,
+    "serial_repeat": 83,
+    "mor_code": "36311",
+    "mor_code_alt": null,
+    "name_am": "ማዕድናትንማንጠር",
+    "name_en": "Processingand Refiningof Minerals",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 84,
+    "serial_repeat": 84,
+    "mor_code": "36312",
+    "mor_code_alt": null,
+    "name_am": "ማዕድናትማቅለጥ/ማድለብ",
+    "name_en": "Processingand Casting Minerals",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 85,
+    "serial_repeat": 85,
+    "mor_code": "36313",
+    "mor_code_alt": null,
+    "name_am": "ብረትእናማግኔታዊያልሆኑብረታብረቶችማቅለጥ/ማድለብ",
+    "name_en": "Processingand Castingof Iron, metalsandnon- ferrousmetals",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 86,
+    "serial_repeat": 86,
+    "mor_code": "36314",
+    "mor_code_alt": null,
+    "name_am": "ማግኔታዊያልሆኑ(አልሙኒየም፣ዚንክ፣ሊድ፣ታንታለም፣ኒኬል፣ነሐስከመሳሰሉት)የብረታብረትውጤቶችንመፈብረክ",
+    "name_en": "Manufactureofprimary nonferrousmetalproducts, excludingpreciousmetals (suchasaluminum, zinc, lid, tantalum, nickeland copper)",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 87,
+    "serial_repeat": 87,
+    "mor_code": "36411",
+    "mor_code_alt": null,
+    "name_am": "ለስትራክቸርየሚያገለግሉየብረታብረትውጤቶችመፈብረክ",
+    "name_en": "Manufactureofstructural metalproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 88,
+    "serial_repeat": 88,
+    "mor_code": "36511",
+    "mor_code_alt": null,
+    "name_am": "ለሁለገብሥራየሚያገለግሉመሣሪያዎችመፈብረክ",
+    "name_en": "Manufactureofgeneral purposemachinery",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 89,
+    "serial_repeat": 89,
+    "mor_code": "36512",
+    "mor_code_alt": null,
+    "name_am": "ለልዩአገልግሎትየሚውሉመሣሪያዎችንመፈብረክ",
+    "name_en": "Manufactureofspecial purposemachinery",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 90,
+    "serial_repeat": 90,
+    "mor_code": "36611",
+    "mor_code_alt": null,
+    "name_am": "የጦርመሣሪያዎችእናጥይቶችመፈብረክ",
+    "name_en": "Manufactureofweapons andammunition",
+    "verif_lic_am": "ፌ/ፖ/ኮፌ/ፖ/ኮ",
+    "verif_lic_en": "FPCFPC"
+  },
+  {
+    "serial": 91,
+    "serial_repeat": 91,
+    "mor_code": "36711",
+    "mor_code_alt": null,
+    "name_am": "የኤሌክትሪክመሣሪያዎችናመገልገያዎችመፈብረክ",
+    "name_en": "Manufactureofelectrical machinery, apparatus utilities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 92,
+    "serial_repeat": 92,
+    "mor_code": "36811",
+    "mor_code_alt": null,
+    "name_am": "የመገናኛመሣሪያዎች፣መለዋወጫዎችእናመገልገያዎችመፈብረክ",
+    "name_en": "Manufactureof communication machineries, spareparts andapparatusandutilities",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 93,
+    "serial_repeat": 93,
+    "mor_code": "36911",
+    "mor_code_alt": null,
+    "name_am": "የመለኪያናየመፈተሻመሣሪያዎችመፈብረክ",
+    "name_en": "Manufactureofinstruments andappliancesfor measuringandchecking",
+    "verif_lic_am": "ብ/ስ/ኢክ/ን/መ/ቤት",
+    "verif_lic_en": "NMIRTB"
+  },
+  {
+    "serial": 94,
+    "serial_repeat": 94,
+    "mor_code": "37111",
+    "mor_code_alt": null,
+    "name_am": "የጨረራአመንጪመሳሪያዎችናቁሶችንመፈብረክ",
+    "name_en": "Manufactureofradiation emittingequipmentand radioactivesources",
+    "verif_lic_am": "ኢ/ጨ/መ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ERPARTB"
+  },
+  {
+    "serial": 95,
+    "serial_repeat": 95,
+    "mor_code": "37211",
+    "mor_code_alt": null,
+    "name_am": "የፎቶግራፍናየዕይታመሣሪያዎችንመፈብረክ",
+    "name_en": "Manufactureof photographicequipment andoptical Instruments",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 96,
+    "serial_repeat": 96,
+    "mor_code": "37311",
+    "mor_code_alt": null,
+    "name_am": "ለህክምናመገልገያነትየሚውሉውጤቶችናመሣሪያዎችንመፈብረክ",
+    "name_en": "Manufactureofmedical instrumentsandappliances",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 97,
+    "serial_repeat": 97,
+    "mor_code": "38111",
+    "mor_code_alt": null,
+    "name_am": "የሞተርተሽከርካሪዎችመፈብረክ",
+    "name_en": "Manufactureofmotor vehicles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 98,
+    "serial_repeat": 98,
+    "mor_code": "38112",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችአካላት፣መለዋወጫዎችናጐማዎችመፈብረክ",
+    "name_en": "Manufactureoftransport vehicles'parts, spareparts andtyres",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 99,
+    "serial_repeat": 99,
+    "mor_code": "38113",
+    "mor_code_alt": null,
+    "name_am": "የሞተርብስክሌቶችንመፈብረክ",
+    "name_en": "Manufactureof motorcycles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 100,
+    "serial_repeat": 100,
+    "mor_code": "38114",
+    "mor_code_alt": null,
+    "name_am": "ብስክሌቶችናጋሪዎችንመፈብረክ",
+    "name_en": "Manufactureofbicycles andcarriages",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 101,
+    "serial_repeat": 101,
+    "mor_code": "38115",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችተሳቢዎችመፈብረክ",
+    "name_en": "Manufactureoftransport vehiclestrailers",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 102,
+    "serial_repeat": 102,
+    "mor_code": "38211",
+    "mor_code_alt": null,
+    "name_am": "መርከቦችንናጀልባዎችንመገንባት",
+    "name_en": "Manufactureofshipsand boats",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 103,
+    "serial_repeat": 103,
+    "mor_code": "38212",
+    "mor_code_alt": null,
+    "name_am": "በባቡርእናበትራምመንገድየሚሄዱሎኮሞቲቮችንእንዲሁምዘዋሪእግርያላቸውንተሽከርካሪዎችንመፈብረክ",
+    "name_en": "Manufactureofrailway andtramway locomotivesandrolling stockvehicles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 104,
+    "serial_repeat": 104,
+    "mor_code": "38213",
+    "mor_code_alt": null,
+    "name_am": "የአውሮኘላንናየጠፈርመንኩራኩሮችንመፈብረክ",
+    "name_en": "Manufactureofaircraftand spacecraft",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 105,
+    "serial_repeat": 105,
+    "mor_code": "39111",
+    "mor_code_alt": null,
+    "name_am": "የቤትናየቢሮዕቃዎችማምረት",
+    "name_en": "Manufactureofhousehold andofficefurniture",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 106,
+    "serial_repeat": 106,
+    "mor_code": "39112",
+    "mor_code_alt": null,
+    "name_am": "የስፐሪንግስፖንጅናፎምውጤቶችንመፈብረክ",
+    "name_en": "Manufacture/produceof springspongesandfoam products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 107,
+    "serial_repeat": 107,
+    "mor_code": "39113",
+    "mor_code_alt": null,
+    "name_am": "ኮምፒውተር፣የኮምፒውተርመሣሪያዎችናመለዋወጫዎችንመፈብረክ",
+    "name_en": "Manufactureofcomputer, computerequipmentand apparatus",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 108,
+    "serial_repeat": 108,
+    "mor_code": "39121",
+    "mor_code_alt": null,
+    "name_am": "የመዝናኛዕቃዎችመፈብረክ",
+    "name_en": "Manufactureofrecreational equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 109,
+    "serial_repeat": 109,
+    "mor_code": "39131",
+    "mor_code_alt": null,
+    "name_am": "የእደጥበብ፣የገፀበረከትዕቃዎችእናአርቲፊሻልጌጣጌጥመፈብረክ",
+    "name_en": "Manufactureofhandicrafts, souvenirs, artifactsand artificialjewelries",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 110,
+    "serial_repeat": 110,
+    "mor_code": "39141",
+    "mor_code_alt": null,
+    "name_am": "ሶፍትዌርመፈብረክ(ዲዛይንማድረግ፣ማበልጸግናትግበራንያካትታል)",
+    "name_en": "Softwaredevelopment (includingdesign, enrichmentand implementation)",
+    "verif_lic_am": "ኢ/ቴ/ሚ ክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 111,
+    "serial_repeat": 111,
+    "mor_code": "39142",
+    "mor_code_alt": null,
+    "name_am": "የፅህፈትመሳሪያዎችመፈብረክ(ከወረቀትናየወረቀትውጤቶችበስተቀር)",
+    "name_en": "Manufactureofstationary (exceptpaperandpaper products)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 112,
+    "serial_repeat": 112,
+    "mor_code": "39143",
+    "mor_code_alt": null,
+    "name_am": "ቁልፍ፣መያዣ፣ተንሸራታችማያያዣወዘተመፈብረክ",
+    "name_en": "Manufactureofbuttons, buckles, slidefasteners, etc",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 113,
+    "serial_repeat": 113,
+    "mor_code": "39144",
+    "mor_code_alt": null,
+    "name_am": "የቁጥርሰሌዳ፣ምልክቶችእናየማስታወቂያሰሌዳ(በኤሌክትሪክየማይሰሩ)መፈብረክ",
+    "name_en": "Manufactureofnumber plates, signsand advertisingdisplays (non electrical)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 114,
+    "serial_repeat": 114,
+    "mor_code": "39145",
+    "mor_code_alt": null,
+    "name_am": "ውድቅዳቂዎችናስክራፖችንጥቅምወዳላቸውምርቶችመለወጥ/መፈብረክ",
+    "name_en": "Recyclingofwasteand scraps",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 115,
+    "serial_repeat": 115,
+    "mor_code": "39146",
+    "mor_code_alt": null,
+    "name_am": "መጥረጊያናመወልወያመፈብረክ",
+    "name_en": "Manufactureofbrushes andbrooms",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 116,
+    "serial_repeat": 116,
+    "mor_code": "41111",
+    "mor_code_alt": null,
+    "name_am": "የኤሌክትሪክኃይልማመንጨት",
+    "name_en": "Generatingelectricity",
+    "verif_lic_am": "ኢ/ኢ/ባኢ/ኢ/ባ",
+    "verif_lic_en": "EEAEEA"
+  },
+  {
+    "serial": 117,
+    "serial_repeat": 117,
+    "mor_code": "41112",
+    "mor_code_alt": null,
+    "name_am": "የኤሌክትሪክኃይልማስተላለፍ፣ማከፋፈልናመሸጥ",
+    "name_en": "Transmission, distribution andsaleofelectricpower",
+    "verif_lic_am": "ኢ/ኢ/ባኢ/ኢ/ባ",
+    "verif_lic_en": "EEAEEA"
+  },
+  {
+    "serial": 118,
+    "serial_repeat": 118,
+    "mor_code": "41113",
+    "mor_code_alt": null,
+    "name_am": "የኤሌክትሪክመስመርመዘርጋት",
+    "name_en": "Extendingelectriclines",
+    "verif_lic_am": "ኢ/ኢ/ባኢ/ኢ/ባ",
+    "verif_lic_en": "EEAEEA"
+  },
+  {
+    "serial": 119,
+    "serial_repeat": 119,
+    "mor_code": "41211",
+    "mor_code_alt": null,
+    "name_am": "ጋዝበመስመርማከፋፈል",
+    "name_en": "Gasdistributionbyline",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 120,
+    "serial_repeat": 120,
+    "mor_code": "41212",
+    "mor_code_alt": null,
+    "name_am": "የእንፋሎትናየሙቅዉኃማቅረብአገልግሎት",
+    "name_en": "Boilerandhotwater service",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 121,
+    "serial_repeat": 121,
+    "mor_code": "41314",
+    "mor_code_alt": null,
+    "name_am": "ውኃየመሰብሰብ፣የማጥራትናየማከፋፈልአገልግሎት",
+    "name_en": "Watercollection, clearance anddistributionservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 122,
+    "serial_repeat": 122,
+    "mor_code": "41321",
+    "mor_code_alt": null,
+    "name_am": "የፍሳሽቆሻሻየማስወገድአገልግሎት",
+    "name_en": "Sewagedisposal",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 123,
+    "serial_repeat": 123,
+    "mor_code": "41322",
+    "mor_code_alt": null,
+    "name_am": "የፍሳሽበካይቁሶችንናባዕድነገሮችንየማስወገድአገልግሎት",
+    "name_en": "Bleachandcontaminants removing",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 124,
+    "serial_repeat": 124,
+    "mor_code": "41323",
+    "mor_code_alt": null,
+    "name_am": "ደረቅቆሻሻየማስወገድ",
+    "name_en": "Drywasteremoving",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 125,
+    "serial_repeat": 125,
+    "mor_code": "51111",
+    "mor_code_alt": null,
+    "name_am": "የመንገድስራተቋራጭነት",
+    "name_en": "Roadworkscontractor",
+    "verif_lic_am": "ከ/ል/ኮ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 126,
+    "serial_repeat": 126,
+    "mor_code": "51112",
+    "mor_code_alt": null,
+    "name_am": "የህንጻስራተቋራጭነት",
+    "name_en": "Buildingworks Contractor",
+    "verif_lic_am": "ከ/ል/ኮ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 127,
+    "serial_repeat": 127,
+    "mor_code": "51113",
+    "mor_code_alt": null,
+    "name_am": "የውኃሥራዎችተቋራጭነት",
+    "name_en": "Waterworks Contractor",
+    "verif_lic_am": "ው/መ/ኢ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOWIERTB"
+  },
+  {
+    "serial": 128,
+    "serial_repeat": 128,
+    "mor_code": "51211",
+    "mor_code_alt": null,
+    "name_am": "የግንባታቦታየማጽዳትናየማዘጋጀትተቋራጭነትስራ",
+    "name_en": "Constructionsite preparation Contractor",
+    "verif_lic_am": "ከ/ል/ኮ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 129,
+    "serial_repeat": 129,
+    "mor_code": "51212",
+    "mor_code_alt": null,
+    "name_am": "የግንባታማጠናቀቅተቋራጭነትስራ",
+    "name_en": "Construction completing/finishing contractor",
+    "verif_lic_am": "ከ/ል/ኮ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 130,
+    "serial_repeat": 130,
+    "mor_code": "61111",
+    "mor_code_alt": null,
+    "name_am": "የኮሚሽን/የአገናኝነትየንግድሥራዎች",
+    "name_en": "Commission/brokers businessactivities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 131,
+    "serial_repeat": 131,
+    "mor_code": "61112",
+    "mor_code_alt": null,
+    "name_am": "የሀገርውስጥንግድወኪል",
+    "name_en": "Domestictrade Agent",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 132,
+    "serial_repeat": 132,
+    "mor_code": "61211",
+    "mor_code_alt": null,
+    "name_am": "የብርዕእናየአገዳሰብሎችጅምላንግድ",
+    "name_en": "Wholesaleofcereals",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 133,
+    "serial_repeat": 133,
+    "mor_code": "61212",
+    "mor_code_alt": null,
+    "name_am": "የቅባትእህሎችጅምላንግድ",
+    "name_en": "Wholesaleofoilseeds",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 134,
+    "serial_repeat": 134,
+    "mor_code": "61213",
+    "mor_code_alt": null,
+    "name_am": "የጥራጥሬእህሎችጅምላንግድ",
+    "name_en": "Wholesaleofpulses",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 135,
+    "serial_repeat": 135,
+    "mor_code": "61214",
+    "mor_code_alt": null,
+    "name_am": "በርበሬናቅመማቅመምጅምላንግድ",
+    "name_en": "Wholesaleofpepperand spices",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 136,
+    "serial_repeat": 136,
+    "mor_code": "61215",
+    "mor_code_alt": null,
+    "name_am": "የፍራፍሬናአትክልትጅምላንግድ",
+    "name_en": "Wholesaleoffruits& vegetables",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 137,
+    "serial_repeat": 137,
+    "mor_code": "61216",
+    "mor_code_alt": null,
+    "name_am": "የቡናናሻይጅምላንግድ",
+    "name_en": "Wholesaleof Coffeeand tea",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 138,
+    "serial_repeat": 138,
+    "mor_code": "61217",
+    "mor_code_alt": null,
+    "name_am": "የዕጽዋትዘርጅምላንግድ",
+    "name_en": "Wholesaleofplantseed",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 139,
+    "serial_repeat": 139,
+    "mor_code": "61218",
+    "mor_code_alt": null,
+    "name_am": "የአበባእናሌሎችየዕጽዋትጅምላንግድ",
+    "name_en": "Wholesaleofcutflowers andotherplants",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 140,
+    "serial_repeat": 140,
+    "mor_code": "61221",
+    "mor_code_alt": null,
+    "name_am": "የግብርናምርቶችአቅርቦት/ጅምላንግድ",
+    "name_en": "Supplyofagricultural products",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 141,
+    "serial_repeat": 141,
+    "mor_code": "61222",
+    "mor_code_alt": null,
+    "name_am": "የቡናናሻይቅጠልአቅርቦት/ጅምላንግድ",
+    "name_en": "Supplyofcoffeeandtea",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 142,
+    "serial_repeat": 142,
+    "mor_code": "61231",
+    "mor_code_alt": null,
+    "name_am": "የቁምእንሰሳትጅምላንግድ",
+    "name_en": "Wholesaletradein livestock",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 143,
+    "serial_repeat": 143,
+    "mor_code": "61232",
+    "mor_code_alt": null,
+    "name_am": "የዶሮናአዕዋፋትጅምላንግድ",
+    "name_en": "Wholesaleofandpoultry andbird",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 144,
+    "serial_repeat": 144,
+    "mor_code": "61233",
+    "mor_code_alt": null,
+    "name_am": "የእንሰሳትተዋፅኦጅምላንግድ",
+    "name_en": "Wholesaletradein livestockproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 145,
+    "serial_repeat": 145,
+    "mor_code": "61234",
+    "mor_code_alt": null,
+    "name_am": "የእንሰሳትተረፈምርቶችጅምላንግድ",
+    "name_en": "Wholesaletradein livestockbyproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 146,
+    "serial_repeat": 146,
+    "mor_code": "61235",
+    "mor_code_alt": null,
+    "name_am": "የባህርእንስሳትጅምላንግድ",
+    "name_en": "Wholesaleofseafood animals",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 147,
+    "serial_repeat": 147,
+    "mor_code": "61311",
+    "mor_code_alt": null,
+    "name_am": "የተዘጋጁየእህልምርትውጤቶችጅምላንግድ(ከቡናናሻይቅጠልበስተቀር)",
+    "name_en": "Wholesaletradein agriculturalproducts (exceptcoffeeandtea)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 148,
+    "serial_repeat": 148,
+    "mor_code": "61312",
+    "mor_code_alt": null,
+    "name_am": "የተዘጋጀቡናናሻይቅጠልጅምላንግድ",
+    "name_en": "Wholesaletradein Coffee andtea",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 149,
+    "serial_repeat": 149,
+    "mor_code": "61411",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትመኖየጅምላንግድ",
+    "name_en": "Wholesaletradein animalfeed",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 150,
+    "serial_repeat": 150,
+    "mor_code": "61412",
+    "mor_code_alt": null,
+    "name_am": "የማርናሰምጅምላንግድ",
+    "name_en": "Wholesaleofhoneyand beewax",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 151,
+    "serial_repeat": 151,
+    "mor_code": "61413",
+    "mor_code_alt": null,
+    "name_am": "የጥሬጎማየጅምላንግድ",
+    "name_en": "Wholesaletradeincrude rubber",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 152,
+    "serial_repeat": 152,
+    "mor_code": "61414",
+    "mor_code_alt": null,
+    "name_am": "ትምባሆናየትምባሆውጤቶችየጅምላንግድ",
+    "name_en": "Wholesaletradein tobaccoandtobacco products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 153,
+    "serial_repeat": 153,
+    "mor_code": "61511",
+    "mor_code_alt": null,
+    "name_am": "የምግብምርቶችጅምላንግድ",
+    "name_en": "Wholesaletradeinfood",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 154,
+    "serial_repeat": 154,
+    "mor_code": "61512",
+    "mor_code_alt": null,
+    "name_am": "የመጠጥምርቶችጅምላንግድ",
+    "name_en": "Wholesaletradein beverages",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 155,
+    "serial_repeat": 155,
+    "mor_code": "61611",
+    "mor_code_alt": null,
+    "name_am": "ጥጥ፣የጨርቃጨርቅጭረቶች፣ክር፣ጨርቃጨርቅእናአልባሳትጅምላንግድ",
+    "name_en": "Wholesaletradeincotton, textilefibers, yarn, textiles andtextilesclothing",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 156,
+    "serial_repeat": 156,
+    "mor_code": "61612",
+    "mor_code_alt": null,
+    "name_am": "ጫማ፣የቆዳውጤችናተዛማጅምርቶችጅምላንግድ",
+    "name_en": "Wholesaletradeinfoot wear, leathergoodsand relatedproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 157,
+    "serial_repeat": 157,
+    "mor_code": "61621",
+    "mor_code_alt": null,
+    "name_am": "የቤትናየቢሮዕቃዎች፣መገልገያዎችእናማስዋቢያዎች(ከኤሌትሪክዕቃዎችውጪ)ጅምላንግድ",
+    "name_en": "Wholesaleof Household andofficeequipment, furnitureandfurnishings (exceptelectrical equipments)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 158,
+    "serial_repeat": 158,
+    "mor_code": "61622",
+    "mor_code_alt": null,
+    "name_am": "የኤሌትሪክዕቃዎችጅምላንግድ",
+    "name_en": "Wholesaletradein electricalequipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 159,
+    "serial_repeat": 159,
+    "mor_code": "61631",
+    "mor_code_alt": null,
+    "name_am": "የመዝናኛእናየሙዚቃመሣሪያዎችጅምላንግድ",
+    "name_en": "Wholesalesaleof recreationalandmusical goods",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 160,
+    "serial_repeat": 160,
+    "mor_code": "61632",
+    "mor_code_alt": null,
+    "name_am": "የእደጥበብ፣ገፀበረከትዕቃዎች፣አርተፊሻልጌጣጌጦችጅምላንግድ",
+    "name_en": "Wholesaleofsouvenirs, artifacts andartificialjewelry",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 161,
+    "serial_repeat": 161,
+    "mor_code": "61633",
+    "mor_code_alt": null,
+    "name_am": "የማዕድናትአቅራቢነትጅምላንግድ",
+    "name_en": "Wholesaleofprecious stones, jewelryand silverware",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 162,
+    "serial_repeat": 162,
+    "mor_code": "61641",
+    "mor_code_alt": null,
+    "name_am": "የጽህፈትመሳሪዎች፣ወረቀትናየወረቀትውጤቶችጅምላንግድ",
+    "name_en": "Wholesaletradein stationeries, paperand paperproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 163,
+    "serial_repeat": 163,
+    "mor_code": "61651",
+    "mor_code_alt": null,
+    "name_am": "የስፖርትዕቃዎችናመገልገያዎች(አልባሳትንሳይጨምር)ጅምላንግድ",
+    "name_en": "Wholesaleofsporting goodsandequipment (excludingapparel)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 164,
+    "serial_repeat": 164,
+    "mor_code": "61661",
+    "mor_code_alt": null,
+    "name_am": "የፎቶግራፍናየዕይታመሣሪያዎችንጅምላንግድ",
+    "name_en": "Wholesaleofphoto graphics&visual equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 165,
+    "serial_repeat": 165,
+    "mor_code": "61711",
+    "mor_code_alt": null,
+    "name_am": "ለህክምና፣ለቀዶጥገናህክምናናለአጥንትህክምናየሚያገለግሉመሣሪያዎችናመለዋወጫዎችጅምላንግድ",
+    "name_en": "Wholesaleofequipment andaccessoriesfor medical, surgicalandbone treatment",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 166,
+    "serial_repeat": 166,
+    "mor_code": "61816",
+    "mor_code_alt": null,
+    "name_am": "ጥጥር፣ፈሳሽ፣ነዳጅጋዞችናተዛማጅምርቶችጅምላንግድ",
+    "name_en": "Wholesaletradeinsolid, liquidand gaseousfuelsandrelated products",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 167,
+    "serial_repeat": 167,
+    "mor_code": "61821",
+    "mor_code_alt": null,
+    "name_am": "ከግብርናውጭያሉሂደታቸውያልተጠናቀቀየኢንዱስትሪምርቶች፣ውድቅዳቂዎችእናእስክራኘውጤቶችጅምላንግድ",
+    "name_en": "Wholesaletradein unfinishednonagricultural intermediateindustrial products, wasteandscrap products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 168,
+    "serial_repeat": 168,
+    "mor_code": "61831",
+    "mor_code_alt": null,
+    "name_am": "የኮንስትራክሽንማቴሪያሎች፣ሃርድዌር፣ብረታብረቶችየቧንቧእናየማሞቂያመሣሪያዎችናጅምላንግድ",
+    "name_en": "Wholesaletradein constructionmaterials, hardware, metals, plumbingandheating equipmentandsupplies",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 169,
+    "serial_repeat": 169,
+    "mor_code": "61832",
+    "mor_code_alt": null,
+    "name_am": "የግንድላናአጣናጅምላንግድ",
+    "name_en": "Wholesaleoflogsand timber",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 170,
+    "serial_repeat": 170,
+    "mor_code": "61841",
+    "mor_code_alt": null,
+    "name_am": "ለኢንዱስሪግብአትየሚውሉኬሚካሎችንጅምላንግድ",
+    "name_en": "Wholesaletradein chemicalsforindustrial use",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 171,
+    "serial_repeat": 171,
+    "mor_code": "61842",
+    "mor_code_alt": null,
+    "name_am": "ለግብርናአገልግሎትየሚውሉኬሚካሎችጅምላንግድ",
+    "name_en": "Wholesaletradein chemicalsforagricultural",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 172,
+    "serial_repeat": 172,
+    "mor_code": "61843",
+    "mor_code_alt": null,
+    "name_am": "ለህክምና፣ለመድኃኒትናምግብማምረትአገልግሎትየሚውሉኬሚካሎችጅምላንግድ",
+    "name_en": "Wholesaletradein chemicalsformedical, pharmaceuticalandfood processinguse",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 173,
+    "serial_repeat": 173,
+    "mor_code": "61844",
+    "mor_code_alt": null,
+    "name_am": "ጎማ፣ኘላስቲክናየኘላስቲክውጤቶችጅምላንግድ",
+    "name_en": "Wholesaletradeinrubber, plasticsandplastic products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 174,
+    "serial_repeat": 174,
+    "mor_code": "61845",
+    "mor_code_alt": null,
+    "name_am": "የንጽህናመጠበቂያዎችእናየኮስሞቲክስዕቃዎችጅምላንግድ",
+    "name_en": "Retailtradeincosmetics, perfumeryandsanitary articles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 175,
+    "serial_repeat": 175,
+    "mor_code": "61851",
+    "mor_code_alt": null,
+    "name_am": "የኢንዱስትሪ፣የግብርናናኮንስትራክሽንመሣሪያዎትናመገልገያዎችጅምላንግድ",
+    "name_en": "Wholesaletradein industrial, agricultural, constructionand communicationmachinery, equipmentandaccessories",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 176,
+    "serial_repeat": 176,
+    "mor_code": "61852",
+    "mor_code_alt": null,
+    "name_am": "የመገናኛ፣የኮምፒውተርዕቃዎችእናተጓዳኝዕቃዎች(መለዋወጫዎችንጨምሮ)ጅምላንግድ",
+    "name_en": "Wholesaletradein communication, computer hardwareandperipheral equipment (including accessories)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 177,
+    "serial_repeat": 177,
+    "mor_code": "61861",
+    "mor_code_alt": null,
+    "name_am": "የጨረራአመንጪመሳሪያዎችናእናቁሶችጅምላንግድ",
+    "name_en": "Wholesaleofradiation emittingequipment&radio activesources",
+    "verif_lic_am": "ኢ/ጨ/መ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ERPARTB"
+  },
+  {
+    "serial": 178,
+    "serial_repeat": 178,
+    "mor_code": "61862",
+    "mor_code_alt": null,
+    "name_am": "የሰውመድኃኒትእናየህክምናመገልገያዎችመሳሪያዎችእናመለዋወጫዎችየጅምላንግድ",
+    "name_en": "Wholesaleofmedicines, and medicalequipmentand accessories",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 179,
+    "serial_repeat": 179,
+    "mor_code": "61863",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትመድሃኒቶች፣የህክምናመገልገያዎችመሳሪያዎችእናመለዋወጫዎችጅምላንግድ",
+    "name_en": "Wholesaleofveterinary drugs, medicalequipment andaccessories",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 180,
+    "serial_repeat": 180,
+    "mor_code": "61864",
+    "mor_code_alt": null,
+    "name_am": "የመለኪያ፣የመፈተሻ፣የቁጥጥር፣ናቪጌሽንእናየትክክለኛነትማረጋገጫመገልገያዎችናመለዋወጫዎችጅምላንግድ",
+    "name_en": "Wholesaleoflegal (commercial) measuring scales, controlling, navigationandprecision equipmentandaccessories",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 181,
+    "serial_repeat": 181,
+    "mor_code": "61865",
+    "mor_code_alt": null,
+    "name_am": "የትምህርትመርጃመሣሪያዎችጅምላንግድ",
+    "name_en": "Wholesaleofeducational equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 182,
+    "serial_repeat": 182,
+    "mor_code": "61911",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችጅምላንግድ",
+    "name_en": "Wholesaleofvehicles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 183,
+    "serial_repeat": 183,
+    "mor_code": "61912",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችመለዋወጫናጌጣጌጦችጅምላንግድ",
+    "name_en": "Wholesaleofvehicles' sparepartsandartificial jewelry/décor",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 184,
+    "serial_repeat": 184,
+    "mor_code": "61913",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችአካላትናተሳቢዎችጅምላንግድ",
+    "name_en": "Wholesaleofvehicles' bodiesandtrailers",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 185,
+    "serial_repeat": 185,
+    "mor_code": "61921",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪነዳጅናቅባትጅምላንግድ",
+    "name_en": "Wholesaletradein automotivefueland lubricants",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 186,
+    "serial_repeat": 186,
+    "mor_code": "62111",
+    "mor_code_alt": null,
+    "name_am": "የገበያማዕከል",
+    "name_en": "Department Store (Mall)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 187,
+    "serial_repeat": 187,
+    "mor_code": "62112",
+    "mor_code_alt": null,
+    "name_am": "ሃይፐርማርኬት",
+    "name_en": "Hypermarket",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 188,
+    "serial_repeat": 188,
+    "mor_code": "62113",
+    "mor_code_alt": null,
+    "name_am": "ሱፐርማርኬት",
+    "name_en": "Supermarket",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 189,
+    "serial_repeat": 189,
+    "mor_code": "62114",
+    "mor_code_alt": null,
+    "name_am": "ሚኒማርኬት",
+    "name_en": "Minimarket/",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 190,
+    "serial_repeat": 190,
+    "mor_code": "62115",
+    "mor_code_alt": null,
+    "name_am": "ትንሽሱቅ(ኪዮስክ)",
+    "name_en": "Smallshop (Kiosk)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 191,
+    "serial_repeat": 191,
+    "mor_code": "62216",
+    "mor_code_alt": null,
+    "name_am": "የእህልምርትውጤቶችችርቻሮንግድ",
+    "name_en": "Retailtradeinagricultural products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 192,
+    "serial_repeat": 192,
+    "mor_code": "62221",
+    "mor_code_alt": null,
+    "name_am": "የምግብምርቶችችርቻሮንግድ",
+    "name_en": "Retailtradeinfood products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 193,
+    "serial_repeat": 193,
+    "mor_code": "62222",
+    "mor_code_alt": "62223",
+    "name_am": "የመጠጥችርቻሮንግድ",
+    "name_en": "Retailtradeinbeverage products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 194,
+    "serial_repeat": 194,
+    "mor_code": "62223",
+    "mor_code_alt": "62224",
+    "name_am": "የአትክልትናፍራፍሬ(የተዘጋጁትንምጨምሮ)ምርቶችችርቻሮንግድ",
+    "name_en": "Retailtradeinvegetables andfruits (including processed)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 195,
+    "serial_repeat": 195,
+    "mor_code": "62236",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትመኖእናጥሬእቃችርቻሮንግድ",
+    "name_en": "Retailtradeinanimal feeds",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 196,
+    "serial_repeat": 196,
+    "mor_code": "62311",
+    "mor_code_alt": null,
+    "name_am": "የንፅህናመጠበቂያእናየኮስሞቲክስዕቃዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofsanitary- warsandcosmetics",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 197,
+    "serial_repeat": 197,
+    "mor_code": "62312",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትመድኃኒቶችናየሕክምናመገልገያዎችችርቻሮንግድ",
+    "name_en": "Retailtradeof pharmaceuticaland medicalequipment",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 198,
+    "serial_repeat": 198,
+    "mor_code": "62313",
+    "mor_code_alt": null,
+    "name_am": "የጨረራአመንጪመሳሪያዎችእናቁሶችንችርቻሮንግድ",
+    "name_en": "Retailtradeinradiation emittingequipmentand radioactivesources",
+    "verif_lic_am": "ኢ/ጨ/መ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ERPARTB"
+  },
+  {
+    "serial": 199,
+    "serial_repeat": 199,
+    "mor_code": "62314",
+    "mor_code_alt": null,
+    "name_am": "ፀረተባይናየግብርናኬሚካሎችችርቻሮንግድ",
+    "name_en": "Retailtradeofpesticides andagriculturalchemicals",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 200,
+    "serial_repeat": 200,
+    "mor_code": "62315",
+    "mor_code_alt": null,
+    "name_am": "የመለኪያ፣የመፈተሻ፣የቁጥጥር፣ናቪጌሽንእናየትክክለኛነትማረጋገጫመገልገያዎችናመለዋወጫዎችችርቻሮንግድ",
+    "name_en": "Retailtradeoflegal (commercial) measuring scales, controlling, navigationandprecision equipmentandaccessories",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 201,
+    "serial_repeat": 201,
+    "mor_code": "62316",
+    "mor_code_alt": null,
+    "name_am": "ከህክምናውጪየሆኑየላቦራቶሪእቃዎችናመለዋወጫዎችችርቻሮንግድ",
+    "name_en": "Retailtradeoflaboratory equipment (nonmedical)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 202,
+    "serial_repeat": 202,
+    "mor_code": "62317",
+    "mor_code_alt": null,
+    "name_am": "የሰውመድሃኒትናየህክምናመገልገያመሣሪያዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofmedical equipment andpharmaceutical",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 203,
+    "serial_repeat": 203,
+    "mor_code": "62318",
+    "mor_code_alt": null,
+    "name_am": "የትምህርትመርጃመሳሪዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofeducation equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 204,
+    "serial_repeat": 204,
+    "mor_code": "62321",
+    "mor_code_alt": null,
+    "name_am": "የስፖርትአልባሳትናጫማዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofsportswear andfootwear",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 205,
+    "serial_repeat": 105,
+    "mor_code": "62322",
+    "mor_code_alt": null,
+    "name_am": "የስፖርትዕቃዎችናመገልገያዎችችርቻሮንግድ(አልባሳትንሳይጨምር)",
+    "name_en": "Retailtradeofsporting goods (excludingapparel)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 206,
+    "serial_repeat": 206,
+    "mor_code": "62331",
+    "mor_code_alt": null,
+    "name_am": "የመገናኛመሣሪያዎችችርቻሮንግድ",
+    "name_en": "Retailtradeof communicationdevices",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 207,
+    "serial_repeat": 207,
+    "mor_code": "62332",
+    "mor_code_alt": null,
+    "name_am": "የፎቶግራፍናየዕይታመሣሪያዎችንችርቻሮንግድ",
+    "name_en": "Retailtradeofphoto graphics&visual equipment",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 208,
+    "serial_repeat": 208,
+    "mor_code": "62346",
+    "mor_code_alt": null,
+    "name_am": "ለህክምና፣ቀዶጥገናህክምናለአጥንትህክምናየሚያገለግሉመሣሪያዎችናመለዋወጫዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofequipment andaccessoriesfor medical, surgicalandbone treatment",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 209,
+    "serial_repeat": 209,
+    "mor_code": "62356",
+    "mor_code_alt": null,
+    "name_am": "የመዝናኛናየሙዚቃመሣሪያዎችችርቻሮንግድ",
+    "name_en": "Retailtradeof entertainmentand Musical Equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 210,
+    "serial_repeat": 110,
+    "mor_code": "62361",
+    "mor_code_alt": null,
+    "name_am": "የኮንስትራክሽንማቴሪያሎችችርቻሮንግድ",
+    "name_en": "Retailtradeofconstruction materials",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 211,
+    "serial_repeat": 211,
+    "mor_code": "62362",
+    "mor_code_alt": null,
+    "name_am": "የግንድላናአጣናችርቻሮንግድ",
+    "name_en": "Retailtradeoflogsand timber",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 212,
+    "serial_repeat": 212,
+    "mor_code": "62411",
+    "mor_code_alt": null,
+    "name_am": "የጨርቃጨርቅጭረቶች፣ጨርቃጨርቅ፣ጥጥ፣ክርናአልባሳትችርቻሮንግድ",
+    "name_en": "Retailtradeofcotton, textilefibers, yarn, textiles andtextilesclothing",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 213,
+    "serial_repeat": 213,
+    "mor_code": "62412",
+    "mor_code_alt": null,
+    "name_am": "ጫማናየቆዳውጤችናተዛማጅችርቻሮንግድ",
+    "name_en": "Retailtradeoffootwear, leatherandrelated products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 214,
+    "serial_repeat": 214,
+    "mor_code": "62511",
+    "mor_code_alt": null,
+    "name_am": "የቤትናየቢሮዕቃዎችማስዋቢያዎችናመገልገያዎችየችርቻሮንግድ",
+    "name_en": "Retailtradeofhousehold andofficefurniture, accessories, and appliances",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 215,
+    "serial_repeat": 215,
+    "mor_code": "62512",
+    "mor_code_alt": null,
+    "name_am": "የኤሌክትሪክመሳሪያዎችናተዛማጅዕቃዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofelectrical equipmentandrelated appliances",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 216,
+    "serial_repeat": 216,
+    "mor_code": "62513",
+    "mor_code_alt": null,
+    "name_am": "ኮምፒዩተር፣የኮምፒዩተርመሳሪያዎችናእናተጓዳኝዕቃዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofcomputer, computerequipmentand relatedappliances",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 217,
+    "serial_repeat": 217,
+    "mor_code": "62514",
+    "mor_code_alt": null,
+    "name_am": "የጽህፈትመሳሪዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofstationery andrelatedproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 218,
+    "serial_repeat": 218,
+    "mor_code": "62515",
+    "mor_code_alt": null,
+    "name_am": "ወረቀትናየወረቀትውጤቶችችርቻሮንግድ",
+    "name_en": "Retailtradeofpaperand paperproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 219,
+    "serial_repeat": 219,
+    "mor_code": "62516",
+    "mor_code_alt": null,
+    "name_am": "የከበሩማዕድናትጌጣጌጥናከብርየተሰሩዕቃዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofprecious mineralsand Jewelryand silverwareitems",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 220,
+    "serial_repeat": 220,
+    "mor_code": "62611",
+    "mor_code_alt": null,
+    "name_am": "ለኢንዱስትሪግብአትነትየሚውሉኬሚካሎችንችርቻሮንግድ",
+    "name_en": "Retailtradeofchemicals forindustrialequipment use",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 221,
+    "serial_repeat": 221,
+    "mor_code": "62612",
+    "mor_code_alt": null,
+    "name_am": "ለህክምና፣ለመድኃኒትናምግብማምረትአገልግሎትየሚውሉኬሚካልችርቻሮንግድ",
+    "name_en": "Retailtradeofchemicals formedical, pharmaceuticalandfood processingproduction",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 222,
+    "serial_repeat": 222,
+    "mor_code": "62613",
+    "mor_code_alt": null,
+    "name_am": "ጎማ፣ኘላስቲክናየኘላስቲክውጤቶችችርቻሮንግድ",
+    "name_en": "Retailtradeofrubber, plasticsandplastic Products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 223,
+    "serial_repeat": 223,
+    "mor_code": "62711",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofvehicles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 224,
+    "serial_repeat": 224,
+    "mor_code": "62712",
+    "mor_code_alt": null,
+    "name_am": "የመለዋወጫናጌጣጌጦችችርቻሮንግድ",
+    "name_en": "Retailtradeofvehicles accessoriesanddecor",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 225,
+    "serial_repeat": 225,
+    "mor_code": "62713",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችአካላትናተሳቢዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofvehicles sparepartsandtrailers",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 226,
+    "serial_repeat": 226,
+    "mor_code": "62714",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪነዳጅእናቅባትችርቻሮንግድ(በማደያ)",
+    "name_en": "Retailtradeofvehicles fuelandlubricants (within fuel Stations)",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 227,
+    "serial_repeat": 227,
+    "mor_code": "62811",
+    "mor_code_alt": null,
+    "name_am": "የኪሮሲንነዳጅናቅባትችርቻሮንግድ(ከማደያውጪ)",
+    "name_en": "Retailtradeofkerosene andlubricants (without fuel Stations)",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 228,
+    "serial_repeat": 228,
+    "mor_code": "62911",
+    "mor_code_alt": null,
+    "name_am": "የኢንዱስትሪ፣የግብርናናየኮንስትራክሽንመሣሪያዎችናመገልገያዎችችርቻሮንግድ",
+    "name_en": "Retailtradeofindustrial, agriculturaland constructionmachinery andequipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 229,
+    "serial_repeat": 229,
+    "mor_code": "63111",
+    "mor_code_alt": null,
+    "name_am": "የግልቤትእናየቢሮዕቃዎችጥገና",
+    "name_en": "Maintenanceofprivate householdandoffice furniture",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 230,
+    "serial_repeat": 230,
+    "mor_code": "63112",
+    "mor_code_alt": null,
+    "name_am": "የጦርመሳሪያዎችዕድሳትእናጥገናስራዎች",
+    "name_en": "Maintenanceandrepairof weapons",
+    "verif_lic_am": "ፌ/ፖ/ኮፌ/ፖ/ኮ",
+    "verif_lic_en": "FPCFPC"
+  },
+  {
+    "serial": 231,
+    "serial_repeat": 231,
+    "mor_code": "63113",
+    "mor_code_alt": null,
+    "name_am": "የኤሌክትሪክመሳሪያዎችተከላናጥገና",
+    "name_en": "Installationand maintenance ofelectricalequipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 232,
+    "serial_repeat": 232,
+    "mor_code": "63114",
+    "mor_code_alt": null,
+    "name_am": "የነዳጅማደያመሳሪያዎችእናየባዮጋዝማብሊያተከላ/ግንባታእናጥገና",
+    "name_en": "Installation/constructionand maintenance offuelstationequipment andbiogasplants",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 233,
+    "serial_repeat": 233,
+    "mor_code": "63115",
+    "mor_code_alt": null,
+    "name_am": "የግሪንሀዉስእናየግሪንሀዉስየዉስጥመስመሮችናመሳሪያዎችተከላናጥገና፣የጂኦመምብሬንብየዳ",
+    "name_en": "Installationand maintenanceofgreen housesincludingin-side equipment, machinesand geomembrainewelding",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 234,
+    "serial_repeat": 234,
+    "mor_code": "63116",
+    "mor_code_alt": null,
+    "name_am": "የኮምፒውተርናየኮምፒውተርተዛማጅእቃዎችየጥገናስራዎች",
+    "name_en": "Computerandcomputer accessories maintenance",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 235,
+    "serial_repeat": 235,
+    "mor_code": "63117",
+    "mor_code_alt": null,
+    "name_am": "የማሽነሪዎችእናየኢንዱስትሪመሳሪያዎችተከላናጥገና",
+    "name_en": "Installationand maintenanceof machineriesandindustrial machineries",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 236,
+    "serial_repeat": 236,
+    "mor_code": "63118",
+    "mor_code_alt": null,
+    "name_am": "የህክምናመሳሪያዎችተከላ፣ኮሚሽኒንግናጥገናአገልግሎት",
+    "name_en": "Medicalequipment installation andmaintenanceservice",
+    "verif_lic_am": "ብ/ስ/ኢክ/ን/መ/ቤት",
+    "verif_lic_en": "NMIRTB"
+  },
+  {
+    "serial": 237,
+    "serial_repeat": 237,
+    "mor_code": "63119",
+    "mor_code_alt": null,
+    "name_am": "የጨራራአመንጪመሳሪያዎችተከላ፣ኮሚሽኒንግናጥገናአገልግሎት",
+    "name_en": "Radiationemitting equipment installation, commissioning, andmaintenance",
+    "verif_lic_am": "ኢ/ጨ/መ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ERPARTB"
+  },
+  {
+    "serial": 238,
+    "serial_repeat": 238,
+    "mor_code": "63211",
+    "mor_code_alt": null,
+    "name_am": "ሁለገብተሽከርካሪዎችእናየተሽከርካሪአካላትጥገና",
+    "name_en": "Multi-purposevehiclesand partsmaintenance",
+    "verif_lic_am": "ፌ/ት/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FTARTB"
+  },
+  {
+    "serial": 239,
+    "serial_repeat": 239,
+    "mor_code": "63212",
+    "mor_code_alt": null,
+    "name_am": "መርከቦችንናጀልባዎችንጥገና",
+    "name_en": "Shipsandboats maintenance",
+    "verif_lic_am": "ፌ/ት/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FTARTB"
+  },
+  {
+    "serial": 240,
+    "serial_repeat": 240,
+    "mor_code": "63213",
+    "mor_code_alt": null,
+    "name_am": "የአየርላይመጓጓዣጥገና",
+    "name_en": "Airtravelmaintenance",
+    "verif_lic_am": "ፌ/ት/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FTARTB"
+  },
+  {
+    "serial": 241,
+    "serial_repeat": 241,
+    "mor_code": "63214",
+    "mor_code_alt": null,
+    "name_am": "የጎማጥገና፣እጥበትግሪስናተዛማጅአገልግሎቶች",
+    "name_en": "Rubbermaintenance, cleangreaseandrelated services",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 242,
+    "serial_repeat": 242,
+    "mor_code": "64111",
+    "mor_code_alt": null,
+    "name_am": "ባለኮከብሆቴልአገልግሎት",
+    "name_en": "Star Hotelservices",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 243,
+    "serial_repeat": 243,
+    "mor_code": "64112",
+    "mor_code_alt": null,
+    "name_am": "የሆቴልአገልግሎት",
+    "name_en": "Hotelservice",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 244,
+    "serial_repeat": 244,
+    "mor_code": "64113",
+    "mor_code_alt": null,
+    "name_am": "ባለኮከብየሬስቶራንትአገልግሎት",
+    "name_en": "Starrestaurantservice",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 245,
+    "serial_repeat": 245,
+    "mor_code": "64114",
+    "mor_code_alt": null,
+    "name_am": "የሬስቶራንትአገልግሎት",
+    "name_en": "Restaurantservice",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 246,
+    "serial_repeat": 246,
+    "mor_code": "64115",
+    "mor_code_alt": null,
+    "name_am": "የሞቴልአገልግሎት",
+    "name_en": "Motelservice",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 247,
+    "serial_repeat": 247,
+    "mor_code": "64116",
+    "mor_code_alt": null,
+    "name_am": "የሎጅአገልግሎት",
+    "name_en": "Lodgeservice",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 248,
+    "serial_repeat": 248,
+    "mor_code": "64117",
+    "mor_code_alt": null,
+    "name_am": "የፔንሲዮንእናየእንግዳማረፊያአገልግሎት",
+    "name_en": "Guesthouseservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 249,
+    "serial_repeat": 249,
+    "mor_code": "64118",
+    "mor_code_alt": null,
+    "name_am": "የካፌናቁርስቤትአገልግሎት",
+    "name_en": "Cafeandbreakfastservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 250,
+    "serial_repeat": 250,
+    "mor_code": "65111",
+    "mor_code_alt": null,
+    "name_am": "የውጭንግድወኪል/ረዳትስራ",
+    "name_en": "Tradeauxiliary",
+    "verif_lic_am": "ን/ኢ/ሚ",
+    "verif_lic_en": "MOTI"
+  },
+  {
+    "serial": 251,
+    "serial_repeat": 251,
+    "mor_code": "65112",
+    "mor_code_alt": null,
+    "name_am": "የንግድእንደራሴስራ",
+    "name_en": "Commercialrepresentative",
+    "verif_lic_am": "ን/ኢ/ሚ",
+    "verif_lic_en": "MOTI"
+  },
+  {
+    "serial": 252,
+    "serial_repeat": 252,
+    "mor_code": "65211",
+    "mor_code_alt": null,
+    "name_am": "የብርዕእናየአገዳሰብሎችአስመጪነት",
+    "name_en": "Importofcereals",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 253,
+    "serial_repeat": 253,
+    "mor_code": "65212",
+    "mor_code_alt": null,
+    "name_am": "የቅባትእህሎችአስመጪነት",
+    "name_en": "Importofoilseeds",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 254,
+    "serial_repeat": 254,
+    "mor_code": "65213",
+    "mor_code_alt": null,
+    "name_am": "የጥራጥሬእህሎችአስመጪነት",
+    "name_en": "Importof Pulses",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 255,
+    "serial_repeat": 255,
+    "mor_code": "65214",
+    "mor_code_alt": null,
+    "name_am": "በርበሬናቅመማቅመምአስመጪነት",
+    "name_en": "Importofpepperand spices",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 256,
+    "serial_repeat": 256,
+    "mor_code": "65215",
+    "mor_code_alt": null,
+    "name_am": "የፍራፍሬናአትክልትአስመጪነት",
+    "name_en": "Importof Fruits& vegetables",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 257,
+    "serial_repeat": 257,
+    "mor_code": "65216",
+    "mor_code_alt": null,
+    "name_am": "የዕጽዋትዘርአስመጪነት",
+    "name_en": "Importofplantseeds",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 258,
+    "serial_repeat": 258,
+    "mor_code": "65217",
+    "mor_code_alt": null,
+    "name_am": "የአበባእናሌሎችየዕጽዋትምርቶችአስመጪ",
+    "name_en": "Importofcutflowersand otherplantproducts",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 259,
+    "serial_repeat": 259,
+    "mor_code": "65221",
+    "mor_code_alt": null,
+    "name_am": "የቁምእንሰሳትተዋፅኦ(ለምግብነትየሚውሉ)አስመጪነት",
+    "name_en": "Importtradeinliveanimal products (forconsumption)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 260,
+    "serial_repeat": 260,
+    "mor_code": "65222",
+    "mor_code_alt": null,
+    "name_am": "የቁምእንሰሳትእናተረፈምርትአስመጪነት",
+    "name_en": "Importtradeinliveanimal andoffproducts",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 261,
+    "serial_repeat": 261,
+    "mor_code": "65231",
+    "mor_code_alt": null,
+    "name_am": "የምግብምርቶችአስመጪነት",
+    "name_en": "Importtradeinfood products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 262,
+    "serial_repeat": 262,
+    "mor_code": "65232",
+    "mor_code_alt": null,
+    "name_am": "የመጠጥምርቶችአስመጪነት",
+    "name_en": "Importtradeinbeverage products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 263,
+    "serial_repeat": 263,
+    "mor_code": "65233",
+    "mor_code_alt": null,
+    "name_am": "የትምባሆውጤቶችአስመጪነት",
+    "name_en": "Importtradeintobacco products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 264,
+    "serial_repeat": 264,
+    "mor_code": "65241",
+    "mor_code_alt": null,
+    "name_am": "የተዘጋጁየግብርናውጤቶችአስመጪነት",
+    "name_en": "Importtradeinprocessed agriculturalproducts",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 265,
+    "serial_repeat": 265,
+    "mor_code": "65242",
+    "mor_code_alt": null,
+    "name_am": "የተዘጋጀቡናእናሻይቅጠልአስመጪነት",
+    "name_en": "Importtradeinprocessed coffee",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 266,
+    "serial_repeat": 266,
+    "mor_code": "65251",
+    "mor_code_alt": null,
+    "name_am": "ዕጣንናየሙጫውጤቶችአስመጪነት",
+    "name_en": "Importtradeinincense& gumsproducts",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 267,
+    "serial_repeat": 267,
+    "mor_code": "65252",
+    "mor_code_alt": null,
+    "name_am": "ሰምአስመጪነት",
+    "name_en": "Importtradeinbeewax",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 268,
+    "serial_repeat": 268,
+    "mor_code": "65253",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትመኖአስመጪነት",
+    "name_en": "Importtradeinanimal feeds",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 269,
+    "serial_repeat": 269,
+    "mor_code": "65254",
+    "mor_code_alt": null,
+    "name_am": "ጥሬጎማናየቃጫውጤቶችአስመጪነት",
+    "name_en": "Importtradeincrude rubberandfiberproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 270,
+    "serial_repeat": 270,
+    "mor_code": "65255",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትመኖጥሬዕቃአስመጪነት",
+    "name_en": "Importtradeinanimal feedsrawmaterials",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 271,
+    "serial_repeat": 271,
+    "mor_code": "65256",
+    "mor_code_alt": null,
+    "name_am": "የአንቂተክሎች(ከቡናናሻይበስተቀር)አስመጪነት",
+    "name_en": "Importofbeveragecrops (exceptcoffeeandtea)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 272,
+    "serial_repeat": 272,
+    "mor_code": "65311",
+    "mor_code_alt": null,
+    "name_am": "ጨርቃጨርቅ፣የጨርቃጨርቅጭረቶች፣ጥጥ፣ክር፣የቆዳናየጨርቃጨርቅአልባሳትአስመጪነት",
+    "name_en": "Importtradeintextile, textilefibers, Cotton, threadandapparel",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 273,
+    "serial_repeat": 273,
+    "mor_code": "65312",
+    "mor_code_alt": null,
+    "name_am": "ቆዳ፣የቆዳውጤቶች፣ጫማእናተዛማጅምርቶችአስመጪነት",
+    "name_en": "Importtradeinleather, leatherproductsand relatedproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 274,
+    "serial_repeat": 274,
+    "mor_code": "65321",
+    "mor_code_alt": null,
+    "name_am": "የቤትናየቢሮዕቃዎችማስዋቢያዎችናመገልገያዎችአስመጪነት",
+    "name_en": "Importofhouseholdand officeappliancesand furnishings",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 275,
+    "serial_repeat": 275,
+    "mor_code": "65331",
+    "mor_code_alt": null,
+    "name_am": "የሙዚቃመሳሪያዎች(የፊልም፣የትያትርናሌሎችየኪነጥበብእቃዎች)አስመጪ",
+    "name_en": "Importsofmusical instruments (film, theater andotherartsobjects)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 276,
+    "serial_repeat": 276,
+    "mor_code": "65332",
+    "mor_code_alt": null,
+    "name_am": "የእደጥበብ፤የገጸበረከትእቃዎችእናአርቴፊሻል",
+    "name_en": "Importsofhandcrafts, souvenirarticles, artificial",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 277,
+    "serial_repeat": 277,
+    "mor_code": "65346",
+    "mor_code_alt": null,
+    "name_am": "ማዕድናትእናከማዕድንየተዘጋጁዕቃዎችአስመጪነት",
+    "name_en": "Importtradeinprecious minerals, jewelryand silverwaregoods",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 278,
+    "serial_repeat": 278,
+    "mor_code": "65351",
+    "mor_code_alt": null,
+    "name_am": "የጽህፈትመሳሪዎች፣ወረቀትናየወረቀትውጤቶችአስመጪነት",
+    "name_en": "Importtradeinstationery materials, paperandpaper products",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 279,
+    "serial_repeat": 279,
+    "mor_code": "65361",
+    "mor_code_alt": null,
+    "name_am": "የስፖርትዕቃዎችአስመጪነት",
+    "name_en": "Importofsportinggoods andequipment (excluding apparel)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 280,
+    "serial_repeat": 280,
+    "mor_code": "65411",
+    "mor_code_alt": null,
+    "name_am": "የድንጋይከሰል፣ኮክናባለቅርፅከሰልአስመጪነት",
+    "name_en": "Importtradein Import tradeincoal, cokeand briquettes",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 281,
+    "serial_repeat": 281,
+    "mor_code": "65412",
+    "mor_code_alt": null,
+    "name_am": "ፔትሮሊየምእናየፔትሮልየምውጤቶችናተዛማጅምርቶአስመጪነት",
+    "name_en": "Importtradeinpetroleum andpetroleumproducts andrelatedproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 282,
+    "serial_repeat": 282,
+    "mor_code": "65413",
+    "mor_code_alt": null,
+    "name_am": "የተፈጥሮእናሰውሰራሽጋዝአስመጪነት",
+    "name_en": "Importtradeinnaturaland man-madegas",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 283,
+    "serial_repeat": 283,
+    "mor_code": "65426",
+    "mor_code_alt": null,
+    "name_am": "የአሌክትሪክኃይልአስመጪነት",
+    "name_en": "Importofelectricity",
+    "verif_lic_am": "ኢ/ኢ/ባኢ/ኢ/ባ",
+    "verif_lic_en": "EEAEEA"
+  },
+  {
+    "serial": 284,
+    "serial_repeat": 284,
+    "mor_code": "65511",
+    "mor_code_alt": null,
+    "name_am": "የኮንስትራክሽንማቴሪያሎችብረታብረት፤ብረታብረትያልሆኑ፤እናእስክራፐአስመጪነት",
+    "name_en": "Importtradeinmaterials, metalsandnonmetals andscraps",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 285,
+    "serial_repeat": 285,
+    "mor_code": "65512",
+    "mor_code_alt": null,
+    "name_am": "የግንድላናአጣናአስመጪነት",
+    "name_en": "Importtradeinlogsand timber",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 286,
+    "serial_repeat": 286,
+    "mor_code": "65611",
+    "mor_code_alt": null,
+    "name_am": "ለኢንዱስሪግብአትየሚውሉኬሚካሎችንአስመጪነት",
+    "name_en": "Importtradeinchemicals for Industrialinput",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 287,
+    "serial_repeat": 287,
+    "mor_code": "65612",
+    "mor_code_alt": null,
+    "name_am": "ለግብርናአገልግሎትየሚውሉኬሚካሎችአስመጪነት",
+    "name_en": "Importtradeinchemicals foragriculturalinput",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 288,
+    "serial_repeat": 288,
+    "mor_code": "65613",
+    "mor_code_alt": null,
+    "name_am": "ለህክምና፣ለመድኃኒትናምግብማምረትአገልግሎትየሚውሉኬሚካልአስመጪነት",
+    "name_en": "Importtradeinchemicals fortreatment, medicine andfood",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 289,
+    "serial_repeat": 289,
+    "mor_code": "65614",
+    "mor_code_alt": null,
+    "name_am": "ጥሬጎማ፤ፕላስቲክ፣ባትሪእናዉጤቶቻቸውአስመጪነት",
+    "name_en": "Importtradeinrubber, plasticsandplastic productsandbatteries",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 290,
+    "serial_repeat": 290,
+    "mor_code": "65615",
+    "mor_code_alt": null,
+    "name_am": "የንጽህናናየኮስሞቲክስዕቃዎችአስመጪነት",
+    "name_en": "Importtradeincleaning andcosmetics",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 291,
+    "serial_repeat": 291,
+    "mor_code": "65621",
+    "mor_code_alt": null,
+    "name_am": "ፈንጂናተቀጣጣይምርቶችአስመጪነት",
+    "name_en": "Importtradeinexplosives andpyrotechnicproducts",
+    "verif_lic_am": "ፌ/ፖ/ኮፌ/ፖ/ኮ",
+    "verif_lic_en": "FPCFPC"
+  },
+  {
+    "serial": 292,
+    "serial_repeat": 292,
+    "mor_code": "65711",
+    "mor_code_alt": null,
+    "name_am": "ለኢንዱስትሪ፣ለግብርናለኮንስትራክሽንእናከሌሎችስራዎችጋርየተያያዙመሳሪያዎችናመገልገያዎችአስመጪነት",
+    "name_en": "Importtradeinindustrial, agriculturaland constructionmachineries, andotherrelatedworks",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 293,
+    "serial_repeat": 293,
+    "mor_code": "65721",
+    "mor_code_alt": null,
+    "name_am": "የመገናኛ፣የኮምፒቱርእናተዛማጅመሳሪያዎችአስመጪነት",
+    "name_en": "Importtradein communication, computer andrelatedequipments",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 294,
+    "serial_repeat": 294,
+    "mor_code": "65722",
+    "mor_code_alt": null,
+    "name_am": "የበለጸገሶፍትዌርአስመጪነት",
+    "name_en": "Importofdeveloped software",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 295,
+    "serial_repeat": 295,
+    "mor_code": "65731",
+    "mor_code_alt": null,
+    "name_am": "የኤሌክትሪክዕቃዎችአስመጪነት",
+    "name_en": "Importtradeinelectrical equipmentandappliances",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 296,
+    "serial_repeat": 296,
+    "mor_code": "65741",
+    "mor_code_alt": null,
+    "name_am": "የመለኪያ፣መፈተሻእናናቪጌሽንመሳሪያዎችአስመጪነት",
+    "name_en": "Importtradein measurements, testingand navigationalequipments",
+    "verif_lic_am": "ብ/ስ/ኢክ/ን/መ/ቤት",
+    "verif_lic_en": "NMIRTB"
+  },
+  {
+    "serial": 297,
+    "serial_repeat": 297,
+    "mor_code": "65742",
+    "mor_code_alt": null,
+    "name_am": "የትምህርትመርጃመሳሪያዎችናቁሳቁሶችአስመጪነት",
+    "name_en": "Importtradeineducation equipmentandtools",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 298,
+    "serial_repeat": 298,
+    "mor_code": "65751",
+    "mor_code_alt": null,
+    "name_am": "የሰውመድሃኒትናየህክምናመገልገያዎችናመሳሪያዎችአስመጪነት",
+    "name_en": "Importtradeinhuman healthmedicalsupplies andequipment",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 299,
+    "serial_repeat": 299,
+    "mor_code": "65752",
+    "mor_code_alt": null,
+    "name_am": "የእንሰሳትመድሃኒትናየህክምናመገልገያዎችናመሳሪያዎችአስመጪነት",
+    "name_en": "Importtradeinanimal medicalsuppliesand equipment",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 300,
+    "serial_repeat": 300,
+    "mor_code": "65753",
+    "mor_code_alt": null,
+    "name_am": "የጨረራአመንጪመሳሪያዎችእናቁሶችንአስመጪነት",
+    "name_en": "Importtradeinradiation emittingequipmentand radioactivesources",
+    "verif_lic_am": "ኢ/ጨ/መ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ERPARTB"
+  },
+  {
+    "serial": 301,
+    "serial_repeat": 300,
+    "mor_code": "65754",
+    "mor_code_alt": null,
+    "name_am": "ፎቶግራፍእናየእይታመሣሪያዎችአስመጪነት",
+    "name_en": "Importtradein photographicapparatus, equipmentandsupplies andopticalgoods",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 302,
+    "serial_repeat": 302,
+    "mor_code": "65761",
+    "mor_code_alt": null,
+    "name_am": "ነድ(ስንደል)አስመጪነት",
+    "name_en": "Importtradeintradein incense",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 303,
+    "serial_repeat": 303,
+    "mor_code": "65762",
+    "mor_code_alt": null,
+    "name_am": "ሻማእናጧፍአስመጪነት",
+    "name_en": "Importtradeincandles and“tewaf”",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 304,
+    "serial_repeat": 304,
+    "mor_code": "65811",
+    "mor_code_alt": null,
+    "name_am": "ተሽከርካሪዎችአስመጪነት",
+    "name_en": "Importingofvehicles",
+    "verif_lic_am": "ፌ/ት/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FTARTB"
+  },
+  {
+    "serial": 305,
+    "serial_repeat": 305,
+    "mor_code": "65812",
+    "mor_code_alt": null,
+    "name_am": "ተሽከርካሪዎችመለዋወጫ፣መቆጣጠሪያመሣሪያዎችናጌጣጌጦችአስመጪነት",
+    "name_en": "Importingofvehiclesspare parts, regulatoryequipment andjewelry/decorsupplies",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 306,
+    "serial_repeat": 306,
+    "mor_code": "65813",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችአካላትናተሳቢዎችአስመጪነት",
+    "name_en": "Importingofvehicles' bodiesandtrailers",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 307,
+    "serial_repeat": 307,
+    "mor_code": "66111",
+    "mor_code_alt": null,
+    "name_am": "የብርዕእናየአገዳሰብሎችላኪነት",
+    "name_en": "Exportofcereals",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 308,
+    "serial_repeat": 308,
+    "mor_code": "66112",
+    "mor_code_alt": null,
+    "name_am": "የቅባትእህሎችላኪነት",
+    "name_en": "Exportofoilseeds",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 309,
+    "serial_repeat": 309,
+    "mor_code": "66113",
+    "mor_code_alt": null,
+    "name_am": "የጥራጥሬእህሎችላኪነት",
+    "name_en": "Exportof Pulses",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 310,
+    "serial_repeat": 310,
+    "mor_code": "66114",
+    "mor_code_alt": null,
+    "name_am": "በርበሬናቅመማቅመምላኪነት",
+    "name_en": "Exportofpepperand spices",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 311,
+    "serial_repeat": 311,
+    "mor_code": "66115",
+    "mor_code_alt": null,
+    "name_am": "የአትክልትናፍራፍሬላኪነት",
+    "name_en": "Exportoffruits& vegetables",
+    "verif_lic_am": "ኢ/ሆ/ግ/ኢ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "EHAIARTB"
+  },
+  {
+    "serial": 312,
+    "serial_repeat": 312,
+    "mor_code": "66116",
+    "mor_code_alt": null,
+    "name_am": "የዕጽዋትዘርእናመድሃኒትነክዕፀዋትላኪነት",
+    "name_en": "Exportofplantseeds",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 313,
+    "serial_repeat": 313,
+    "mor_code": "66117",
+    "mor_code_alt": null,
+    "name_am": "የአበባእናሌሎችየዕጽዋትላኪነት",
+    "name_en": "Exportofcutflowersand otherplantproducts",
+    "verif_lic_am": "ኢ/ሆ/ግ/ኢ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "EHAIARTB"
+  },
+  {
+    "serial": 314,
+    "serial_repeat": 314,
+    "mor_code": "66121",
+    "mor_code_alt": null,
+    "name_am": "የእንሰሳትተዋፅኦ(ለምግብነትየሚውሉ)ላኪነት",
+    "name_en": "Exporttradeinliveanimal products (forconsumption)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 315,
+    "serial_repeat": 315,
+    "mor_code": "66122",
+    "mor_code_alt": null,
+    "name_am": "የቁምእንሰሳትእናተረፈምርትላኪነት",
+    "name_en": "Exporttradeinlive animalsand Inherited products",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 316,
+    "serial_repeat": 316,
+    "mor_code": "66131",
+    "mor_code_alt": null,
+    "name_am": "የምግብምርቶችላኪነት",
+    "name_en": "Exporttradeinfood products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 317,
+    "serial_repeat": 317,
+    "mor_code": "66132",
+    "mor_code_alt": null,
+    "name_am": "የመጠጥምርቶችላኪነት",
+    "name_en": "Exporttradeinbeverage products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 318,
+    "serial_repeat": 318,
+    "mor_code": "66133",
+    "mor_code_alt": null,
+    "name_am": "የትምባሆውጤቶችላኪነት",
+    "name_en": "Exporttradeintobacco products",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 319,
+    "serial_repeat": 319,
+    "mor_code": "66141",
+    "mor_code_alt": null,
+    "name_am": "የተዘጋጀቡናእናየቡናቅጠልላኪነት",
+    "name_en": "Exporttradeinprocessed coffeeandcoffeeleaves",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 320,
+    "serial_repeat": 320,
+    "mor_code": "66142",
+    "mor_code_alt": null,
+    "name_am": "የተዘጋጀየእህልምርትውጤቶች(ከቡናናየቡናቅጠልውጪ)ላኪነት",
+    "name_en": "Exporttradeinprocessed agriculturalproducts (exceptcoffeeandcoffee leaves)",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 321,
+    "serial_repeat": 321,
+    "mor_code": "66211",
+    "mor_code_alt": null,
+    "name_am": "የአንቂተክሎች(ከቡናናሻይበስተቀር)ላኪነት",
+    "name_en": "Exportofbeverageplants (exceptcoffeeandtea)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 322,
+    "serial_repeat": 322,
+    "mor_code": "66212",
+    "mor_code_alt": null,
+    "name_am": "የቡናናሻይቅጠልላኪነት",
+    "name_en": "Exportofcoffeeandtea",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 323,
+    "serial_repeat": 323,
+    "mor_code": "66213",
+    "mor_code_alt": null,
+    "name_am": "የዕጣንናሙጫላኪነት",
+    "name_en": "Exporttradeinincense andgums",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 324,
+    "serial_repeat": 324,
+    "mor_code": "66214",
+    "mor_code_alt": null,
+    "name_am": "የሰምላኪነት",
+    "name_en": "Exportofbeewax",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 325,
+    "serial_repeat": 325,
+    "mor_code": "66215",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትመኖእናጥሬእቃላኪነት",
+    "name_en": "Exportofanimalfeeds",
+    "verif_lic_am": "እ/መ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "VDAFACARTB"
+  },
+  {
+    "serial": 326,
+    "serial_repeat": 326,
+    "mor_code": "66216",
+    "mor_code_alt": null,
+    "name_am": "የጥሬጎማናየቃጫውጤቶችላኪነት",
+    "name_en": "Exporttradeinrawrubber andfiberproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 327,
+    "serial_repeat": 327,
+    "mor_code": "66217",
+    "mor_code_alt": null,
+    "name_am": "ግንድላእናአጠናላኪነት",
+    "name_en": "Exportoflogsandtimber",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 328,
+    "serial_repeat": 328,
+    "mor_code": "66311",
+    "mor_code_alt": null,
+    "name_am": "የቤትናየቢሮእቃዎች፣ማስዋቢያዎችእናሌሎችመገልገያዎችላኪነት",
+    "name_en": "Exportofhouseholdand officefurniture, appliances, equipmentand relatedutilities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 329,
+    "serial_repeat": 329,
+    "mor_code": "66321",
+    "mor_code_alt": null,
+    "name_am": "የጨርቃጨርቅጭረቶች፣ጥጥ፣ክርናአልባሳትላኪነት",
+    "name_en": "Exporttradeintextile fibers, cotton, yarnand apparel",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 330,
+    "serial_repeat": 330,
+    "mor_code": "66322",
+    "mor_code_alt": null,
+    "name_am": "ቆዳዎች፣የቆዳውጤቶች፣ጫማዎችናእናተዛማጅምርቶችላኪነት",
+    "name_en": "Exporttradeinleather, leatherproducts, footwear andrelatedproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 331,
+    "serial_repeat": 331,
+    "mor_code": "66331",
+    "mor_code_alt": null,
+    "name_am": "ማዕድናትእናከማዕድንየተዘጋጁዕቃዎችላኪ",
+    "name_en": "Exporttradeinminerals andmineralproducts",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 332,
+    "serial_repeat": 332,
+    "mor_code": "66341",
+    "mor_code_alt": null,
+    "name_am": "የሙዚቃናየመዝናኛየእደጥበብናየገጸበረከትዕቃዎችላኪነት",
+    "name_en": "Exportofmusical, recreational, craftand souvenirgoods",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 333,
+    "serial_repeat": 333,
+    "mor_code": "66351",
+    "mor_code_alt": null,
+    "name_am": "የጽህፈትመሳሪያዎች፣ወረቀትእናየወረቀትውጤቶችላኪነት",
+    "name_en": "Exporttradeinpaperand paperproductsand stationerymaterials",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 334,
+    "serial_repeat": 334,
+    "mor_code": "66361",
+    "mor_code_alt": "63661",
+    "name_am": "የስፖርትዕቃዎችላኪነት",
+    "name_en": "Exporttradeinsporting goods",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 335,
+    "serial_repeat": 335,
+    "mor_code": "66411",
+    "mor_code_alt": null,
+    "name_am": "የድንጋይከሰል፣ኮክናባለቅርፅከሰልላኪነት",
+    "name_en": "Exporttradeincoal, coke and briquettes",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 336,
+    "serial_repeat": 336,
+    "mor_code": "66412",
+    "mor_code_alt": null,
+    "name_am": "ፔትሮሊየምእናየፔትሮልየምውጤቶችናተዛማጅምርቶችላኪነት",
+    "name_en": "Exporttradeinpetroleum, petroleumproductsand relatedproducts",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 337,
+    "serial_repeat": 337,
+    "mor_code": "66413",
+    "mor_code_alt": null,
+    "name_am": "የተፈጥሮናሰውሰራሽጋዝላኪነት",
+    "name_en": "Exporttradeinnatural andmanmadegas",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 338,
+    "serial_repeat": 338,
+    "mor_code": "66421",
+    "mor_code_alt": null,
+    "name_am": "የአሌክትሪክኃይልላኪነት",
+    "name_en": "Exporttradeinelectric power",
+    "verif_lic_am": "ኢ/ኢ/ባኢ/ኢ/ባ",
+    "verif_lic_en": "EEAEEA"
+  },
+  {
+    "serial": 339,
+    "serial_repeat": 339,
+    "mor_code": "66431",
+    "mor_code_alt": null,
+    "name_am": "ብረታብረት፣ብረታብረትያልሆኑ፣የብረታብረትማዕድናትእናእስክራፕላኪነት",
+    "name_en": "Exporttradeinmetals, non-metallic, metallic mineralsandscraps",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 340,
+    "serial_repeat": 340,
+    "mor_code": "66441",
+    "mor_code_alt": null,
+    "name_am": "የኮንስትራክሽንማቴሪያሎች፣ብረታብረት፣የባንቧእናየማሞቂያመሳሪያዎችናአቅርቦትላኪነት",
+    "name_en": "Exporttradein constructionmaterials, iron, plumbingandheating equipments",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 341,
+    "serial_repeat": 341,
+    "mor_code": "66511",
+    "mor_code_alt": null,
+    "name_am": "ለኢንዱስትሪግብአትነትየሚውሉኬሚካሎችላኪነት",
+    "name_en": "Exporttradeinbasic chemicalsusedfor industry",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 342,
+    "serial_repeat": 342,
+    "mor_code": "66512",
+    "mor_code_alt": null,
+    "name_am": "ለግብርናአገልግሎትየሚውሉኬሚካሎችላኪነት",
+    "name_en": "Exporttradeinbasic chemicalsusedfor agriculture",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 343,
+    "serial_repeat": 343,
+    "mor_code": "66513",
+    "mor_code_alt": null,
+    "name_am": "ለህክምና፣ለመድኃኒት፣ለምግብማምረትአገልግሎትየሚውሉኬሚካሎችላኪነት",
+    "name_en": "Exportofchemicalsused formedical, manufacture offoodandmedicine includingprecursor chemicals",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 344,
+    "serial_repeat": 344,
+    "mor_code": "66514",
+    "mor_code_alt": null,
+    "name_am": "ጥሬጎማ፤ፕላስቲክ፣ባትሪእናውጤቶቻቸውላኪነት",
+    "name_en": "Exporttradeinraw rubber, tires, plastics plasticproducts, battery anddrycells",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 345,
+    "serial_repeat": 345,
+    "mor_code": "66515",
+    "mor_code_alt": null,
+    "name_am": "የንጽህናናየኮስሞቲክስዕቃዎችላኪነት",
+    "name_en": "Exporttradeincleaning andcosmeticsequivalents",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 346,
+    "serial_repeat": 346,
+    "mor_code": "66521",
+    "mor_code_alt": null,
+    "name_am": "ፈንጂናተቀጣጣይምርቶችላኪነት",
+    "name_en": "Exporttradeinexplosives andpyrotechnicproducts",
+    "verif_lic_am": "ፌ/ፖ/ኮፌ/ፖ/ኮ",
+    "verif_lic_en": "FPCFPC"
+  },
+  {
+    "serial": 347,
+    "serial_repeat": 347,
+    "mor_code": "66531",
+    "mor_code_alt": null,
+    "name_am": "ሂደታቸዉያልተጠናቀቀዉጤቶች፣ውድቅዳቂዎችእናእስክራፕላኪነት",
+    "name_en": "Exporttradein intermediate products, wasteand scraps",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 348,
+    "serial_repeat": 348,
+    "mor_code": "66611",
+    "mor_code_alt": null,
+    "name_am": "የኢንዱስትሪ፣የግብርና፣የኮንስትራክሽንመሳሪያዎችእናሌሎችተዛማጅመሳሪያዎችናመገልገያዎችላኪነት",
+    "name_en": "Exporttradeinindustrial, agricultural, construction machineriesandrelated machineriesand equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 349,
+    "serial_repeat": 349,
+    "mor_code": "66621",
+    "mor_code_alt": null,
+    "name_am": "የመገናኛመሳሪያዎች፣ኮምፒዉተርእናየኮምፒዉተርተዛማጅእቃዎች፣መለዋወጫዎችእናየመገልገያመሳሪያዎችላኪ",
+    "name_en": "Exporttradein communication, computers, computerperipheral equipmentandaccessories",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 350,
+    "serial_repeat": 350,
+    "mor_code": "66622",
+    "mor_code_alt": null,
+    "name_am": "የበለጸገሶፍትዌርላኪነት",
+    "name_en": "Exporttradeindeveloped software",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 351,
+    "serial_repeat": 351,
+    "mor_code": "66631",
+    "mor_code_alt": null,
+    "name_am": "የአሌክትሪክእቃዎች፣ተዛማጅምርቶችናመለዋወጫዎችላኪነት",
+    "name_en": "Exporttradeinelectrical equipmentandaccessories",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 352,
+    "serial_repeat": 352,
+    "mor_code": "66641",
+    "mor_code_alt": null,
+    "name_am": "የመለኪያ፣የቁጥጥርእናየትክክለኛነትማረጋገጫመገልገያዎችላኪነት",
+    "name_en": "Exporttradeinscientific measurement, controlling andprecisionequipments",
+    "verif_lic_am": "ብ/ስ/ኢክ/ን/መ/ቤት",
+    "verif_lic_en": "NMIRTB"
+  },
+  {
+    "serial": 353,
+    "serial_repeat": 353,
+    "mor_code": "66642",
+    "mor_code_alt": null,
+    "name_am": "የትምህርትመርጃመሳሪያዎችናቁሳቁሶችላኪነት",
+    "name_en": "Exporttradeineducation supportequipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 354,
+    "serial_repeat": 354,
+    "mor_code": "66643",
+    "mor_code_alt": null,
+    "name_am": "የጨረራአመንጪመሳሪያዎችእናቁሶችላኪነት",
+    "name_en": "Exporttradeinradiation emittingequipmentand radioactivesources",
+    "verif_lic_am": "ኢ/ጨ/መ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ERPARTB"
+  },
+  {
+    "serial": 355,
+    "serial_repeat": 355,
+    "mor_code": "66644",
+    "mor_code_alt": null,
+    "name_am": "የፎቶግራፍመሳሪያዎችናየዕይታዕቃዎችላኪነት",
+    "name_en": "Exportofphotographic apparatus, equipmentandsupplies andopticalgoods",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 356,
+    "serial_repeat": 356,
+    "mor_code": "66651",
+    "mor_code_alt": null,
+    "name_am": "የሰውመድሃኒትናየህክምናመገልገያዎችናመሳሪያዎችላኪነት",
+    "name_en": "Exporttradein Human Medicalsuppliesand equipment",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 357,
+    "serial_repeat": 357,
+    "mor_code": "66652",
+    "mor_code_alt": null,
+    "name_am": "የእንሰሳትመድሃኒትናየህክምናመገልገያዎችናመሳሪያዎችላኪነት",
+    "name_en": "Exporttradein Animal Medicalsuppliesand equipment",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 358,
+    "serial_repeat": 358,
+    "mor_code": "66661",
+    "mor_code_alt": null,
+    "name_am": "ነድ(ስንደል)ላኪነት",
+    "name_en": "Exporttradeinincense",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 359,
+    "serial_repeat": 359,
+    "mor_code": "66662",
+    "mor_code_alt": null,
+    "name_am": "ሻማእናጧፍላኪነት",
+    "name_en": "Exporttradeincandles andtewaf",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 360,
+    "serial_repeat": 360,
+    "mor_code": "66711",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችላኪነት",
+    "name_en": "Exportofvehicles",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 361,
+    "serial_repeat": 361,
+    "mor_code": "66712",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪዎችመለዋወጫአካላት፣ጌጣጌጦችናተጓዳኝእቃዎች(የመኪናባትሪእናጎማንጨምሮ)ላኪነት",
+    "name_en": "Exportofvehiclesspare parts, decorsuppliesand relatedequipment (includingvehiclesbattery andtires)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 362,
+    "serial_repeat": 362,
+    "mor_code": "66713",
+    "mor_code_alt": null,
+    "name_am": "የተሸከርካሪአካላትናተሳቢዎችላኪነት",
+    "name_en": "Exportofvehicleparts andtailors",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 363,
+    "serial_repeat": 363,
+    "mor_code": "71111",
+    "mor_code_alt": null,
+    "name_am": "የባቡርናኮምዩተርትራንስፖርትአገልግሎት",
+    "name_en": "Railwayandcommuter transportservices",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 364,
+    "serial_repeat": 364,
+    "mor_code": "71112",
+    "mor_code_alt": null,
+    "name_am": "አገርአቋራጭየህዝብትራንስፖርትአገልግሎት",
+    "name_en": "Cross-Country Public Transport",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 365,
+    "serial_repeat": 365,
+    "mor_code": "71113",
+    "mor_code_alt": null,
+    "name_am": "የየብስትራንስፖርትናተዛማጅአገልግሎቶች",
+    "name_en": "Landtransportandrelated services",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 366,
+    "serial_repeat": 366,
+    "mor_code": "71114",
+    "mor_code_alt": null,
+    "name_am": "የመንገድናየደረቅጭነትአገልግሎት",
+    "name_en": "Transportservicebyroad anddryfreight",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 367,
+    "serial_repeat": 367,
+    "mor_code": "71115",
+    "mor_code_alt": null,
+    "name_am": "የፈሳሽጭነትትራንስፖርትአገልግሎት",
+    "name_en": "Transportofcargotrucks",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 368,
+    "serial_repeat": 368,
+    "mor_code": "71116",
+    "mor_code_alt": null,
+    "name_am": "የዉሃላይትራንስፖርትአገልግሎት",
+    "name_en": "Watertransportservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 369,
+    "serial_repeat": 369,
+    "mor_code": "71117",
+    "mor_code_alt": null,
+    "name_am": "የአየርትራንስፖርትእናተዛማጅአገልግሎቶች",
+    "name_en": "Airtransportservice",
+    "verif_lic_am": "ኢ/ሲ/አ/ባኢ/ሲ/አ/ባ",
+    "verif_lic_en": "ECAACAA"
+  },
+  {
+    "serial": 370,
+    "serial_repeat": 370,
+    "mor_code": "71211",
+    "mor_code_alt": null,
+    "name_am": "የአውሮፕላንማረፊያዎችየግንባታእናየአስተዳደርሥራዎች",
+    "name_en": "Airportsconstructionand administrationworks",
+    "verif_lic_am": "ኢ/ሲ/አ/ባኢ/ሲ/አ/ባ",
+    "verif_lic_en": "ECAACAA"
+  },
+  {
+    "serial": 371,
+    "serial_repeat": 371,
+    "mor_code": "71212",
+    "mor_code_alt": null,
+    "name_am": "መንገዶችናቀረጥየሚከፈልባቸዉመንገዶችየማሰተዳደርስራዎች",
+    "name_en": "Operationofroadsand tollroads",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 372,
+    "serial_repeat": 372,
+    "mor_code": "72111",
+    "mor_code_alt": null,
+    "name_am": "የአስጎብኚነትአገልግሎት",
+    "name_en": "Touroperationservices",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 373,
+    "serial_repeat": 373,
+    "mor_code": "72112",
+    "mor_code_alt": null,
+    "name_am": "የጉዞአገልግሎትውክልናስራዎች",
+    "name_en": "Travelagency representationactivity",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 374,
+    "serial_repeat": 374,
+    "mor_code": "72127",
+    "mor_code_alt": null,
+    "name_am": "ልዩዝግጅትየማስተባበርስራዎች",
+    "name_en": "Specialevent Organization activities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 375,
+    "serial_repeat": 375,
+    "mor_code": "72131",
+    "mor_code_alt": null,
+    "name_am": "የመርከብስራውክልና",
+    "name_en": "Delegationofship activities",
+    "verif_lic_am": "ማ/ጉ/ባን/ኢ/ሚ",
+    "verif_lic_en": "MAAMOTI"
+  },
+  {
+    "serial": 376,
+    "serial_repeat": 376,
+    "mor_code": "72132",
+    "mor_code_alt": null,
+    "name_am": "የእቃአስተላላፊነትናየወደብስራዎች",
+    "name_en": "Freightforwardersand harbourworks",
+    "verif_lic_am": "ማ/ጉ/ባን/ኢ/ሚ",
+    "verif_lic_en": "MAAMOTI"
+  },
+  {
+    "serial": 377,
+    "serial_repeat": 377,
+    "mor_code": "73117",
+    "mor_code_alt": null,
+    "name_am": "የፖስታእናፈጣንየመልእክትመጓጓዣአገልግሎትተግባራት",
+    "name_en": "Postalandfastcarrier serviceactivities",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 378,
+    "serial_repeat": 378,
+    "mor_code": "73127",
+    "mor_code_alt": null,
+    "name_am": "ብሔራዊየቴሌኮሙኒኬሽንአገልግሎት",
+    "name_en": "Nationaltelecommunication services",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 379,
+    "serial_repeat": 379,
+    "mor_code": "73137",
+    "mor_code_alt": null,
+    "name_am": "የቴሌሴንተርአገልገሎት",
+    "name_en": "Telecenterservice",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 380,
+    "serial_repeat": 380,
+    "mor_code": "73147",
+    "mor_code_alt": null,
+    "name_am": "የኢንተርኔትካፌአገልግሎት",
+    "name_en": "Internetcafeservice",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 381,
+    "serial_repeat": 381,
+    "mor_code": "73157",
+    "mor_code_alt": null,
+    "name_am": "የቴሌኮሙኒኬሽንየውስጥኬብልዝርጋታ፣ተከላናጥገናስራዎች",
+    "name_en": "Telecommunicationinside cablesetup, installation andmaintenanceworks",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 382,
+    "serial_repeat": 382,
+    "mor_code": "73167",
+    "mor_code_alt": null,
+    "name_am": "የቴሌኮሙኒኬሽንየማዞሪያተከላናጥገናአገልግሎት",
+    "name_en": "Telecommunication exchange installationand maintenanceservice",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 383,
+    "serial_repeat": 383,
+    "mor_code": "73177",
+    "mor_code_alt": null,
+    "name_am": "የቴሌኮሙኒኬሽንተርሚናልእቃዎችጥገናአገልግሎት",
+    "name_en": "Telecommunication terminal equipmentmaintenance service",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 384,
+    "serial_repeat": 384,
+    "mor_code": "73187",
+    "mor_code_alt": null,
+    "name_am": "የቴሌኮሙኒኬሽንቫልዩአድድአገልግሎት",
+    "name_en": "Telecommunicationvalue addedservice",
+    "verif_lic_am": "ኢ/ቴ/ሚኢ/ቴ/ሚ",
+    "verif_lic_en": "MOITMOIT"
+  },
+  {
+    "serial": 385,
+    "serial_repeat": 385,
+    "mor_code": "74117",
+    "mor_code_alt": null,
+    "name_am": "በጉምሩክየማከማቻናመጋዘንአገልግሎት",
+    "name_en": "Customsstorageand bondedwarehousing service",
+    "verif_lic_am": "ገ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MORRTB"
+  },
+  {
+    "serial": 386,
+    "serial_repeat": 386,
+    "mor_code": "74127",
+    "mor_code_alt": null,
+    "name_am": "የንግድዕቃዎችማከማቻናመጋዘንአገልግሎት",
+    "name_en": "General Storageand warehousingservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 387,
+    "serial_repeat": 387,
+    "mor_code": "74137",
+    "mor_code_alt": null,
+    "name_am": "የመኪናማቆያ(ፓርኪንግ)አገልግሎት",
+    "name_en": "Vehiclesparkinglots service",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 388,
+    "serial_repeat": 388,
+    "mor_code": "81111",
+    "mor_code_alt": null,
+    "name_am": "የባንክስራ",
+    "name_en": "Bankingservice",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 389,
+    "serial_repeat": 389,
+    "mor_code": "81112",
+    "mor_code_alt": null,
+    "name_am": "የገንዘብቁጠባእናብድርህብረትስራ",
+    "name_en": "Saving&creditservice associations",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 390,
+    "serial_repeat": 390,
+    "mor_code": "81113",
+    "mor_code_alt": null,
+    "name_am": "አነስተኛየፋይናንስሥራዎች",
+    "name_en": "Microfinanceinstitutions",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 391,
+    "serial_repeat": 391,
+    "mor_code": "81114",
+    "mor_code_alt": null,
+    "name_am": "የሊዝፋይናንሲንግሥራዎች",
+    "name_en": "Leasefinancing",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 392,
+    "serial_repeat": 392,
+    "mor_code": "81115",
+    "mor_code_alt": null,
+    "name_am": "የዋስትናድርድርሥራዎች",
+    "name_en": "Securitydealingactivities",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 393,
+    "serial_repeat": 393,
+    "mor_code": "81116",
+    "mor_code_alt": null,
+    "name_am": "የቅናሽክፍያቤቶች፤የንግድናሌሎችአገልግሎቶች",
+    "name_en": "Discounthouses, commercialand otherbankingservices",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 394,
+    "serial_repeat": 394,
+    "mor_code": "82111",
+    "mor_code_alt": null,
+    "name_am": "የህይወትመድንሥራ",
+    "name_en": "Lifeinsurance Institutions",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 395,
+    "serial_repeat": 395,
+    "mor_code": "82112",
+    "mor_code_alt": null,
+    "name_am": "የጡረታአገልገሎትፈንድሥራ",
+    "name_en": "Pensionfunding Institutions",
+    "verif_lic_am": "ሰ/ማ/ጉ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOLSARTB"
+  },
+  {
+    "serial": 396,
+    "serial_repeat": 396,
+    "mor_code": "82113",
+    "mor_code_alt": null,
+    "name_am": "የጠቅላላመድንሥራ(የህይወትመድንንይጨምራል)",
+    "name_en": "Generalinsurance includinglifeinsurance",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 397,
+    "serial_repeat": 397,
+    "mor_code": "82114",
+    "mor_code_alt": null,
+    "name_am": "የጠለፋዋሰትናሥራ",
+    "name_en": "Reinsuranceinstitutions",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 398,
+    "serial_repeat": 398,
+    "mor_code": "82115",
+    "mor_code_alt": null,
+    "name_am": "የንብረትአቻግመታሥራዎች",
+    "name_en": "Assetvaluationactivities",
+    "verif_lic_am": "ከ/ል/ኮ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 399,
+    "serial_repeat": 399,
+    "mor_code": "82211",
+    "mor_code_alt": null,
+    "name_am": "ለማህበራዊዋስትናአጋዥየሆኑስራዎች",
+    "name_en": "Activitiesauxiliaryto pensionfunding",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 400,
+    "serial_repeat": 400,
+    "mor_code": "82212",
+    "mor_code_alt": null,
+    "name_am": "ለኢንሹራንስአጋዥየሆኑስራዎች",
+    "name_en": "Activitiesauxiliaryto insurance",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 401,
+    "serial_repeat": 401,
+    "mor_code": "82213",
+    "mor_code_alt": null,
+    "name_am": "የመድንድላላስራ",
+    "name_en": "Insurancebrokering activities",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 402,
+    "serial_repeat": 402,
+    "mor_code": "82214",
+    "mor_code_alt": null,
+    "name_am": "የመድንሽያጭውክልናስራ",
+    "name_en": "Insurancesalesagency activities",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 403,
+    "serial_repeat": 403,
+    "mor_code": "82215",
+    "mor_code_alt": null,
+    "name_am": "የአስሊስራዎች",
+    "name_en": "Actuaryactivities",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 404,
+    "serial_repeat": 404,
+    "mor_code": "82216",
+    "mor_code_alt": null,
+    "name_am": "የጉዳት፤የቋሚንብረትናተንቀሳቃሽየንብረትግመታስራዎች",
+    "name_en": "Damages, fixedassets andmobileproperties estimatesactivities",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 405,
+    "serial_repeat": 405,
+    "mor_code": "82217",
+    "mor_code_alt": null,
+    "name_am": "የመድንጉዳትየማስተካከልስራ",
+    "name_en": "Loss Assessingactivity",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 406,
+    "serial_repeat": 406,
+    "mor_code": "82218",
+    "mor_code_alt": null,
+    "name_am": "መድንየመመርመርስራ",
+    "name_en": "Loss Adjustingactivity",
+    "verif_lic_am": "ኢ/ብ/ባኢ/ብ/ባ",
+    "verif_lic_en": "NBENBE"
+  },
+  {
+    "serial": 407,
+    "serial_repeat": 407,
+    "mor_code": "83111",
+    "mor_code_alt": null,
+    "name_am": "ሪልእስቴትየማልማትእናየማከፋፈልሥራዎች",
+    "name_en": "Realestatedevelopment anddistributionintolots activities",
+    "verif_lic_am": "ከ/ል/ኮ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 408,
+    "serial_repeat": 408,
+    "mor_code": "83112",
+    "mor_code_alt": null,
+    "name_am": "መኖሪያቤትእናህንፃ(ቋሚንብረት)የማከራየትስራዎች",
+    "name_en": "Fixedproperty subletting/rentingactivities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 409,
+    "serial_repeat": 409,
+    "mor_code": "84111",
+    "mor_code_alt": null,
+    "name_am": "የኢንስፔክሽንአገልግሎት",
+    "name_en": "Inspectionservice",
+    "verif_lic_am": "ኢ/ብ/አ/ጽን/ኢ/ሚ",
+    "verif_lic_en": "ENAOMOTI"
+  },
+  {
+    "serial": 410,
+    "serial_repeat": 410,
+    "mor_code": "84112",
+    "mor_code_alt": null,
+    "name_am": "የላብራቶሪፍተሻአገልግሎት",
+    "name_en": "Laboratorytestingservice",
+    "verif_lic_am": "ኢ/ብ/አ/ጽን/ኢ/ሚ",
+    "verif_lic_en": "ENAOMOTI"
+  },
+  {
+    "serial": 411,
+    "serial_repeat": 411,
+    "mor_code": "84113",
+    "mor_code_alt": null,
+    "name_am": "የምርትሰርተፊኬሽንአገልግሎት",
+    "name_en": "Productcertification service",
+    "verif_lic_am": "ኢ/ብ/አ/ጽን/ኢ/ሚ",
+    "verif_lic_en": "ENAOMOTI"
+  },
+  {
+    "serial": 412,
+    "serial_repeat": 412,
+    "mor_code": "84114",
+    "mor_code_alt": null,
+    "name_am": "የስራአመራርስርዓትሰርተፊኬሽንአገልግሎት",
+    "name_en": "Managementsystem certificationservice",
+    "verif_lic_am": "ኢ/ብ/አ/ጽን/ኢ/ሚ",
+    "verif_lic_en": "ENAOMOTI"
+  },
+  {
+    "serial": 413,
+    "serial_repeat": 413,
+    "mor_code": "84115",
+    "mor_code_alt": null,
+    "name_am": "የባለሙያሰርተፊኬሽንአገልግሎት",
+    "name_en": "Professionalcertification service",
+    "verif_lic_am": "ኢ/ብ/አ/ጽን/ኢ/ሚ",
+    "verif_lic_en": "ENAOMOTI"
+  },
+  {
+    "serial": 414,
+    "serial_repeat": 414,
+    "mor_code": "84116",
+    "mor_code_alt": null,
+    "name_am": "የላብራቶሪዎችካሊብሬሽንአገልግሎት",
+    "name_en": "Laboratorycalibration service",
+    "verif_lic_am": "ኢ/ብ/አ/ጽን/ኢ/ሚ",
+    "verif_lic_en": "ENAOMOTI"
+  },
+  {
+    "serial": 415,
+    "serial_repeat": 415,
+    "mor_code": "84117",
+    "mor_code_alt": null,
+    "name_am": "የቬሪፊኬሽንአገልግሎት",
+    "name_en": "Verificationservice",
+    "verif_lic_am": "ኢ/ብ/አ/ጽን/ኢ/ሚ",
+    "verif_lic_en": "ENAOMOTI"
+  },
+  {
+    "serial": 416,
+    "serial_repeat": 416,
+    "mor_code": "84121",
+    "mor_code_alt": null,
+    "name_am": "የተሽከርካሪቴክኒክምርመራአገልገሎት",
+    "name_en": "Vehiclestechnical assessmentservice",
+    "verif_lic_am": "ፌ/ት/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "MOTRRTB"
+  },
+  {
+    "serial": 417,
+    "serial_repeat": 417,
+    "mor_code": "85111",
+    "mor_code_alt": null,
+    "name_am": "መሣሪያዎችንናመገልገያዎችንየማከራየትስራ",
+    "name_en": "Rentingserviceof machineriesand equipment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 418,
+    "serial_repeat": 418,
+    "mor_code": "85121",
+    "mor_code_alt": null,
+    "name_am": "የኮምፒዩተርኔትዎርክዲዛይንእናኬብልዝርጋታናትግበራሰራዎች",
+    "name_en": "Computernetworkdesign andcableinstallation",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 419,
+    "serial_repeat": 419,
+    "mor_code": "85122",
+    "mor_code_alt": null,
+    "name_am": "ሶፍትዌርየመጫን፣ኮሚሽኒንግናየሙከራተግባር",
+    "name_en": "Databaseactivitiesand Dataprocessing",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 420,
+    "serial_repeat": 420,
+    "mor_code": "85123",
+    "mor_code_alt": null,
+    "name_am": "የመረጃቋትየማደራጀትናመረጃየማቀነባበርስራዎች",
+    "name_en": "Softwareinstallation, commissioningand erectionactivity",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 421,
+    "serial_repeat": 421,
+    "mor_code": "85124",
+    "mor_code_alt": null,
+    "name_am": "የዳታሴንተር(ሆስቲንግ)አገልግሎትስራዎች",
+    "name_en": "Datacenter (hosting) services",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 422,
+    "serial_repeat": 422,
+    "mor_code": "85211",
+    "mor_code_alt": null,
+    "name_am": "የተፈቀደለትየሂሳብአዋቂ",
+    "name_en": "Authorized Accountant",
+    "verif_lic_am": "ኢ/ሂ/አ/ኦ/ቦ ክ/ን/መ/ቤት",
+    "verif_lic_en": "EAABRTB"
+  },
+  {
+    "serial": 423,
+    "serial_repeat": 423,
+    "mor_code": "85212",
+    "mor_code_alt": null,
+    "name_am": "የተፈቀደለትኦዲተር",
+    "name_en": "Authorized Auditor",
+    "verif_lic_am": "ኢ/ሂ/አ/ኦ/ቦ ክ/ን/መ/ቤት",
+    "verif_lic_en": "EAABRTB"
+  },
+  {
+    "serial": 424,
+    "serial_repeat": 424,
+    "mor_code": "86111",
+    "mor_code_alt": null,
+    "name_am": "በሥራአመራርየማማከርአገልግሎት",
+    "name_en": "Managementconsultancy services",
+    "verif_lic_am": "ኢ/ሥ/አ/ኢክ/ን/መ/ቤት",
+    "verif_lic_en": "EMIRTB"
+  },
+  {
+    "serial": 425,
+    "serial_repeat": 425,
+    "mor_code": "86112",
+    "mor_code_alt": null,
+    "name_am": "የታክስውክልናአገልግሎት",
+    "name_en": "Consultancyservicefor taxand finance",
+    "verif_lic_am": "ገ/ሚ ክ/ን/መ/ቤት",
+    "verif_lic_en": "MORRTB"
+  },
+  {
+    "serial": 426,
+    "serial_repeat": 426,
+    "mor_code": "86113",
+    "mor_code_alt": null,
+    "name_am": "በማህበራዊጉዳይየማማከርአገልግሎት",
+    "name_en": "Consultancyservicefor socialaffairs",
+    "verif_lic_am": "ሰ/ማ/ጉ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOLSARTB"
+  },
+  {
+    "serial": 427,
+    "serial_repeat": 427,
+    "mor_code": "86114",
+    "mor_code_alt": null,
+    "name_am": "በኢኮኖሚ፣ቢዝነስናኢንቨስትመንትልማትየማማከርአገልግሎት",
+    "name_en": "Consultancyservicefor economicdevelopment, businessand Investment",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 428,
+    "serial_repeat": 428,
+    "mor_code": "86115",
+    "mor_code_alt": null,
+    "name_am": "የምግብዋስትናየማማከርአገልግሎት",
+    "name_en": "Consultancyservicefor foodsecurity",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 429,
+    "serial_repeat": 429,
+    "mor_code": "86116",
+    "mor_code_alt": null,
+    "name_am": "በሚዲያሥራየማማከርአገልግሎት",
+    "name_en": "Media Consultancy Service",
+    "verif_lic_am": "ብ/ባ ክ/ን/መ/ቤት",
+    "verif_lic_en": "BARTB"
+  },
+  {
+    "serial": 430,
+    "serial_repeat": 430,
+    "mor_code": "86211",
+    "mor_code_alt": null,
+    "name_am": "የሆቴልናቱሪዝምየማማከርአገልግሎት",
+    "name_en": "Hotelandtourism consultancyservice",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 431,
+    "serial_repeat": 431,
+    "mor_code": "86212",
+    "mor_code_alt": null,
+    "name_am": "በኪነጥበብናባህልየማማከርአገልግሎት",
+    "name_en": "Artandculture consultancyservice",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 432,
+    "serial_repeat": 432,
+    "mor_code": "86213",
+    "mor_code_alt": null,
+    "name_am": "በትምህርትዙሪያየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon education",
+    "verif_lic_am": "ት/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOERTB"
+  },
+  {
+    "serial": 433,
+    "serial_repeat": 433,
+    "mor_code": "86214",
+    "mor_code_alt": null,
+    "name_am": "በጥራትስራአመራርየማማከርአገልግሎት",
+    "name_en": "Quality Management system Consultancy",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 434,
+    "serial_repeat": 434,
+    "mor_code": "86215",
+    "mor_code_alt": null,
+    "name_am": "በሙያደህንነትጤንነትቁጥጥርየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon occupationalsafetyand healthcontrolservice",
+    "verif_lic_am": "ሰ/ማ/ጉ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOLSARTB"
+  },
+  {
+    "serial": 435,
+    "serial_repeat": 435,
+    "mor_code": "86311",
+    "mor_code_alt": null,
+    "name_am": "በጤናየማማከርአገልግሎት",
+    "name_en": "Healthconsultancyservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 436,
+    "serial_repeat": 436,
+    "mor_code": "86312",
+    "mor_code_alt": null,
+    "name_am": "በአካባቢኦዲትናአካባቢአጠባበቅየማማከርአገልግሎት",
+    "name_en": "Environmentalauditingand environmentalprotection consultancyservice",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 437,
+    "serial_repeat": 437,
+    "mor_code": "86313",
+    "mor_code_alt": null,
+    "name_am": "በአግሮኢኮሲስተምልማትእናበእርሻናተፈጥሮሃብትዙሪያየማማከርአገልግሎት",
+    "name_en": "Agroecosystem developmentconsultancy service",
+    "verif_lic_am": "ግ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOARTB"
+  },
+  {
+    "serial": 438,
+    "serial_repeat": 438,
+    "mor_code": "86314",
+    "mor_code_alt": null,
+    "name_am": "በቡና፣ሻይናቅመማቅመምአያያዝናማሻሻያስራዎችየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon coffee, teaandspices treatmentand improvementactivities",
+    "verif_lic_am": "ኢ/ቡ/ሻ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECTARTB"
+  },
+  {
+    "serial": 439,
+    "serial_repeat": 439,
+    "mor_code": "86315",
+    "mor_code_alt": null,
+    "name_am": "በኒዩትሪሽንዙሪያየማማከርአገልገሎት",
+    "name_en": "Consultancyserviceon nutrition",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 440,
+    "serial_repeat": 440,
+    "mor_code": "86316",
+    "mor_code_alt": null,
+    "name_am": "በምግብናመጠጥማዘጋጀትየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon foodandbeverages preparation",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 441,
+    "serial_repeat": 441,
+    "mor_code": "86317",
+    "mor_code_alt": null,
+    "name_am": "በስፖርትሳይንስዙሪያየማማከርአገልገሎት",
+    "name_en": "Consultancyserviceon sportscience",
+    "verif_lic_am": "ስ/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "SCRTB"
+  },
+  {
+    "serial": 442,
+    "serial_repeat": 442,
+    "mor_code": "86411",
+    "mor_code_alt": null,
+    "name_am": "በኮንስትራክሽንናማናጅመንትስራዎችየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon constructionworks",
+    "verif_lic_am": "ከ/ል/ኮ/ሚ ክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 443,
+    "serial_repeat": 443,
+    "mor_code": "86412",
+    "mor_code_alt": null,
+    "name_am": "በከተማፕላን፣በአርክቴክቸር፣ሲቪልኢንጂነሪንግእናተያያዥስራዎችየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon urbanplanningandrelated activities",
+    "verif_lic_am": "ከ/ል/ኮ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 444,
+    "serial_repeat": 444,
+    "mor_code": "86511",
+    "mor_code_alt": null,
+    "name_am": "በኤሌክትሪካልኢንጅነሪንግየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon electricalengineering",
+    "verif_lic_am": "ኢ/ኢ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "EEARTB"
+  },
+  {
+    "serial": 445,
+    "serial_repeat": 445,
+    "mor_code": "86512",
+    "mor_code_alt": null,
+    "name_am": "በኢንዱስትሪያልናበሜካኒካልኢንጅነሪንግየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon mechanicalengineering",
+    "verif_lic_am": "ከ/ል/ኮ/ሚ ክ/ን/መ/ቤት",
+    "verif_lic_en": "MOUDCRTB"
+  },
+  {
+    "serial": 446,
+    "serial_repeat": 446,
+    "mor_code": "86513",
+    "mor_code_alt": null,
+    "name_am": "በማዕድንኢንጅነሪንግየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon miningengineering",
+    "verif_lic_am": "ማ/ነ/ሚ ክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 447,
+    "serial_repeat": 447,
+    "mor_code": "86514",
+    "mor_code_alt": null,
+    "name_am": "በኬሚካልኢንጅነሪንግየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon chemicalengineering",
+    "verif_lic_am": "አ/ደ/የአ/ን/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "EFCCRTB"
+  },
+  {
+    "serial": 448,
+    "serial_repeat": 448,
+    "mor_code": "86515",
+    "mor_code_alt": null,
+    "name_am": "በዉሃስራዎችየማማከርአገልገሎት",
+    "name_en": "Consultancyserviceon water Works",
+    "verif_lic_am": "ው/መ/ኢ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOWIERTB"
+  },
+  {
+    "serial": 449,
+    "serial_repeat": 449,
+    "mor_code": "86516",
+    "mor_code_alt": null,
+    "name_am": "በስነልክዙሪያየማማከርአገልግሎት",
+    "name_en": "Consultancyservice metrology",
+    "verif_lic_am": "ብ/ስ/ኢክ/ን/መ/ቤት",
+    "verif_lic_en": "NMIRTB"
+  },
+  {
+    "serial": 450,
+    "serial_repeat": 450,
+    "mor_code": "86528",
+    "mor_code_alt": null,
+    "name_am": "በኢንፎርሜሽንናኮሙኒኬሽንቴክኖሎጂየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon informationand communicationtechnology",
+    "verif_lic_am": "ኢ/ቴ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOITRTB"
+  },
+  {
+    "serial": 451,
+    "serial_repeat": 451,
+    "mor_code": "86538",
+    "mor_code_alt": null,
+    "name_am": "በሳይንሳዊመሳሪያዎችመረጣ፣ተከላ፣ጥገናናአወጋገድዙሪያየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon scientificmachineries selection, installation, commissioning, maintenanceanddisposal",
+    "verif_lic_am": "ብ/ስ/ኢክ/ን/መ/ቤት",
+    "verif_lic_en": "NMIRTB"
+  },
+  {
+    "serial": 452,
+    "serial_repeat": 452,
+    "mor_code": "86611",
+    "mor_code_alt": "86612",
+    "name_am": "በነዳጅውጤቶችማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon petroleumproducts",
+    "verif_lic_am": "ማ/ነ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOMPRTB"
+  },
+  {
+    "serial": 453,
+    "serial_repeat": 453,
+    "mor_code": "86711",
+    "mor_code_alt": null,
+    "name_am": "በማሪታይምዘርፍየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon maritime",
+    "verif_lic_am": "ማ/ጉ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "MAARTB"
+  },
+  {
+    "serial": 454,
+    "serial_repeat": 454,
+    "mor_code": "86712",
+    "mor_code_alt": null,
+    "name_am": "በአቪዬሽንየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon aviation",
+    "verif_lic_am": "ኢ/ሲ/አ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "ECAARTB"
+  },
+  {
+    "serial": 455,
+    "serial_repeat": 455,
+    "mor_code": "86713",
+    "mor_code_alt": null,
+    "name_am": "በየብስትራንስፖርትየማማከርአገልግሎት",
+    "name_en": "Consultancyserviceon landtransport (car)",
+    "verif_lic_am": "ፌ/ት/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FTARTB"
+  },
+  {
+    "serial": 456,
+    "serial_repeat": 456,
+    "mor_code": "86714",
+    "mor_code_alt": null,
+    "name_am": "በጂኦኢንፎርሜሽንምርትናአገልገሎትየማማከር",
+    "name_en": "Consultancyon Geo- informationproductand services",
+    "verif_lic_am": "ኢ/ጂ/ኢ/ኤክ/ን/መ/ቤት",
+    "verif_lic_en": "EGIARTB"
+  },
+  {
+    "serial": 457,
+    "serial_repeat": 457,
+    "mor_code": "86811",
+    "mor_code_alt": null,
+    "name_am": "የማሰታወቂያስራ",
+    "name_en": "Consultancyactivityon advertising",
+    "verif_lic_am": "ብ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "BARTB"
+  },
+  {
+    "serial": 458,
+    "serial_repeat": 458,
+    "mor_code": "86812",
+    "mor_code_alt": null,
+    "name_am": "ጋዜጣ፣መጽሄትእናሌሎችተዛማጅፅሁፎችየማሳተምተግባራት",
+    "name_en": "Newspapers, journalsand relatedperiodicals distributionactivities",
+    "verif_lic_am": "ብ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "BARTB"
+  },
+  {
+    "serial": 459,
+    "serial_repeat": 459,
+    "mor_code": "86821",
+    "mor_code_alt": null,
+    "name_am": "በሀገርውስጥሥራናሠራተኛየማገናኘትአገልግሎት",
+    "name_en": "Locallaborrecruitment andlinkageactivities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 460,
+    "serial_repeat": 460,
+    "mor_code": "86822",
+    "mor_code_alt": null,
+    "name_am": "በውጭሀገርሥራናሠራተኛየማገናኘትአገልግሎት",
+    "name_en": "Abroadlaborrecruitment andlinkageactivities",
+    "verif_lic_am": "ሰ/ማ/ጉ/ሚ ን/ኢ/ሚ",
+    "verif_lic_en": "MOLSAMOTI"
+  },
+  {
+    "serial": 461,
+    "serial_repeat": 461,
+    "mor_code": "86823",
+    "mor_code_alt": null,
+    "name_am": "የጥበቃእናየጽዳትአገልግሎት",
+    "name_en": "Securityactivities",
+    "verif_lic_am": "ሰ/ማ/ጉ/ሚ ክ/ን/መ/ቤት",
+    "verif_lic_en": "MOLSARTB"
+  },
+  {
+    "serial": 462,
+    "serial_repeat": 462,
+    "mor_code": "86824",
+    "mor_code_alt": null,
+    "name_am": "የጂኦስፔሻል(የምድርመረጃ)አገልግሎት",
+    "name_en": "Geo-spatial (earth information) service",
+    "verif_lic_am": "ኢ/ጂ/ኢ/ኤ ክ/ን/መ/ቤት",
+    "verif_lic_en": "EGIARTB"
+  },
+  {
+    "serial": 463,
+    "serial_repeat": 463,
+    "mor_code": "86911",
+    "mor_code_alt": null,
+    "name_am": "ዓለምአቀፍየጨረታስራዎች(ባሸነፈበትዘርፍብቻ)",
+    "name_en": "Internationalbids (restrictedtothespecific wonbid)",
+    "verif_lic_am": "ን/ኢ/ሚ",
+    "verif_lic_en": "MOTI"
+  },
+  {
+    "serial": 464,
+    "serial_repeat": 464,
+    "mor_code": "91111",
+    "mor_code_alt": null,
+    "name_am": "ቅድመየመጀመሪያደረጃትምህርትእናከትምህርትበኋላየሚሰጥአገልግሎት",
+    "name_en": "Servicesofper-primary educationandafter-school centre",
+    "verif_lic_am": "ት/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOERTB"
+  },
+  {
+    "serial": 465,
+    "serial_repeat": 465,
+    "mor_code": "91112",
+    "mor_code_alt": null,
+    "name_am": "የመጀመሪያናሁለተኛደረጃትምህርትአገልግሎት",
+    "name_en": "Servicesofprimaryand secondaryeducation",
+    "verif_lic_am": "ት/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOERTB"
+  },
+  {
+    "serial": 466,
+    "serial_repeat": 466,
+    "mor_code": "91113",
+    "mor_code_alt": null,
+    "name_am": "ድንበርተሻጋሪከፍተኛትምህርትአገልግሎት",
+    "name_en": "Servicesofcross boundaryhighereducation",
+    "verif_lic_am": "ከ/ት/አ/ጥ/ኤን/ኢ/ሚ",
+    "verif_lic_en": "HERQAMOTI"
+  },
+  {
+    "serial": 467,
+    "serial_repeat": 467,
+    "mor_code": "91114",
+    "mor_code_alt": null,
+    "name_am": "የቴክኒክኮሌጆችእናየቴክኒክተቋማትአገልግሎት",
+    "name_en": "Servicesofeducationby technicalcollegesand technicalinstitutions",
+    "verif_lic_am": "የፌ/ቴ/ሙ/ት/ስ/ኤ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FTVETARTB"
+  },
+  {
+    "serial": 468,
+    "serial_repeat": 468,
+    "mor_code": "91115",
+    "mor_code_alt": null,
+    "name_am": "የአጭርጊዜየቴክኒክትምህርትእናስልጠናአገልግሎት",
+    "name_en": "Servicesofshort-term technicaleducationand training (TVET)",
+    "verif_lic_am": "የፌ/ቴ/ሙ/ት/ስ/ኤ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FTVETARTB"
+  },
+  {
+    "serial": 469,
+    "serial_repeat": 469,
+    "mor_code": "91116",
+    "mor_code_alt": null,
+    "name_am": "መደበኛየከፍተኛትምህርትአገልግሎት",
+    "name_en": "Servicesofregularhigher education",
+    "verif_lic_am": "ከ/ት/አ/ጥ/ኤክ/ን/መ/ቤት",
+    "verif_lic_en": "HERQARTB"
+  },
+  {
+    "serial": 470,
+    "serial_repeat": 470,
+    "mor_code": "91211",
+    "mor_code_alt": null,
+    "name_am": "የአሽከርካሪብቃትማረጋገጫየስልጠና(የመደበኛትምህርትናበልዩተንቀሳቃሽማሽነሪዎች)አገልግሎት",
+    "name_en": "Servicesofdriver's qualificationcertification (In formaleducationand specializedmobile machines)",
+    "verif_lic_am": "ፌ/ት/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FTARTB"
+  },
+  {
+    "serial": 471,
+    "serial_repeat": 471,
+    "mor_code": "91311",
+    "mor_code_alt": null,
+    "name_am": "ትያትር፣ሙዚቃ፣ፊልም፣ሞዴሊንግ፣ዳንስ(ውዝዋዜ)፣የቪዲዬናፎቶግራፍ፣የስዕልናዲዛይንወዘተ",
+    "name_en": "Servicesoftheater, music, film, modeling, dance, videoandphotograph, designworksetc)",
+    "verif_lic_am": "የፌ/ቴ/ሙ/ት/ስ/ኤ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FTVETARTB"
+  },
+  {
+    "serial": 472,
+    "serial_repeat": 472,
+    "mor_code": "91312",
+    "mor_code_alt": "91132",
+    "name_am": "የሠርከስማሰልጠኛት/ቤት",
+    "name_en": "Servicesoncircus training",
+    "verif_lic_am": "ስ/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "SCRTB"
+  },
+  {
+    "serial": 473,
+    "serial_repeat": 473,
+    "mor_code": "91411",
+    "mor_code_alt": null,
+    "name_am": "የባህርትራንስፖርትሙያስልጠናአገልግሎት",
+    "name_en": "Trainingservicein maritime",
+    "verif_lic_am": "ማ/ጉ/ባማ/ጉ/ባ",
+    "verif_lic_en": "MAAMAA"
+  },
+  {
+    "serial": 474,
+    "serial_repeat": 474,
+    "mor_code": "91412",
+    "mor_code_alt": null,
+    "name_am": "የአቪዬሽንሙያስልጠናአገልግሎት",
+    "name_en": "Trainingserviceinaviation",
+    "verif_lic_am": "ኢ/ሲ/አ/ባን/ኢ/ሚ",
+    "verif_lic_en": "ECAAMOTI"
+  },
+  {
+    "serial": 475,
+    "serial_repeat": 475,
+    "mor_code": "92111",
+    "mor_code_alt": null,
+    "name_am": "የስፔሻላይዝድሆስፒታልአገልግሎት",
+    "name_en": "Specializedhospital service",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባ ን/ኢ/ሚ",
+    "verif_lic_en": "FMHACAMOTI"
+  },
+  {
+    "serial": 476,
+    "serial_repeat": 476,
+    "mor_code": "92112",
+    "mor_code_alt": null,
+    "name_am": "የአጠቃላይሆስፒታልአገልግሎት",
+    "name_en": "Generalhospitalservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባ ን/ኢ/ሚ",
+    "verif_lic_en": "FMHACAMOTI"
+  },
+  {
+    "serial": 477,
+    "serial_repeat": 477,
+    "mor_code": "92113",
+    "mor_code_alt": null,
+    "name_am": "የመጀመሪያደረጃሆስፒታል",
+    "name_en": "Primaryhospitalservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 478,
+    "serial_repeat": 478,
+    "mor_code": "92114",
+    "mor_code_alt": null,
+    "name_am": "የዲያጎኖስቲክኢሜጂንግአገልግሎት",
+    "name_en": "Diagnosticimagingservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባ ክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 479,
+    "serial_repeat": 478,
+    "mor_code": "92115",
+    "mor_code_alt": null,
+    "name_am": "የዲያጎኖስቲክላብራቶሪአገልግሎት",
+    "name_en": "Diagnosticlaboratory service",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 480,
+    "serial_repeat": 480,
+    "mor_code": "92121",
+    "mor_code_alt": null,
+    "name_am": "ክሊኒኮችእናየተዛመዱየጤናእንክብካቤአገልግሎቶች",
+    "name_en": "Clinicsandsupplementary healthcareservices",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 481,
+    "serial_repeat": 481,
+    "mor_code": "92122",
+    "mor_code_alt": null,
+    "name_am": "የነርስነትአገልግሎት",
+    "name_en": "Nursingservices",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 482,
+    "serial_repeat": 482,
+    "mor_code": "92123",
+    "mor_code_alt": null,
+    "name_am": "የስፔሻሊቲክሊኒክአገልግሎት",
+    "name_en": "Specialtyclinicservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 483,
+    "serial_repeat": 483,
+    "mor_code": "92124",
+    "mor_code_alt": null,
+    "name_am": "የመካካለኛክሊኒክአገልግሎ",
+    "name_en": "Middleclinicservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 484,
+    "serial_repeat": 484,
+    "mor_code": "92125",
+    "mor_code_alt": null,
+    "name_am": "የመጀመሪያደረጃክሊኒክአገልግሎት",
+    "name_en": "Primaryclinicservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 485,
+    "serial_repeat": 485,
+    "mor_code": "92126",
+    "mor_code_alt": null,
+    "name_am": "የህፃናትማቆያአገልግሎትአገልግሎት",
+    "name_en": "Childdaycareservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 486,
+    "serial_repeat": 486,
+    "mor_code": "92127",
+    "mor_code_alt": null,
+    "name_am": "የእንስሳትህክምናሥራዎች",
+    "name_en": "Veterinaryactivities",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 487,
+    "serial_repeat": 487,
+    "mor_code": "92128",
+    "mor_code_alt": null,
+    "name_am": "የባህላዊህክምናአገልግሎት",
+    "name_en": "Traditional (cultural) medicalservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 488,
+    "serial_repeat": 488,
+    "mor_code": "92131",
+    "mor_code_alt": null,
+    "name_am": "የማሕበራዊደህንነትእናድጋፍአገልግሎቶች",
+    "name_en": "Medicalandsocialwelfare supportservices",
+    "verif_lic_am": "ማ/ጉ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "MAARTB"
+  },
+  {
+    "serial": 489,
+    "serial_repeat": 489,
+    "mor_code": "93111",
+    "mor_code_alt": null,
+    "name_am": "ተንቀሳቃሽፊልም፣ቴአትር(ሲኒማ)ቪድዮእናተመሳሳይስራዎችየመቅረጽናየማከፋፈልስራዎች",
+    "name_en": "Motionpicture (movie) , films, theatre, videoand relatedworksvideo recording, productionand distributionactivities",
+    "verif_lic_am": "ባ/ቱ/ሚክ/ን/መ/ቤት",
+    "verif_lic_en": "MOCTRTB"
+  },
+  {
+    "serial": 490,
+    "serial_repeat": 490,
+    "mor_code": "93112",
+    "mor_code_alt": null,
+    "name_am": "ተንቀሳቃሽፊልም፣ቴአትር(ሲኒማ)ቪድዮእናተመሳሳይስራዎችየማሳየትአገልግሎቶች",
+    "name_en": "Motionpicture (movie) , films, theatre, videoand relatedworksdisplay activities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 491,
+    "serial_repeat": 491,
+    "mor_code": "93121",
+    "mor_code_alt": null,
+    "name_am": "የንግድብሮድካስትአገልግሎት",
+    "name_en": "Tradeon Broadcast services",
+    "verif_lic_am": "ብ/ባብ/ባ",
+    "verif_lic_en": "BABA"
+  },
+  {
+    "serial": 492,
+    "serial_repeat": 492,
+    "mor_code": "93122",
+    "mor_code_alt": null,
+    "name_am": "የራዲዮናየቴሌቪዥንፕሮግራምቀረጻናየማሠራጨትስራዎች",
+    "name_en": "Activitiesofofradioand televisionprograms productionanddistribution",
+    "verif_lic_am": "ብ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "BARTB"
+  },
+  {
+    "serial": 493,
+    "serial_repeat": 493,
+    "mor_code": "93123",
+    "mor_code_alt": null,
+    "name_am": "የሚዲያመዝናኛፕሮግራምየማዘጋጀትናየማሰራጨትስራዎች",
+    "name_en": "Activitiesofmedia entertainmentproduction anddistributionprograms",
+    "verif_lic_am": "ብ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "BARTB"
+  },
+  {
+    "serial": 494,
+    "serial_repeat": 494,
+    "mor_code": "93211",
+    "mor_code_alt": null,
+    "name_am": "የስፖርትናሌሎችመዝናኛዎችየማዘጋጀትናየማሳየትስራዎች",
+    "name_en": "Activitiesofsportsand otherentertainments Preparationanddisplay",
+    "verif_lic_am": "ስ/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "SCRTB"
+  },
+  {
+    "serial": 495,
+    "serial_repeat": 495,
+    "mor_code": "93212",
+    "mor_code_alt": null,
+    "name_am": "የሰውነትማበልጸጊያ(እንደሰርከስየመሳሰሉት)አገልግሎቶች",
+    "name_en": "Bodyenrichmentsports services (suchascircus)",
+    "verif_lic_am": "ስ/ኮክ/ን/መ/ቤት",
+    "verif_lic_en": "SCRTB"
+  },
+  {
+    "serial": 496,
+    "serial_repeat": 496,
+    "mor_code": "93311",
+    "mor_code_alt": null,
+    "name_am": "የሙዚቃመሳሪያአጫዋች(ዲጄ)አገልግሎት",
+    "name_en": "Serviceonmusical instrumentsplaying (such as DJs)",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 497,
+    "serial_repeat": 497,
+    "mor_code": "93312",
+    "mor_code_alt": null,
+    "name_am": "የስቱዲዮቀረጻአገልግሎት",
+    "name_en": "Studiorecordingservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 498,
+    "serial_repeat": 498,
+    "mor_code": "93313",
+    "mor_code_alt": null,
+    "name_am": "የስዕል፣ቅርጻቅርጽ፣ጋለሪ/ስቱዲዮአገልግሎት",
+    "name_en": "Picture, sculpture, gallery/studioservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 499,
+    "serial_repeat": 499,
+    "mor_code": "93314",
+    "mor_code_alt": null,
+    "name_am": "የሙዚቃናየባንድሥራ",
+    "name_en": "Musicandbandactivities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 500,
+    "serial_repeat": 500,
+    "mor_code": "93215",
+    "mor_code_alt": "93315",
+    "name_am": "የፊልም፣ቲያትርኘሮዳክሽንእናተዛማጅስራዎች",
+    "name_en": "Filmsandtheatre Productionand Related",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 501,
+    "serial_repeat": 501,
+    "mor_code": "93411",
+    "mor_code_alt": null,
+    "name_am": "የዱርእንስሳትታክስደርሚንግድስራዎች",
+    "name_en": "Wildlifetaxidermy commercialactivities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 502,
+    "serial_repeat": 502,
+    "mor_code": "93412",
+    "mor_code_alt": null,
+    "name_am": "የዱርእንስሳትልዩልዩውጤቶችንግድ",
+    "name_en": "Variouswildlifeproducts trade",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 503,
+    "serial_repeat": 503,
+    "mor_code": "93511",
+    "mor_code_alt": null,
+    "name_am": "የቤተ-መጽሃፍትእናየቤተ-መዛግብትአገልግሎት",
+    "name_en": "Bookstoreandlibrary activities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 504,
+    "serial_repeat": 504,
+    "mor_code": "93512",
+    "mor_code_alt": null,
+    "name_am": "የሙዝየምስራዎች",
+    "name_en": "Museumworks",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 505,
+    "serial_repeat": 505,
+    "mor_code": "93513",
+    "mor_code_alt": "93613",
+    "name_am": "የታሪካዊቦታዎችናህንጻዎችዕድሳትናእንክብካቤአገልግሎቶች",
+    "name_en": "Historiccitesandbuildings forrecreationandcare services",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 506,
+    "serial_repeat": 506,
+    "mor_code": "94111",
+    "mor_code_alt": null,
+    "name_am": "የወንዶችየውበትሳሎንአገልግሎት",
+    "name_en": "Men’shairdressingservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 507,
+    "serial_repeat": 507,
+    "mor_code": "94112",
+    "mor_code_alt": null,
+    "name_am": "የሴቶችየውበትሳሎንአገልግሎት",
+    "name_en": "Ladies’hairdressing service",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 508,
+    "serial_repeat": 508,
+    "mor_code": "94211",
+    "mor_code_alt": null,
+    "name_am": "የልብስንጽህናአገልግሎት",
+    "name_en": "Laundryservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 509,
+    "serial_repeat": 509,
+    "mor_code": "94212",
+    "mor_code_alt": null,
+    "name_am": "የገላመታጠቢያአገልግሎት",
+    "name_en": "Showerservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 510,
+    "serial_repeat": 510,
+    "mor_code": "94213",
+    "mor_code_alt": null,
+    "name_am": "የሳውናባዝ፣እስቲምእናማሳጅእገልግሎት",
+    "name_en": "Bath&massageservice",
+    "verif_lic_am": "ም/መ/ጤ/አ/ቁ/ባክ/ን/መ/ቤት",
+    "verif_lic_en": "FMHACARTB"
+  },
+  {
+    "serial": 511,
+    "serial_repeat": 511,
+    "mor_code": "94311",
+    "mor_code_alt": null,
+    "name_am": "የትርጉም፣የጽህፈትናሌሎችተያያዥአገልግሎቶች",
+    "name_en": "Translation, secretarialand otherrelatedservices",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 512,
+    "serial_repeat": 512,
+    "mor_code": "94312",
+    "mor_code_alt": null,
+    "name_am": "የተለያዩዝግጅቶችየማስዋብ(ዲኮሬሽን)ስራዎች",
+    "name_en": "Differenteventsdecorating activities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 513,
+    "serial_repeat": 513,
+    "mor_code": "95111",
+    "mor_code_alt": null,
+    "name_am": "ቀብርየማስፈጸምእናተዛማጅስራዎች",
+    "name_en": "Funeralexecutionand relatedactivities",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 514,
+    "serial_repeat": 514,
+    "mor_code": "95112",
+    "mor_code_alt": null,
+    "name_am": "የእህልወፍጮአገልግሎት",
+    "name_en": "Grainmillservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 515,
+    "serial_repeat": 515,
+    "mor_code": "95113",
+    "mor_code_alt": null,
+    "name_am": "የመኖሪያቤትየጸረ-ተባይርጭትአገልግሎት",
+    "name_en": "Residentialpesticides sprayingservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 516,
+    "serial_repeat": 516,
+    "mor_code": "95114",
+    "mor_code_alt": null,
+    "name_am": "የልብስስፌትአገልግሎት",
+    "name_en": "Tailoringservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 517,
+    "serial_repeat": 517,
+    "mor_code": "95115",
+    "mor_code_alt": null,
+    "name_am": "የምድርሚዛንአገልግሎት",
+    "name_en": "Scaleandbalanceservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 518,
+    "serial_repeat": 518,
+    "mor_code": "95116",
+    "mor_code_alt": null,
+    "name_am": "የውኃናየመብራትክፍያዎችበውክልናየመሰብሰብአገልግሎት",
+    "name_en": "Waterandlightingfees collectiondelegating service",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  },
+  {
+    "serial": 519,
+    "serial_repeat": 519,
+    "mor_code": "95117",
+    "mor_code_alt": null,
+    "name_am": "የመጫንናየማውረድአገልግሎት",
+    "name_en": "Loadandunloadservice",
+    "verif_lic_am": "ክ/ን/መ/ቤት",
+    "verif_lic_en": "RTB"
+  }
+]

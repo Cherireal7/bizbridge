@@ -1,0 +1,9 @@
+node_modules
+.next
+dist
+build
+.turbo
+*.lock
+pnpm-lock.yaml
+apps/web/src/payload-types.ts
+apps/api/src/db/migrations

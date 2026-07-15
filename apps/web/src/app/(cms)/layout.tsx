@@ -1,0 +1,30 @@
+/* eslint-disable @next/next/no-css-tags */
+import config from '@payload-config'
+import '@payloadcms/next/css'
+import { RootLayout } from '@payloadcms/next/layouts'
+import type { ServerFunctionClient } from 'payload'
+
+import { importMap } from './admin/importMap.js'
+import './custom.scss'
+
+type Args = {
+  children: React.ReactNode
+}
+
+const serverFunction: ServerFunctionClient = async function (args) {
+  'use server'
+  const { handleServerFunctions } = await import('@payloadcms/next/layouts')
+  return handleServerFunctions({
+    ...args,
+    config,
+    importMap,
+  })
+}
+
+const Layout = ({ children }: Args) => (
+  <RootLayout config={config} importMap={importMap} serverFunction={serverFunction}>
+    {children}
+  </RootLayout>
+)
+
+export default Layout

@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  [data-theme='dark'] {
+    --bg: 10 15 13;
+    --surface: 15 22 20;
+    --surface-2: 21 32 29;
+    --surface-3: 29 42 38;
+
+    --ink: 230 228 217;
+    --ink-muted: 156 160 152;
+    --ink-faint: 106 113 106;
+
+    --border: 29 42 38;
+    --border-strong: 44 61 56;
+
+    --brand: 27 119 88;
+    --brand-strong: 15 77 61;
+    --brand-muted: 10 40 32;
+    --brand-foreground: 245 242 232;
+
+    --accent: 63 171 137;
+    --accent-muted: 10 40 32;
+
+    --success: 27 119 88;
+    --warn: 199 181 126;
+    --danger: 220 100 92;
+
+    --chart-1: 27 119 88;
+    --chart-2: 63 171 137;
+    --chart-3: 15 77 61;
+    --chart-4: 156 160 152;
+    --chart-5: 92 106 96;
+
+    --radius: 0.625rem;
+    color-scheme: dark;
+  }
+
+  [data-theme='light'] {
+    --bg: 245 242 232;
+    --surface: 255 255 255;
+    --surface-2: 239 235 220;
+    --surface-3: 226 221 200;
+
+    --ink: 15 22 20;
+    --ink-muted: 92 98 90;
+    --ink-faint: 140 146 138;
+
+    --border: 226 221 200;
+    --border-strong: 200 194 170;
+
+    --brand: 15 77 61;
+    --brand-strong: 8 44 34;
+    --brand-muted: 220 237 229;
+    --brand-foreground: 255 255 255;
+
+    --accent: 15 77 61;
+    --accent-muted: 220 237 229;
+
+    --success: 15 77 61;
+    --warn: 140 123 63;
+    --danger: 180 50 40;
+
+    --chart-1: 15 77 61;
+    --chart-2: 27 119 88;
+    --chart-3: 8 44 34;
+    --chart-4: 140 146 138;
+    --chart-5: 92 98 90;
+
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    @apply bg-bg text-ink antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  ::selection {
+    background: rgb(var(--brand) / 0.28);
+    color: rgb(var(--ink));
+  }
+  *,
+  *::before,
+  *::after {
+    border-color: rgb(var(--border));
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+  .hairline {
+    @apply border-border/60;
+  }
+  .mono {
+    @apply font-mono text-[0.78em] tracking-tight;
+  }
+  .glow-ring {
+    box-shadow: 0 0 0 1px rgb(var(--brand) / 0.3), 0 0 32px -4px rgb(var(--brand) / 0.25);
+  }
+  .card {
+    @apply rounded-lg border border-border bg-surface;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+}
