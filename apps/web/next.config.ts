@@ -4,6 +4,9 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@bizbridge/shared', '@bizbridge/ui'],
+  // Emits .next/standalone with a self-contained server bundle — required for
+  // the Dockerfile at the repo root.
+  output: 'standalone',
   experimental: {
     reactCompiler: false,
   },
