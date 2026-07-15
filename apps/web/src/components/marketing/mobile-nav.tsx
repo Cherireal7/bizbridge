@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { CurrencyToggle } from '@/components/ui/currency-toggle'
 import { LangToggle } from '@/components/ui/lang-toggle'
 import { cn } from '@/lib/cn'
+import { ENABLE_ACCOUNTS } from '@/lib/flags'
 
 interface MobileNavProps {
   nav: { href: string; label: string }[]
@@ -95,14 +96,20 @@ export function MobileNav({ nav, className }: MobileNavProps) {
             <CurrencyToggle className="flex-1" />
             <LangToggle />
           </div>
-          <div className="grid grid-cols-2 gap-2">
-            <Button asChild variant="secondary" size="sm" onClick={() => setOpen(false)}>
-              <Link href="/login">Log in</Link>
+          {ENABLE_ACCOUNTS ? (
+            <div className="grid grid-cols-2 gap-2">
+              <Button asChild variant="secondary" size="sm" onClick={() => setOpen(false)}>
+                <Link href="/login">Log in</Link>
+              </Button>
+              <Button asChild size="sm" onClick={() => setOpen(false)}>
+                <Link href="/signup">Get started</Link>
+              </Button>
+            </div>
+          ) : (
+            <Button asChild size="sm" className="w-full" onClick={() => setOpen(false)}>
+              <Link href="/consult">Book a consult</Link>
             </Button>
-            <Button asChild size="sm" onClick={() => setOpen(false)}>
-              <Link href="/signup">Get started</Link>
-            </Button>
-          </div>
+          )}
         </div>
       </SheetContent>
     </Sheet>

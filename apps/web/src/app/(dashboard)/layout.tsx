@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import {
   Calculator,
   CheckSquare,
@@ -15,6 +16,7 @@ import { CommandTrigger } from '@/components/command-palette/command-trigger'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { CurrencyToggle } from '@/components/ui/currency-toggle'
 import { Button } from '@/components/ui/button'
+import { ENABLE_ACCOUNTS } from '@/lib/flags'
 
 const NAV: { href: string; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
   { href: '/dashboard', label: 'Overview', icon: LayoutDashboard },
@@ -28,6 +30,7 @@ const NAV: { href: string; label: string; icon: React.ComponentType<{ className?
 ]
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+  if (!ENABLE_ACCOUNTS) notFound()
   return (
     <CommandPaletteProvider>
       <div className="flex min-h-screen bg-bg">

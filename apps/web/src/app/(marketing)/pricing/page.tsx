@@ -1,8 +1,10 @@
+import { notFound } from 'next/navigation'
 import { tryPayload } from '@/lib/payload'
 import { PricingTable } from './pricing-table'
 import { Badge } from '@/components/ui/badge'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { GridBackdrop } from '@/components/marketing/grid-backdrop'
+import { ENABLE_ACCOUNTS } from '@/lib/flags'
 
 export const revalidate = 600
 
@@ -12,6 +14,7 @@ interface OneTimePrices {
 }
 
 export default async function PricingPage() {
+  if (!ENABLE_ACCOUNTS) notFound()
   const pricing = await tryPayload(async (payload) => {
     return payload.findGlobal({ slug: 'pricing-config' })
   })

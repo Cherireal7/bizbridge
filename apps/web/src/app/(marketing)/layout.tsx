@@ -7,16 +7,21 @@ import { LangToggle } from '@/components/ui/lang-toggle'
 import { Button } from '@/components/ui/button'
 import { SupportWidget } from '@/components/support-widget'
 import { MobileNav } from '@/components/marketing/mobile-nav'
+import { ENABLE_ACCOUNTS, CONSULT_EMAIL } from '@/lib/flags'
 
-const NAV = [
+const BASE_NAV = [
   { href: '/', label: 'Home' },
   { href: '/sectors', label: 'Sectors' },
   { href: '/bishoftu', label: 'Research' },
   { href: '/reports', label: 'Reports' },
   { href: '/partners', label: 'Partners' },
   { href: '/blog', label: 'Blog' },
-  { href: '/pricing', label: 'Pricing' },
+  { href: '/consult', label: 'Consult' },
 ]
+
+const NAV = ENABLE_ACCOUNTS
+  ? [...BASE_NAV.slice(0, -1), { href: '/pricing', label: 'Pricing' }, BASE_NAV[BASE_NAV.length - 1]!]
+  : BASE_NAV
 
 export default function MarketingLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -46,12 +51,20 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
             <div className="ml-auto flex items-center gap-1.5 lg:gap-2">
               <CommandTrigger className="hidden md:inline-flex" />
               <ThemeToggle />
-              <Button asChild variant="ghost" size="sm" className="hidden md:inline-flex">
-                <Link href="/login">Log in</Link>
-              </Button>
-              <Button asChild size="sm" className="hidden md:inline-flex">
-                <Link href="/signup">Get started</Link>
-              </Button>
+              {ENABLE_ACCOUNTS ? (
+                <>
+                  <Button asChild variant="ghost" size="sm" className="hidden md:inline-flex">
+                    <Link href="/login">Log in</Link>
+                  </Button>
+                  <Button asChild size="sm" className="hidden md:inline-flex">
+                    <Link href="/signup">Get started</Link>
+                  </Button>
+                </>
+              ) : (
+                <Button asChild size="sm" className="hidden md:inline-flex">
+                  <Link href="/consult">Book a consult</Link>
+                </Button>
+              )}
               <MobileNav nav={NAV} className="lg:hidden" />
             </div>
           </div>
@@ -105,9 +118,9 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
               <FooterColumn
                 title="Help"
                 links={[
-                  { href: '/pricing', label: 'Pricing' },
-                  { href: '/lawyer', label: 'Talk to a lawyer' },
-                  { href: 'mailto:hello@bizbridge.et', label: 'Email us' },
+                  { href: '/consult', label: 'Book a consult' },
+                  ...(ENABLE_ACCOUNTS ? [{ href: '/pricing', label: 'Pricing' }] : []),
+                  { href: `mailto:${CONSULT_EMAIL}`, label: 'Email us' },
                 ]}
               />
             </div>

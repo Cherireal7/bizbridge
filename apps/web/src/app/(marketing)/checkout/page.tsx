@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 import { Badge } from '@/components/ui/badge'
 import { GridBackdrop } from '@/components/marketing/grid-backdrop'
 import { CheckoutClient } from './checkout-client'
+import { ENABLE_ACCOUNTS } from '@/lib/flags'
 
 export const metadata: Metadata = {
   title: 'Checkout',
@@ -13,6 +15,7 @@ interface PageProps {
 }
 
 export default async function CheckoutPage({ searchParams }: PageProps) {
+  if (!ENABLE_ACCOUNTS) notFound()
   const sp = await searchParams
   const kind = sp.type === 'report' ? 'report' : 'tier'
   const tier = sp.tier ?? 'standard'

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, ArrowUpRight, Check, Handshake, MapPin, Sparkles } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Check, Code2, Handshake, MapPin, MessageCircle, Sparkles } from 'lucide-react'
 import { tryPayload } from '@/lib/payload'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -10,6 +10,9 @@ import { StatCard } from '@/components/marketing/stat-card'
 import { Sparkline } from '@/components/charts/sparkline'
 import { HomeCharts } from '@/components/marketing/home-charts'
 import { PartnersLogoBar } from '@/components/marketing/partners-strip'
+import { CONSULT_TELEGRAM } from '@/lib/flags'
+
+const FOUNDER_SECTOR_CODES = ['39141', '72131', '92191']
 
 export const revalidate = 600
 
@@ -46,12 +49,19 @@ export default async function HomePage() {
     const blogPosts = await payload
       .find({ collection: 'blog-posts', limit: 3, sort: '-published_at', depth: 1 })
       .catch(() => ({ docs: [] as Array<{ id: number; slug: string; title: string; excerpt: string | null; published_at: string | null }> }))
+    const founderSectors = await payload.find({
+      collection: 'business-sectors',
+      where: { mor_code: { in: FOUNDER_SECTOR_CODES } },
+      limit: FOUNDER_SECTOR_CODES.length,
+      depth: 0,
+    })
     return {
       categories: categories.docs,
       counts,
       featured: featured.docs,
       totalSectors: sectorTotal.totalDocs,
       blogPosts: blogPosts.docs,
+      founderSectors: founderSectors.docs,
     }
   })
 
@@ -60,6 +70,9 @@ export default async function HomePage() {
   const featured = data?.featured ?? []
   const counts = data?.counts ?? []
   const blogPosts = data?.blogPosts ?? []
+  const founderSectors = (data?.founderSectors ?? []).sort(
+    (a, b) => FOUNDER_SECTOR_CODES.indexOf(a.mor_code) - FOUNDER_SECTOR_CODES.indexOf(b.mor_code),
+  )
 
   return (
     <div>
@@ -102,6 +115,55 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* FOR FOUNDERS — design + software focus */}
+      {founderSectors.length > 0 ? (
+        <section className="border-b border-border bg-surface/40">
+          <div className="container-page py-14 sm:py-20">
+            <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div className="max-w-2xl">
+                <p className="inline-flex items-center gap-1.5 text-xs uppercase tracking-wider text-brand">
+                  <Code2 className="h-3.5 w-3.5" /> For founders
+                </p>
+                <h2 className="mt-2 text-3xl font-semibold tracking-tightish sm:text-4xl">
+                  Opening a design or software company?
+                </h2>
+                <p className="mt-3 text-pretty text-ink-muted">
+                  This is the most-asked question we get. Start with the sector code that
+                  actually applies, the ministry that issues the licence, and the fees you&apos;ll
+                  actually pay — no middlemen, no guesswork.
+                </p>
+              </div>
+              <Link href="/consult" className="text-sm font-medium text-brand hover:underline self-start sm:self-end">
+                Talk it through →
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {founderSectors.map((s) => (
+                <Link
+                  key={s.id}
+                  href={`/sectors/${s.slug}`}
+                  className="group rounded-lg border border-border bg-bg p-5 transition-all hover:border-brand/40 hover:shadow-glow"
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <Badge variant="mono">{s.mor_code}</Badge>
+                    <ArrowUpRight className="h-4 w-4 text-ink-faint transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
+                  </div>
+                  <h3 className="mt-3 text-base font-semibold tracking-tightish text-ink group-hover:text-brand">
+                    {s.name_en}
+                  </h3>
+                  {s.name_am ? (
+                    <p className="mt-0.5 truncate font-amharic text-xs text-ink-faint">{s.name_am}</p>
+                  ) : null}
+                  {s.description_short ? (
+                    <p className="mt-3 line-clamp-3 text-sm text-ink-muted">{s.description_short}</p>
+                  ) : null}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       {/* STATS */}
       <section className="border-b border-border">
@@ -207,18 +269,18 @@ export default async function HomePage() {
           <div className="grid gap-6 md:grid-cols-3">
             <HowStep
               num="01"
-              title="Buy the research + process"
-              body="$29 unlocks every sector guide, the cost calculator, ministry approval chains, and the document checklist. One-time payment. Lifetime access."
+              title="Read the sector guide"
+              body="Every sector page has the MOR code, the licensing ministry, the certificates you'll need, and the approval chain. Free to browse — no signup, no paywall."
             />
             <HowStep
               num="02"
-              title="Open it yourself, on our process"
-              body="The step-by-step guide is built from MOR 17/2011 + four years of Bishoftu fieldwork. Most operators finish in 4–8 weeks. Email us anytime you get stuck."
+              title="Follow the process"
+              body="Built from MOR Directive 17/2011 and four years of Bishoftu fieldwork. Most operators finish in 4–8 weeks. Use the wizard if you're not sure which sector to pick."
             />
             <HowStep
               num="03"
-              title="Get connected to partners"
-              body="Pro members ($149) get a 30-min legal consult + warm introductions to our partner network: IT, logistics, hospitality, accounting, marketing. We make the intro; you take it from there."
+              title="Book a consult when you're stuck"
+              body="Sector selection, business model sanity check, warm intros to our partner network (IT, legal, accounting, logistics). One-off, no subscription."
             />
           </div>
         </div>
@@ -393,24 +455,26 @@ export default async function HomePage() {
             <Handshake className="h-3 w-3" /> Ready when you are
           </Badge>
           <h2 className="mx-auto max-w-2xl text-balance text-3xl font-semibold tracking-tightish sm:text-4xl lg:text-5xl">
-            Pay once. Open it. We&apos;ll be on the phone.
+            Have a business idea? Let&apos;s talk it through.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-            No subscriptions. Lifetime access. Standard $29 unlocks the full guide.
-            Pro $149 adds a 30-min lawyer call + warm intros to our partner network.
+            The guides are free. If you want a second pair of eyes on your sector, entity type,
+            or approval chain — book a one-off consult. No subscription, no upsell ladder.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row flex-wrap justify-center gap-3">
             <Button asChild size="lg" className="w-full sm:w-auto">
-              <Link href="/pricing">
-                See pricing <ArrowRight className="h-4 w-4" />
+              <Link href="/consult">
+                Book a consult <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
-              <Link href="/signup">Create free account</Link>
+              <a href={CONSULT_TELEGRAM} target="_blank" rel="noreferrer">
+                <MessageCircle className="h-4 w-4" /> Message on Telegram
+              </a>
             </Button>
           </div>
           <p className="mt-5 text-xs text-ink-faint">
-            Chapa · TeleBirr · Remitly bank transfer · No Stripe, no card-on-file
+            Bishoftu · Oromia · Federal Ethiopia · Replies in a day or two
           </p>
         </div>
       </section>
