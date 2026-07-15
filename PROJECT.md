@@ -1,16 +1,13 @@
 # BizBridge Ethiopia — PROJECT.md
 
-> Canonical source of truth for the project. Read this entire file before writing code.
-> Last revised: **2026-06-01** (replaces the original Phase-1 planning spec — that document is
-> obsolete; this one supersedes it).
+> Canonical source of truth for the project — product, architecture, phase plan.
 >
-> **2026-07-15 addendum — public-content pivot for launch.** Real demand right now is founders
-> asking for guides on opening **design and software companies**. Accounts, dashboard, pricing,
-> and checkout are gated behind `NEXT_PUBLIC_ENABLE_ACCOUNTS` (default off) so the launch site
-> is 100% public content + a **Book a consult** CTA (Telegram + email + Formsubmit form at
-> `/consult`). The paid-tier code is still in the tree — flip the flag when you're ready to
+> Launch posture: the site is **100% free public content** — 519 MOR sectors, cost calculator,
+> checklist, eTrade service guide, and a **Book a consult** CTA (Telegram + email + Formsubmit).
+> Accounts, dashboard, pricing, and checkout are gated behind `NEXT_PUBLIC_ENABLE_ACCOUNTS`
+> (default off). The paid-tier code is preserved — flip the flag when the offer is ready to
 > sell. Deploy target: web app on Vercel; Fastify API deferred (nothing calls it while the flag
-> is off). See `PROGRESS.md` for the 2026-07-15 change log.
+> is off).
 
 ---
 

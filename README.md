@@ -1,13 +1,12 @@
 # BizBridge Ethiopia
 
-Freemium business intelligence and setup platform for opening a business in Bishoftu/Debrezeit, Ethiopia (expanding to other Ethiopian cities).
+An independent civic-tech project — every MOR sector, every fee, every ministry approval, free to browse. Built for Addis and Bishoftu, applicable across Oromia and federal Ethiopia.
 
-> Read [`PROJECT.md`](./PROJECT.md) for the full product, architecture, and phase plan.
-> Read [`CLAUDE.md`](./CLAUDE.md) for developer commands and conventions.
+> Read [`PROJECT.md`](./PROJECT.md) for the full product spec and architecture, [`SETUP.md`](./SETUP.md) for first-run setup.
 
 ## Stack
 
-Turborepo · Next.js 15 · Payload CMS v3 · Fastify · PostgreSQL · Drizzle · Better Auth · Chapa + Stripe · Cloudflare R2 · Resend · MeiliSearch · Cal.com
+Turborepo · Next.js 15 · Payload CMS v3 · Fastify · PostgreSQL (Neon) · Drizzle · Better Auth · Chapa · Cloudflare R2
 
 ## Workspace
 
