@@ -10,10 +10,10 @@ import { ENABLE_ACCOUNTS, CONSULT_EMAIL } from '@/lib/flags'
 const BASE_NAV = [
   { href: '/', label: 'Home' },
   { href: '/sectors', label: 'Sectors' },
+  { href: '/services', label: 'Services' },
   { href: '/bishoftu', label: 'Research' },
   { href: '/reports', label: 'Reports' },
   { href: '/partners', label: 'Partners' },
-  { href: '/blog', label: 'Blog' },
   { href: '/consult', label: 'Consult' },
 ]
 
@@ -94,12 +94,13 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
                 title="Product"
                 links={[
                   { href: '/sectors', label: 'All 519 sectors' },
-                  { href: '/reports', label: 'Reports catalog' },
+                  { href: '/services', label: 'eTrade services' },
                   { href: '/lookup', label: 'MOR code lookup' },
                   { href: '/compare', label: 'Compare sectors' },
                   { href: '/calculator', label: 'Cost calculator' },
                   { href: '/checklist', label: 'Setup checklist' },
                   { href: '/wizard', label: 'Sector wizard' },
+                  { href: '/reports', label: 'Reports catalog' },
                 ]}
               />
               <FooterColumn

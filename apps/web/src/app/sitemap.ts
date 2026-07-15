@@ -10,6 +10,7 @@ const PUBLIC_ROUTES: Array<{
 }> = [
   { path: '/', changeFrequency: 'weekly', priority: 1 },
   { path: '/sectors', changeFrequency: 'daily', priority: 0.95 },
+  { path: '/services', changeFrequency: 'monthly', priority: 0.9 },
   { path: '/consult', changeFrequency: 'monthly', priority: 0.9 },
   { path: '/wizard', changeFrequency: 'monthly', priority: 0.85 },
   { path: '/calculator', changeFrequency: 'monthly', priority: 0.85 },

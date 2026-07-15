@@ -25,69 +25,93 @@ interface Step {
   estimated_days: number
 }
 
+/**
+ * 7-step process sourced from:
+ * - Ministry of Trade & Regional Integration (motri.gov.et) service catalog
+ * - Ethiopian Investment & Business Licensing Process guide (legalserviceethiopia.com)
+ * - 2021 Commercial Code (Proc. 1243/2021)
+ *
+ * The order matters — each step depends on the previous one.
+ */
 const TEMPLATE: Step[] = [
   {
-    id: 'investment-licence',
-    title: 'Investment licence',
+    id: 'name-reservation',
+    title: 'Trade name reservation',
     description:
-      'Apply at the Ethiopian Investment Commission (EIC). Bring passport / national ID, business plan, and project description.',
-    where_to_go: 'Ethiopian Investment Commission (EIC), Addis',
-    estimated_days: 5,
-  },
-  {
-    id: 'tin',
-    title: 'TIN registration',
-    description:
-      'Get your Tax Identification Number from the Ministry of Revenue branch nearest your business address.',
-    where_to_go: 'Bishoftu Tax Authority Branch',
-    estimated_days: 1,
-  },
-  {
-    id: 'bank-account',
-    title: 'Open business bank account',
-    description:
-      'Choose a private bank (CBE offers foreign-currency accounts if you need one). Deposit the minimum capital per business type.',
-    where_to_go: 'Any commercial bank',
-    estimated_days: 2,
-  },
-  {
-    id: 'trade-licence',
-    title: 'Trade licence',
-    description:
-      'Apply at the Regional Trade Bureau / Bishoftu City Trade Office with the correct MOR sector code.',
-    where_to_go: 'Bishoftu City Trade Office',
+      'Submit 3 proposed company names via the eTrade portal (etrade.gov.et) or your local Trade Bureau. First-choice availability confirmed same day; formal reservation issued 1–3 days.',
+    where_to_go: 'eTrade portal · Ministry of Trade sub-city bureau',
     estimated_days: 3,
-  },
-  {
-    id: 'sector-approval',
-    title: 'Sector-specific ministry approval',
-    description:
-      'Depends on the sector — health, food, transport, etc. each need a separate competency / approval check.',
-    where_to_go: 'Sector ministry (see your sector page)',
-    estimated_days: 10,
-  },
-  {
-    id: 'employer-id',
-    title: 'Employer registration',
-    description:
-      'Register with Social Security (POESSA) and the Ministry of Labour if hiring employees.',
-    where_to_go: 'POESSA / Labour Office',
-    estimated_days: 2,
   },
   {
     id: 'lease',
     title: 'Lease / land agreement',
     description:
-      'Sign a notarized lease or, for industrial land, work with EIDC for plot allocation. Required for the trade licence.',
-    where_to_go: 'Local sub-city / EIDC',
+      'Sign a notarised lease for your business address (required to authenticate documents in the next step). For industrial land, work with EIDC for plot allocation. Sole proprietors can use residential address in some cases.',
+    where_to_go: 'Local sub-city land office · EIDC (industrial)',
     estimated_days: 7,
   },
   {
-    id: 'vat',
-    title: 'VAT registration (if applicable)',
+    id: 'authentication',
+    title: 'Document authentication (DARA)',
     description:
-      'Annual turnover ≥ ETB 1M triggers VAT. Register at MOR and obtain VAT certificate.',
-    where_to_go: 'Ministry of Revenue',
+      'PLC / share company only — sole proprietors skip this step. Authenticate the Memorandum & Articles of Association, company-name letter, proof of address, and shareholder agreements at the Document Authentication & Registration Agency. Appointments run day-of or next-day.',
+    where_to_go: 'Document Authentication & Registration Agency (DARA), Addis',
+    estimated_days: 3,
+  },
+  {
+    id: 'bank-account',
+    title: 'Open business bank account + deposit capital',
+    description:
+      'Choose any commercial bank (CBE offers foreign-currency accounts). Deposit the minimum capital per entity type — Br 15,000 for a domestic PLC, per the Commercial Code (Proc. 1243/2021). Bank issues a capital-deposit confirmation letter you\'ll need for commercial registration.',
+    where_to_go: 'Any Ethiopian commercial bank',
+    estimated_days: 2,
+  },
+  {
+    id: 'tin',
+    title: 'TIN registration',
+    description:
+      'Get your Tax Identification Number at the sub-city small-taxpayers office. Biometric capture required. Increasingly issued automatically once commercial registration completes on the eTrade portal.',
+    where_to_go: 'Sub-city small-taxpayers office · Ministry of Revenue',
+    estimated_days: 2,
+  },
+  {
+    id: 'commercial-registration',
+    title: 'Commercial registration certificate',
+    description:
+      'Apply at the Ministry of Trade / local Trade Bureau with: application form, authenticated MoA (if PLC), proof of address, TIN certificate, capital-deposit letter. Certificate is valid for one year and required before you can trade legally.',
+    where_to_go: 'Ministry of Trade · sub-city Trade Bureau',
+    estimated_days: 5,
+  },
+  {
+    id: 'competency',
+    title: 'Competency certificate (sector-specific)',
+    description:
+      'Only if your MOR sector requires it — health, food, transport, education, and specialised professional services do; general retail and most consulting do not. On-site inspection by the relevant ministry. Check your sector page for specifics.',
+    where_to_go: 'Sector ministry (see your sector page)',
+    estimated_days: 10,
+  },
+  {
+    id: 'trade-licence',
+    title: 'Trade / business licence',
+    description:
+      'The document that lets you legally operate. Apply at the Ministry of Trade or local Trade Bureau with: commercial registration certificate, TIN certificate, competency certificate (if applicable). Renewable every 6 months per current MoTRI rules.',
+    where_to_go: 'Ministry of Trade · sub-city Trade Bureau',
+    estimated_days: 3,
+  },
+  {
+    id: 'vat',
+    title: 'VAT / TOT registration',
+    description:
+      'Register in SIGTAS at the Federal Ministry of Revenue (or the regional Revenue Authority, or Large/Medium Taxpayers Office). Annual turnover ≥ Br 1,000,000 or ≥ 75% VAT-registered clients ⇒ VAT. Below that ⇒ Turnover Tax (TOT). Health + education sectors are exempt. Get invoice-printing authorisation and cash-register approval here too.',
+    where_to_go: 'Federal Ministry of Revenue · SIGTAS',
+    estimated_days: 3,
+  },
+  {
+    id: 'employer-id',
+    title: 'Employer registration (if hiring)',
+    description:
+      'Register with POESSA (Social Security) and the Ministry of Labour if you\'ll have staff. Not required for owner-operator sole proprietorships.',
+    where_to_go: 'POESSA · Ministry of Labour',
     estimated_days: 2,
   },
 ]
