@@ -118,20 +118,18 @@ export default async function ReportsCatalogPage() {
           <Card className="relative overflow-hidden p-7 sm:p-10">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="text-xs uppercase tracking-wider text-brand">
-                  Skip the cart entirely
-                </p>
+                <p className="text-xs uppercase tracking-wider text-brand">Custom research</p>
                 <h3 className="mt-2 text-2xl font-semibold tracking-tightish">
-                  Pro includes every report — current and future.
+                  Need something a published report doesn&apos;t cover?
                 </h3>
                 <p className="mt-1 text-sm text-ink-muted">
-                  $149 one-time, lifetime access. Plus a 30-min lawyer consult and all the data
-                  tools.
+                  Tell us what you&apos;re trying to figure out — sector deep-dive, location
+                  analysis, feasibility check. We&apos;ll say if we can help and how.
                 </p>
               </div>
               <Button asChild size="lg">
-                <Link href="/pricing">
-                  See pricing <ArrowRight className="h-4 w-4" />
+                <Link href="/consult">
+                  Book a consult <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
             </div>

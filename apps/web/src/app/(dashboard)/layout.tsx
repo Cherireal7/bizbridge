@@ -14,7 +14,6 @@ import {
 import { CommandPaletteProvider } from '@/components/command-palette/command-palette'
 import { CommandTrigger } from '@/components/command-palette/command-trigger'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
-import { CurrencyToggle } from '@/components/ui/currency-toggle'
 import { Button } from '@/components/ui/button'
 import { ENABLE_ACCOUNTS } from '@/lib/flags'
 
@@ -72,7 +71,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <header className="sticky top-0 z-20 flex h-14 items-center gap-3 border-b border-border bg-bg/80 px-6 backdrop-blur-md">
             <CommandTrigger className="hidden md:inline-flex" />
             <div className="ml-auto flex items-center gap-2">
-              <CurrencyToggle className="hidden md:inline-flex" />
               <ThemeToggle />
               <Button asChild size="sm" variant="ghost">
                 <Link href="/settings">Account</Link>

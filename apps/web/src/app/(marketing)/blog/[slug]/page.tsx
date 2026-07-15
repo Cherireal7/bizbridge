@@ -160,18 +160,18 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       <section className="container-page pb-12 sm:pb-16">
         <Card className="mx-auto max-w-2xl p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-wider text-brand">Want the full guide?</p>
+          <p className="text-xs uppercase tracking-wider text-brand">Keep going</p>
           <h3 className="mt-2 text-xl font-semibold tracking-tightish">
-            Standard $29 unlocks every sector process.
+            Every sector, every fee — free to browse.
           </h3>
           <p className="mt-2 text-sm text-ink-muted">
-            One-time payment, lifetime access. The walk-through above plus 519 official MOR
-            sectors, costs, ministry approvals, and document checklists.
+            The walk-through above plus 519 official MOR sectors, real fees, ministry approvals,
+            and document checklists. No signup.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Button asChild>
-              <Link href="/pricing">
-                See pricing <ArrowRight className="h-4 w-4" />
+              <Link href="/sectors">
+                Browse sectors <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="secondary">

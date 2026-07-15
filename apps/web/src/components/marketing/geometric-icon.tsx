@@ -1,48 +1,72 @@
+import {
+  Briefcase,
+  Factory,
+  HardHat,
+  Landmark,
+  Pickaxe,
+  ShoppingBag,
+  Truck,
+  Users,
+  Wheat,
+  Zap,
+  type LucideIcon,
+} from 'lucide-react'
 import { cn } from '@/lib/cn'
+
+/**
+ * Category-aware icon tile — lucide-react icon on a subtly tinted swatch,
+ * keyed by MOR category slug. Keeps the same API as the old geometric
+ * gradient version so call sites don't need to change.
+ */
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  'agriculture-hunting-forestry-fishing': Wheat,
+  'mining-and-quarrying': Pickaxe,
+  'manufacturing': Factory,
+  'electricity-gas-water-waste': Zap,
+  'construction': HardHat,
+  'wholesale-retail-hotels-import-export': ShoppingBag,
+  'transport-storage-communication': Truck,
+  'finance-insurance-real-estate-business': Landmark,
+  'community-social-personal-services': Users,
+}
+
+// Matches the palette in home-charts.tsx — keep in sync manually.
+const TINT_MAP: Record<string, string> = {
+  'agriculture-hunting-forestry-fishing': '#3f6b52',
+  'mining-and-quarrying': '#8a6a3d',
+  'manufacturing': '#c66a3a',
+  'electricity-gas-water-waste': '#3a8f9c',
+  'construction': '#a05c50',
+  'wholesale-retail-hotels-import-export': '#1B7758',
+  'transport-storage-communication': '#4c6ea8',
+  'finance-insurance-real-estate-business': '#a48242',
+  'community-social-personal-services': '#7d5e88',
+}
 
 interface GeometricIconProps {
   slug: string
   className?: string
 }
 
-/**
- * Hash-based geometric icon per sector category. No external assets;
- * built from CSS shapes + the category slug as the deterministic seed.
- */
 export function GeometricIcon({ slug, className }: GeometricIconProps) {
-  const variant = hash(slug) % 8
+  const Icon = ICON_MAP[slug] ?? Briefcase
+  const tint = TINT_MAP[slug] ?? '#1B7758'
 
   return (
     <div
       className={cn(
         'relative inline-flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-md',
-        'border border-border bg-gradient-to-br from-surface-2 to-surface',
+        'border border-border',
         className,
       )}
+      style={{
+        backgroundColor: `${tint}18`,
+        borderColor: `${tint}40`,
+      }}
       aria-hidden
     >
-      <div className="absolute inset-0" style={{ background: glyphFor(variant) }} />
+      <Icon className="h-[55%] w-[55%]" style={{ color: tint }} strokeWidth={1.75} />
     </div>
   )
-}
-
-function hash(s: string): number {
-  let h = 0
-  for (let i = 0; i < s.length; i++) h = ((h << 5) - h + s.charCodeAt(i)) | 0
-  return Math.abs(h)
-}
-
-function glyphFor(variant: number): string {
-  // Brand-tinted geometric glyphs — pure CSS, no SVGs.
-  const fills = [
-    'conic-gradient(from 45deg at 50% 50%, rgb(var(--brand)/0.5) 0deg, rgb(var(--brand)/0.1) 90deg, rgb(var(--brand)/0.5) 180deg, rgb(var(--brand)/0.1) 270deg)',
-    'linear-gradient(135deg, rgb(var(--brand)/0.5) 0%, rgb(var(--brand)/0.05) 50%, rgb(var(--accent)/0.4) 100%)',
-    'radial-gradient(ellipse at 30% 30%, rgb(var(--brand)/0.5), rgb(var(--brand)/0) 60%)',
-    'linear-gradient(45deg, transparent 40%, rgb(var(--brand)/0.45) 40%, rgb(var(--brand)/0.45) 60%, transparent 60%)',
-    'radial-gradient(circle at 70% 70%, rgb(var(--accent)/0.5), rgb(var(--brand)/0.2) 50%, transparent 80%)',
-    'conic-gradient(rgb(var(--brand)/0.4), rgb(var(--accent)/0.4), rgb(var(--brand)/0.4))',
-    'linear-gradient(180deg, rgb(var(--brand)/0.4) 0%, rgb(var(--brand)/0.4) 25%, transparent 25%, transparent 50%, rgb(var(--brand)/0.4) 50%, rgb(var(--brand)/0.4) 75%, transparent 75%)',
-    'repeating-linear-gradient(45deg, rgb(var(--brand)/0.3), rgb(var(--brand)/0.3) 4px, transparent 4px, transparent 8px)',
-  ]
-  return fills[variant] ?? fills[0]!
 }

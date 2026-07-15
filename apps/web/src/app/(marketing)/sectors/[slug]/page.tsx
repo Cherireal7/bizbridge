@@ -214,13 +214,18 @@ export default async function SectorDetailPage({ params }: PageProps) {
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <Button asChild size="lg">
-                  <Link href={`/checkout?tier=standard&sector=${sector.slug}`}>
-                    Get the full guide · $29 <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  <a
+                    href={`https://etrade.gov.et`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Landmark className="h-4 w-4" /> Reserve name on eTrade{' '}
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
                 </Button>
                 <Button asChild variant="secondary">
                   <Link href={`/checklist?sector=${sector.slug}`}>
-                    Free checklist <ListChecks className="h-4 w-4" />
+                    Setup checklist <ListChecks className="h-4 w-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="ghost">

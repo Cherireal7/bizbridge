@@ -1,5 +1,102 @@
 # PROGRESS
 
+## 2026-07-15 (session 3) — Deploy-ready cleanup
+
+Third session same day. Cheri gave a big list of cleanup items after previewing
+the site. Executed as one batch since most are independent.
+
+### Copy scrub
+
+- **Removed every `$29` / `$149` / paywall reference** in user-visible copy
+  (sector detail hero CTA, wizard completion, lawyer page, reports CTA,
+  partners CTA, blog post CTA, about page). Site no longer promises a paid
+  tier anywhere it doesn't back it up.
+- **Removed diaspora / foreign-investor framing** from user copy (hero,
+  about, wizard, calculator, bishoftu, checklist, reports). USER_TYPES enum
+  is still in `packages/shared/src/constants.ts` for future use, but the
+  wizard question and calculator selector are gone — the site is now scoped
+  to domestic operators. Note added in the lawyer page: foreign-branch
+  structures need a consult, not a self-service page.
+
+### Currency + language toggles removed
+
+- `CurrencyToggle` + `LangToggle` no longer rendered in marketing layout,
+  dashboard layout, mobile-nav. Component files kept (may reintroduce).
+  `CurrencyProvider` still wraps the tree so the calculator's USD conversion
+  still works — just no user-visible toggle.
+
+### Bitcoin sign → Br
+
+- Every `₿` prefix (8 sites in calculator + bishoftu + pulse-charts) replaced
+  with `Br ` (Ethiopian birr). No more BTC symbol misuse.
+
+### Calculator overhaul
+
+- BUSINESS_TYPES trimmed to **sole proprietorship** and **PLC** only. Share
+  company + foreign branch removed — we don't have accurate cost data for
+  those; note points users to a consult instead.
+- Added **PLC operating-capital callout**: explains that Br 15,000 is the
+  legal MoJ floor, not a budget — realistic first-year runway is
+  Br 250,000–1,500,000.
+- Removed the "Premium — Export & save" locked teaser. Replaced with a
+  working **Print / Save-as-PDF** button (uses browser print dialog with
+  print-styled CSS) and a **CSV download** with source citation baked in.
+- Added a prominent **"Open eTrade"** CTA in the summary column pointing to
+  `https://etrade.gov.et` — that's where name reservation and TIN registration
+  actually happen.
+- Added source citation under the line-item chart:
+  *"Ethiopian Commercial Code (Proclamation 1243/2021), MOR fee schedule, and
+  local practitioner interviews (2025–2026)."*
+
+### eTrade link-outs
+
+- Primary CTA on **sector detail** pages is now **"Reserve name on eTrade"**
+  (opens `etrade.gov.et` in a new tab).
+- Calculator has an eTrade card next to the estimate.
+- Consult page + lawyer page mention eTrade in context.
+
+### Civic disclaimer
+
+- Prominent footer block: *"Independent civic-tech project. Not affiliated
+  with the Government of Ethiopia, Ministry of Trade, MOR, or any official
+  body. Verify current rules on eTrade or with a licensed lawyer."*
+- Data-source line separated in footer: *"Source: MOR Directive 17/2011"*.
+
+### Icons — lucide-react
+
+- `GeometricIcon` rewritten to render **lucide-react icons per MOR category
+  slug** (Wheat, Pickaxe, Factory, Zap, HardHat, ShoppingBag, Truck, Landmark,
+  Users). Fallback `Briefcase`. Same API as before, so no call-site changes.
+  Tint per category matches the home-charts palette.
+
+### SEO
+
+- **New favicon**: `apps/web/src/app/icon.tsx` (64px), `apple-icon.tsx`
+  (180px). Both are dynamic `ImageResponse` — a stylised **B** on the
+  forest-green gradient.
+- **New Open Graph image**: `apps/web/src/app/opengraph-image.tsx` (1200×630)
+  — brand mark, hero headline, tagline, and provenance line. Used for Twitter
+  cards too.
+- Root `metadata` expanded: author + creator + publisher, richer keywords,
+  canonical URL, robots directives, JSON-LD Organization schema (schema.org
+  data for search + AI crawlers).
+- **Sitemap expanded** from 4 static routes to 14 + all sector pages + blog
+  posts + reports. Priorities/changeFrequency tuned per route type.
+
+### Partners
+
+- **Doxa Innovations** URL updated from `#` to `https://doxaplc.com`.
+- **BR Photography** URL set to `''` (empty) with copy note *"Follow on
+  Instagram / TikTok — no website."* Marquee component updated to render
+  non-linked partners as `<span>` instead of a broken `<a>`.
+
+### Follow-ups still open
+
+- BR Photography Instagram / TikTok handles — waiting on Cheri.
+- Real blog posts + Media collection with R2 credentials — writing section
+  stays hidden until then.
+- No API integration with eTrade (they don't publish one). Link-out only.
+
 ## 2026-07-15 (later) — Launch-ready polish
 
 Second session same day, after previewing the site in prod mode. Cheri asked

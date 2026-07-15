@@ -116,7 +116,7 @@ export function PulseCharts({ trending, phases, fxHistory }: PulseChartsProps) {
               categories: ['W-8', 'W-7', 'W-6', 'W-5', 'W-4', 'W-3', 'W-2', 'W-1', 'Now'],
             },
             yaxis: {
-              labels: { formatter: (v) => `₿${v.toFixed(1)}` },
+              labels: { formatter: (v) => `Br ${v.toFixed(1)}` },
             },
             fill: {
               type: 'gradient',

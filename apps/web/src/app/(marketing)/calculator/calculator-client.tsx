@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
-import { Download, FileSearch, Lock, Search } from 'lucide-react'
+import { Download, Info, Landmark, Printer, Search } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -12,9 +12,9 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Chart } from '@/components/charts/chart'
 import { useCurrency } from '@/components/providers/currency-provider'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+import { humanizeSectorName } from '@/lib/humanize-sector-name'
 
-type BusinessType = 'sole_proprietorship' | 'plc' | 'share_company' | 'branch'
-type UserType = 'local' | 'diaspora' | 'foreign_investor'
+type BusinessType = 'sole_proprietorship' | 'plc'
 
 interface SectorHit {
   id: string | number
@@ -23,18 +23,38 @@ interface SectorHit {
   name_en: string
 }
 
-const BUSINESS_TYPES: { value: BusinessType; label: string; capitalFloor: number }[] = [
-  { value: 'sole_proprietorship', label: 'Sole proprietorship', capitalFloor: 0 },
-  { value: 'plc', label: 'PLC', capitalFloor: 50_000 },
-  { value: 'share_company', label: 'Share company', capitalFloor: 500_000 },
-  { value: 'branch', label: 'Foreign branch', capitalFloor: 200_000 },
+/**
+ * Entity types we can price with confidence. Share companies and foreign
+ * branches have different capital regimes we don't yet cover — book a consult
+ * for those. Legal minimums come from the Commercial Code of Ethiopia
+ * (Proc. 1243/2021) via the Ministry of Justice; recommended figures are
+ * lived-experience estimates for 6–12 months of operating runway.
+ */
+const BUSINESS_TYPES: {
+  value: BusinessType
+  label: string
+  legalMin: number
+  recommended: number
+}[] = [
+  {
+    value: 'sole_proprietorship',
+    label: 'Sole proprietorship',
+    legalMin: 0,
+    recommended: 25_000,
+  },
+  {
+    value: 'plc',
+    label: 'Private Limited Company (PLC)',
+    legalMin: 15_000,
+    recommended: 250_000,
+  },
 ]
 
-const USER_TYPES: { value: UserType; label: string; mult: number }[] = [
-  { value: 'local', label: 'Local', mult: 1 },
-  { value: 'diaspora', label: 'Diaspora', mult: 1.15 },
-  { value: 'foreign_investor', label: 'Foreign investor', mult: 1.4 },
-]
+const DEFAULT_CAPITAL = 250_000
+
+function br(n: number): string {
+  return `Br ${Math.round(n).toLocaleString()}`
+}
 
 export function CalculatorClient({ initialSectorSlug }: { initialSectorSlug: string | null }) {
   const { format, fxRate } = useCurrency()
@@ -42,10 +62,8 @@ export function CalculatorClient({ initialSectorSlug }: { initialSectorSlug: str
   const [sector, setSector] = useState<SectorHit | null>(null)
   const [businessType, setBusinessType] = useState<BusinessType>('plc')
   const [employees, setEmployees] = useState(5)
-  const [capital, setCapital] = useState(100_000)
-  const [userType, setUserType] = useState<UserType>('local')
+  const [capital, setCapital] = useState(DEFAULT_CAPITAL)
 
-  // Load initial sector from URL slug
   useEffect(() => {
     if (!initialSectorSlug) return
     const params = new URLSearchParams()
@@ -58,22 +76,18 @@ export function CalculatorClient({ initialSectorSlug }: { initialSectorSlug: str
       .catch(() => {})
   }, [initialSectorSlug])
 
-  const lines = useMemo(() => computeLines({ sector, businessType, employees, capital, userType, fxRate }), [
-    sector,
-    businessType,
-    employees,
-    capital,
-    userType,
-    fxRate,
-  ])
+  const activeType = BUSINESS_TYPES.find((b) => b.value === businessType)!
+  const lines = useMemo(
+    () => computeLines({ sector, businessType, employees, capital }),
+    [sector, businessType, employees, capital],
+  )
 
   const totalBirr = lines.reduce((acc, l) => acc + l.amount, 0)
   const totalUsd = totalBirr / fxRate
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_400px]">
-      {/* INPUTS */}
-      <Card className="p-6">
+      <Card className="p-6 print:shadow-none">
         <div className="space-y-6">
           <div className="space-y-2">
             <Label>Sector</Label>
@@ -91,6 +105,10 @@ export function CalculatorClient({ initialSectorSlug }: { initialSectorSlug: str
                 ))}
               </TabsList>
             </Tabs>
+            <p className="text-xs text-ink-faint">
+              Share company + foreign branch require sector-specific advice — book a consult if
+              you&apos;re going that route.
+            </p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
@@ -106,51 +124,46 @@ export function CalculatorClient({ initialSectorSlug }: { initialSectorSlug: str
                 value={[employees]}
                 onValueChange={([v]) => setEmployees(v ?? 0)}
               />
-              <p className="text-xs text-ink-faint">Adds payroll & registration overhead</p>
+              <p className="text-xs text-ink-faint">Adds payroll + registration overhead</p>
             </div>
 
             <div className="space-y-2">
               <div className="flex items-baseline justify-between">
-                <Label>Initial capital (ETB)</Label>
-                <span className="font-mono text-sm text-ink">
-                  ₿ {capital.toLocaleString()}
-                </span>
+                <Label>Initial capital</Label>
+                <span className="font-mono text-sm text-ink">{br(capital)}</span>
               </div>
               <Slider
                 min={0}
                 max={5_000_000}
-                step={10_000}
+                step={5_000}
                 value={[capital]}
                 onValueChange={([v]) => setCapital(v ?? 0)}
               />
               <p className="text-xs text-ink-faint">
-                Floor for{' '}
-                {BUSINESS_TYPES.find((b) => b.value === businessType)?.label}: ₿{' '}
-                {(
-                  BUSINESS_TYPES.find((b) => b.value === businessType)?.capitalFloor ?? 0
-                ).toLocaleString()}
+                MoJ legal minimum: {br(activeType.legalMin)} · Realistic 6–12mo runway:{' '}
+                {br(activeType.recommended)}
               </p>
             </div>
           </div>
 
-          <div className="space-y-2">
-            <Label>You are</Label>
-            <Tabs value={userType} onValueChange={(v) => setUserType(v as UserType)}>
-              <TabsList className="w-full">
-                {USER_TYPES.map((t) => (
-                  <TabsTrigger key={t.value} value={t.value} className="flex-1">
-                    {t.label}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-            </Tabs>
-            <p className="text-xs text-ink-faint">
-              Adjusts professional service multipliers (translation, attestation, escrow).
-            </p>
-          </div>
+          {/* PLC operating-capital note */}
+          {businessType === 'plc' ? (
+            <div className="flex gap-3 rounded-lg border border-brand/25 bg-brand/5 p-4 text-sm">
+              <Info className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
+              <div className="text-ink-muted">
+                <strong className="text-ink">The Br 15,000 PLC minimum is a legal floor, not a
+                budget.</strong>{' '}
+                Very few PLCs actually run on it. Plan for rent, staff, inventory, licenses, and
+                the first two months of losses — a realistic starting figure is
+                Br 250,000–1,500,000 depending on sector. The calculator uses the higher of what
+                you enter or the legal floor.
+              </div>
+            </div>
+          ) : null}
         </div>
 
         <div className="mt-6 border-t border-border pt-6">
+          <p className="mb-2 text-xs uppercase tracking-wider text-brand">Line items</p>
           <Chart
             type="bar"
             height={260}
@@ -161,69 +174,108 @@ export function CalculatorClient({ initialSectorSlug }: { initialSectorSlug: str
               },
             ]}
             options={{
+              chart: { toolbar: { show: false } },
               xaxis: { categories: lines.map((l) => l.label) },
               plotOptions: {
                 bar: { borderRadius: 4, columnWidth: '55%', distributed: true },
               },
               legend: { show: false },
               tooltip: {
-                y: { formatter: (v) => `₿ ${v.toLocaleString()}` },
+                y: { formatter: (v) => br(v) },
               },
               yaxis: {
                 labels: {
                   formatter: (v) =>
-                    `₿${v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v.toFixed(0)}`,
+                    `Br ${v >= 1000 ? `${(v / 1000).toFixed(0)}k` : v.toFixed(0)}`,
                 },
               },
             }}
           />
+          <p className="mt-3 text-2xs text-ink-faint">
+            Source: Ethiopian Commercial Code (Proclamation 1243/2021), MOR fee schedule, and
+            local practitioner interviews (2025–2026). Ranges vary by city office and by year.
+          </p>
         </div>
       </Card>
 
-      {/* SUMMARY */}
-      <div className="space-y-4">
+      <div className="space-y-4 print:space-y-2">
         <Card className="p-6">
           <p className="text-xs uppercase tracking-wider text-brand">Estimated total</p>
-          <p className="mt-2 text-4xl font-semibold tracking-crisp text-ink">
-            ₿ {totalBirr.toLocaleString()}
-          </p>
+          <p className="mt-2 text-4xl font-semibold tracking-crisp text-ink">{br(totalBirr)}</p>
           <p className="text-sm text-ink-muted">≈ {format(totalUsd, { currency: 'USD' })}</p>
           <div className="mt-4 space-y-1.5 text-sm">
             {lines.map((l) => (
               <div key={l.label} className="flex items-baseline justify-between">
                 <span className="text-ink-muted">{l.label}</span>
-                <span className="font-mono text-ink">
-                  ₿ {Math.round(l.amount).toLocaleString()}
-                </span>
+                <span className="font-mono text-ink">{br(l.amount)}</span>
               </div>
             ))}
           </div>
           <div className="mt-4 border-t border-border pt-3 text-xs text-ink-faint">
-            FX 1 USD = ₿ {fxRate.toFixed(2)} · ranges are typical; actual fees vary by city
-            office.
+            FX 1 USD ≈ Br {fxRate.toFixed(2)} · ranges are typical, not authoritative. Verify
+            each fee at the office you file with.
           </div>
         </Card>
 
-        <Card className="p-6">
-          <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-accent">
-            <Lock className="h-3 w-3" /> Premium
-          </div>
-          <p className="mt-1.5 text-sm font-semibold text-ink">Export & save</p>
-          <p className="mt-1 text-xs text-ink-muted">
-            Premium subscribers can export a branded PDF cost report and save scenarios to revisit.
+        <Card className="p-5">
+          <p className="text-xs uppercase tracking-wider text-brand">Next step</p>
+          <p className="mt-1.5 text-sm text-ink-muted">
+            Reserve your trade name and register your TIN on the Ministry of Trade&apos;s eTrade
+            portal — that&apos;s where the fees above get paid.
+          </p>
+          <Button asChild className="mt-4 w-full">
+            <a href="https://etrade.gov.et" target="_blank" rel="noreferrer">
+              <Landmark className="h-4 w-4" /> Open eTrade
+            </a>
+          </Button>
+        </Card>
+
+        <Card className="p-5 print:hidden">
+          <p className="text-xs uppercase tracking-wider text-ink-faint">Save this estimate</p>
+          <p className="mt-1.5 text-sm text-ink-muted">
+            Print or export to PDF — your browser handles both from one dialog.
           </p>
           <div className="mt-4 flex flex-col gap-2">
-            <Button variant="secondary" disabled>
-              <Download className="h-4 w-4" /> Export PDF
+            <Button variant="secondary" onClick={() => window.print()}>
+              <Printer className="h-4 w-4" /> Print / Save as PDF
             </Button>
-            <Button variant="ghost" disabled>
-              <FileSearch className="h-4 w-4" /> Save scenario
+            <Button variant="ghost" asChild>
+              <a
+                href={`data:text/csv,${encodeURIComponent(csvExport(sector, activeType, employees, capital, lines, totalBirr))}`}
+                download={`bizbridge-estimate${sector ? '-' + sector.mor_code : ''}.csv`}
+              >
+                <Download className="h-4 w-4" /> Download CSV
+              </a>
             </Button>
           </div>
         </Card>
       </div>
     </div>
   )
+}
+
+function csvExport(
+  sector: SectorHit | null,
+  type: (typeof BUSINESS_TYPES)[number],
+  employees: number,
+  capital: number,
+  lines: { label: string; amount: number }[],
+  total: number,
+): string {
+  const rows = [
+    ['BizBridge Ethiopia · cost estimate'],
+    ['Source', 'Ethiopian Commercial Code (Proc. 1243/2021), MOR fee schedule'],
+    [],
+    ['Sector', sector ? `${humanizeSectorName(sector.mor_code, sector.name_en)} (MOR ${sector.mor_code})` : '—'],
+    ['Business type', type.label],
+    ['Employees', String(employees)],
+    ['Initial capital (Br)', String(capital)],
+    [],
+    ['Line item', 'Amount (Br)'],
+    ...lines.map((l) => [l.label, String(Math.round(l.amount))]),
+    ['TOTAL', String(Math.round(total))],
+  ]
+  return rows.map((r) => r.map((cell) => `"${cell.replace(/"/g, '""')}"`).join(',')).join('\n')
 }
 
 function SectorPicker({
@@ -260,7 +312,9 @@ function SectorPicker({
           {value ? (
             <span className="flex items-center gap-2 truncate">
               <Badge variant="mono">{value.mor_code}</Badge>
-              <span className="truncate text-ink">{value.name_en}</span>
+              <span className="truncate text-ink">
+                {humanizeSectorName(value.mor_code, value.name_en)}
+              </span>
             </span>
           ) : (
             <span className="text-ink-faint">Choose a sector…</span>
@@ -287,7 +341,9 @@ function SectorPicker({
               }}
               className="flex w-full items-center justify-between gap-2 rounded px-2 py-2 text-left text-sm hover:bg-surface-2"
             >
-              <span className="line-clamp-1 text-ink">{h.name_en}</span>
+              <span className="line-clamp-1 text-ink">
+                {humanizeSectorName(h.mor_code, h.name_en)}
+              </span>
               <span className="font-mono text-xs text-ink-faint">{h.mor_code}</span>
             </button>
           ))}
@@ -302,32 +358,22 @@ function computeLines({
   businessType,
   employees,
   capital,
-  userType,
-  fxRate,
 }: {
   sector: SectorHit | null
   businessType: BusinessType
   employees: number
   capital: number
-  userType: UserType
-  fxRate: number
 }) {
-  const userMult = USER_TYPES.find((u) => u.value === userType)?.mult ?? 1
-  const capitalFloor = BUSINESS_TYPES.find((b) => b.value === businessType)?.capitalFloor ?? 0
-  const effectiveCapital = Math.max(capital, capitalFloor)
+  const type = BUSINESS_TYPES.find((b) => b.value === businessType)!
+  const effectiveCapital = Math.max(capital, type.legalMin)
 
-  // All amounts in ETB (heuristic ranges; refine when fee schedule lands)
   const lines: { label: string; amount: number; tier: 'gov' | 'pro' | 'capital' }[] = [
-    { label: 'Investment / commercial registration', amount: 5_000 * userMult, tier: 'gov' },
+    { label: 'Investment / commercial registration', amount: 5_000, tier: 'gov' },
     { label: 'TIN registration', amount: 800, tier: 'gov' },
-    { label: 'Trade licence (incl. annual)', amount: 1_500 * (sector ? 1.2 : 1), tier: 'gov' },
-    {
-      label: 'Sector approval fees',
-      amount: sector ? 3_500 * userMult : 0,
-      tier: 'gov',
-    },
-    { label: 'Legal & translation', amount: 8_000 * userMult, tier: 'pro' },
-    { label: 'Notary & attestation', amount: 3_500 * userMult, tier: 'pro' },
+    { label: 'Trade licence (incl. annual)', amount: sector ? 1_800 : 1_500, tier: 'gov' },
+    { label: 'Sector approval fees', amount: sector ? 3_500 : 0, tier: 'gov' },
+    { label: 'Legal & translation', amount: 8_000, tier: 'pro' },
+    { label: 'Notary & attestation', amount: 3_500, tier: 'pro' },
     { label: 'Bank account setup', amount: 1_500 + employees * 200, tier: 'pro' },
     { label: 'Initial capital deposit', amount: effectiveCapital, tier: 'capital' },
   ]

@@ -10,19 +10,37 @@ export function PartnersLogoBar() {
   return (
     <div className="group relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
       <div className="flex w-max animate-ticker items-center gap-12 group-hover:[animation-play-state:paused]">
-        {[...items, ...items].map((p, i) => (
-          <a
-            key={`${p.slug}-${i}`}
-            href={p.url}
-            target="_blank"
-            rel="noopener external"
-            className="flex shrink-0 items-center gap-3 whitespace-nowrap text-ink-muted transition-colors hover:text-ink"
-            aria-label={`${p.name} — opens in a new tab`}
-          >
-            <BrandMark partner={p} size="sm" />
-            <span className="text-sm font-medium tracking-tightish">{p.name}</span>
-          </a>
-        ))}
+        {[...items, ...items].map((p, i) => {
+          const hasLink = p.url && p.url !== '#'
+          const inner = (
+            <>
+              <BrandMark partner={p} size="sm" />
+              <span className="text-sm font-medium tracking-tightish">{p.name}</span>
+            </>
+          )
+          if (!hasLink) {
+            return (
+              <span
+                key={`${p.slug}-${i}`}
+                className="flex shrink-0 items-center gap-3 whitespace-nowrap text-ink-muted"
+              >
+                {inner}
+              </span>
+            )
+          }
+          return (
+            <a
+              key={`${p.slug}-${i}`}
+              href={p.url}
+              target="_blank"
+              rel="noopener external"
+              className="flex shrink-0 items-center gap-3 whitespace-nowrap text-ink-muted transition-colors hover:text-ink"
+              aria-label={`${p.name} — opens in a new tab`}
+            >
+              {inner}
+            </a>
+          )
+        })}
       </div>
     </div>
   )

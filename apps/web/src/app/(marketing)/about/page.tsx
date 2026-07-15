@@ -27,9 +27,9 @@ export default function AboutPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-pretty text-base sm:text-lg text-ink-muted">
             BizBridge is not a company. It&apos;s a personal project built around what
-            I&apos;ve learned opening businesses and watching others try in Bishoftu. The goal:
-            give entrepreneurs, diaspora investors, and curious operators the research and the
-            real process they need — without the middlemen.
+            I&apos;ve learned opening businesses and watching others try in Bishoftu and Addis.
+            The goal: give founders the research and the real process they need — without the
+            middlemen.
           </p>
         </div>
       </section>
@@ -39,41 +39,44 @@ export default function AboutPage() {
           <div className="space-y-10 text-pretty text-ink-muted">
             <Block title="What this is">
               <p>
-                A digital research product. We sell survey data and a step-by-step process for
-                opening a licensable business in Ethiopia — drawn from MOR Directive 17/2011 plus
-                a few years of field research in Bishoftu / Debrezeit.
+                A free civic-tech research project. Every sector, every fee, every ministry
+                approval — drawn from MOR Directive 17/2011 plus a few years of field work in
+                Bishoftu / Debrezeit and Addis. If it helps you skip a middleman, it&apos;s done
+                its job.
               </p>
             </Block>
             <Block title="What this is not (and how we still help)">
               <p>
-                We don&apos;t run your registration for you. You do the steps — that&apos;s the
-                point. But you&apos;re not on your own. We&apos;ve assembled a small network of
-                vetted Bishoftu / Oromia operators who handle the pieces you shouldn&apos;t do
-                alone: legal &amp; commercial registration, accounting / tax, IT setup, last-mile
-                logistics, and hospitality service partners.
+                We don&apos;t run your registration for you. You do the steps yourself — that
+                way you learn the system, you meet the offices, and the relationship is yours to
+                keep. But you&apos;re not on your own. We&apos;ve assembled a small network of
+                vetted local operators who handle the pieces you shouldn&apos;t do alone: legal
+                &amp; commercial registration, accounting / tax, IT setup, last-mile logistics,
+                and hospitality partners.
               </p>
               <p className="mt-3">
-                Pro members get warm introductions to that network plus a 30-minute call with our
-                business lawyer to sanity-check the idea and the model.
+                Book a consult and describe what you&apos;re building — we&apos;ll make the
+                warm intro to the right operator, no commission, no markup.
               </p>
             </Block>
-            <Block title="Why Bishoftu">
+            <Block title="Why Bishoftu (and Addis)">
               <p>
                 Because that&apos;s where I&apos;ve done the most work — and because the next
-                decade of Ethiopian growth is concentrated there. A $12.5B airport build, 245k
-                people, 3.2% YoY growth, five lakes, tourism + F&amp;B + logistics economies all
-                reshaping in real time. The sector data is national; the field detail is local.
+                decade of Ethiopian growth is concentrated between the two. A $12.5B Bishoftu
+                airport build, 245k local residents, 3.2% YoY growth, five lakes, tourism +
+                F&amp;B + logistics economies all reshaping in real time. The sector data is
+                national; the field detail is local.
               </p>
             </Block>
             <Block title="Why I built this">
               <p>
-                Because middlemen quote $1,500 to do what a focused entrepreneur can do for
-                $200 in fees and a few weeks of patience. The information asymmetry shouldn&apos;t
-                cost you a thousand dollars. So I priced the research at $29–$149 one-time, no
-                subscriptions, no claw-backs.
+                Because middlemen quote a thousand dollars to do what a focused founder can do
+                for a few hundred birr in fees and a few weeks of patience. The information
+                asymmetry is the whole problem — so I published the information. Free to browse,
+                no signup, no upsell ladder.
               </p>
             </Block>
-            <Block title="What you get when you pay">
+            <Block title="What you get on this site — all free">
               <ul className="mt-3 space-y-2">
                 <li className="flex gap-2">
                   <span className="text-brand">·</span>
@@ -93,11 +96,11 @@ export default function AboutPage() {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-brand">·</span>
-                  Pro: a 30-min call with a lawyer + warm intros to vetted operational partners
+                  A live cost estimator you can print or export as CSV
                 </li>
                 <li className="flex gap-2">
                   <span className="text-brand">·</span>
-                  Email guidance — quick questions answered, always
+                  A booking form for a one-off consult when you want a second pair of eyes
                 </li>
               </ul>
             </Block>
@@ -108,14 +111,13 @@ export default function AboutPage() {
               <p className="text-xs uppercase tracking-wider text-brand">Quick facts</p>
               <div className="mt-3 space-y-3 text-sm text-ink-muted">
                 <Fact label="Project type" value="Personal · not a company" />
-                <Fact label="Scope" value="Survey research + process guide" />
-                <Fact label="Specialty" value="Bishoftu / Debrezeit, Oromia" />
-                <Fact label="Coverage" value="All 519 MOR sectors, federal Ethiopia" />
-                <Fact label="Pricing" value="One-time · no subscriptions" />
-                <Fact label="Payments" value="Chapa · TeleBirr · Remitly" />
+                <Fact label="Affiliation" value="Independent · not a gov body" />
+                <Fact label="Scope" value="Research + process, all free" />
+                <Fact label="Specialty" value="Bishoftu / Debrezeit, Addis" />
+                <Fact label="Coverage" value="All 519 MOR sectors" />
                 <Fact label="What we don't do" value="Run registrations directly" />
-                <Fact label="What we do" value="Research, process, warm intros" />
-                <Fact label="Languages" value="EN · AM (gradually)" />
+                <Fact label="What we do" value="Data, process, warm intros" />
+                <Fact label="Source" value="MOR Directive 17/2011 + field work" />
               </div>
             </Card>
 
@@ -123,18 +125,17 @@ export default function AboutPage() {
               <p className="text-xs uppercase tracking-wider text-brand">Get in touch</p>
               <p className="mt-2 text-sm text-ink-muted">
                 Questions about your situation, the data, or whether BizBridge is right for you?
-                Email is the fastest way to reach me.
+                Book a consult or send a note.
               </p>
               <Button asChild className="mt-4 w-full">
-                <Link href="mailto:hello@bizbridge.et">
-                  <Mail className="h-4 w-4" />
-                  hello@bizbridge.et
+                <Link href="/consult">
+                  Book a consult <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="secondary" className="mt-2 w-full">
-                <Link href="/lawyer">
-                  Pro: talk to a lawyer <ArrowUpRight className="h-4 w-4" />
-                </Link>
+                <a href="mailto:cheridemeke7@gmail.com">
+                  <Mail className="h-4 w-4" /> Email me
+                </a>
               </Button>
             </Card>
 

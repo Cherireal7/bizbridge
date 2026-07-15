@@ -5,8 +5,6 @@ import { useState } from 'react'
 import { Menu } from 'lucide-react'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
-import { CurrencyToggle } from '@/components/ui/currency-toggle'
-import { LangToggle } from '@/components/ui/lang-toggle'
 import { cn } from '@/lib/cn'
 import { ENABLE_ACCOUNTS } from '@/lib/flags'
 
@@ -92,10 +90,6 @@ export function MobileNav({ nav, className }: MobileNavProps) {
           </Link>
         </nav>
         <div className="border-t border-border p-4 space-y-3">
-          <div className="flex items-center gap-2">
-            <CurrencyToggle className="flex-1" />
-            <LangToggle />
-          </div>
           {ENABLE_ACCOUNTS ? (
             <div className="grid grid-cols-2 gap-2">
               <Button asChild variant="secondary" size="sm" onClick={() => setOpen(false)}>

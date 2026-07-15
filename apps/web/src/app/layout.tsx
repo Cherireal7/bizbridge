@@ -6,36 +6,71 @@ import { CurrencyProvider } from '@/components/providers/currency-provider'
 import { Toaster } from 'sonner'
 import './globals.css'
 
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'
+
 export const metadata: Metadata = {
   title: {
-    default: 'BizBridge Ethiopia — open a business in Bishoftu without the guesswork',
+    default: 'BizBridge Ethiopia — open a business without the guesswork',
     template: '%s · BizBridge Ethiopia',
   },
   description:
-    'The complete guide to opening a business in Bishoftu and across Ethiopia. 519 official sectors, real fees, real timelines, expert help on demand.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'),
+    'Every MOR sector, every fee, every ministry approval. A free, independent guide to opening a business in Ethiopia — with cost estimates, an eTrade link-out, and a one-off consult when you want a second pair of eyes.',
+  metadataBase: new URL(APP_URL),
   applicationName: 'BizBridge Ethiopia',
-  authors: [{ name: 'BizBridge' }],
+  authors: [{ name: 'Cherinet Demeke', url: 'https://github.com/Cherireal7' }],
+  creator: 'Cherinet Demeke',
+  publisher: 'BizBridge (independent project)',
   keywords: [
     'Ethiopia',
     'Bishoftu',
     'Debrezeit',
-    'business setup',
+    'Addis Ababa',
+    'business setup Ethiopia',
     'MOR Directive 17/2011',
     'trade license',
-    'diaspora investment',
+    'PLC Ethiopia',
+    'eTrade Ethiopia',
+    'ministry of trade',
+    'company registration Ethiopia',
+    'sole proprietorship Ethiopia',
   ],
   formatDetection: { telephone: false },
+  alternates: {
+    canonical: APP_URL,
+  },
   openGraph: {
     type: 'website',
-    title: 'BizBridge Ethiopia',
-    description: 'Open a business in Ethiopia — verified, modern, no middlemen.',
+    title: 'BizBridge Ethiopia — open a business without the guesswork',
+    description:
+      'Every MOR sector, every fee, every ministry approval. Free, independent, no middlemen.',
     siteName: 'BizBridge Ethiopia',
+    url: APP_URL,
+    locale: 'en_US',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'BizBridge Ethiopia — a free guide to opening a business',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'BizBridge Ethiopia',
-    description: 'Open a business in Ethiopia — verified, modern, no middlemen.',
+    description:
+      'Every MOR sector, every fee, every ministry approval. Free, independent, no middlemen.',
+    images: ['/opengraph-image'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 
@@ -43,6 +78,26 @@ export const viewport: Viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: dark)', color: '#090C0E' },
     { media: '(prefers-color-scheme: light)', color: '#F8F5EF' },
+  ],
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'BizBridge Ethiopia',
+  url: APP_URL,
+  description:
+    'Independent civic-tech project providing a free guide to opening a business in Ethiopia — 519 MOR sectors, real fees, ministry approvals, and a consult booking.',
+  founder: { '@type': 'Person', name: 'Cherinet Demeke' },
+  areaServed: [
+    { '@type': 'Country', name: 'Ethiopia' },
+    { '@type': 'AdministrativeArea', name: 'Oromia Region' },
+  ],
+  knowsAbout: [
+    'Ministry of Revenue Directive 17/2011',
+    'Ethiopian Commercial Code (Proc. 1243/2021)',
+    'Company registration in Ethiopia',
+    'MOR sector codes',
   ],
 }
 
@@ -60,6 +115,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       }
     >
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ThemeProvider defaultTheme="dark">
           <CurrencyProvider>
             {children}

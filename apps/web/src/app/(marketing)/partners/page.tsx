@@ -101,22 +101,21 @@ export default function PartnersPage() {
               <div>
                 <p className="text-xs uppercase tracking-wider text-brand">How introductions work</p>
                 <h3 className="mt-2 text-2xl sm:text-3xl font-semibold tracking-tightish">
-                  Buy Pro. Tell us what you need. We make the intro.
+                  Tell us what you need. We make the intro.
                 </h3>
                 <p className="mt-3 text-pretty text-ink-muted">
-                  Pro members ($149 one-time) get warm introductions to partners on this list.
-                  We share your project brief with the right operator, copy you on the
-                  introduction email, and let you take it from there. No commission, no markup —
-                  just the connection.
+                  Book a consult and describe what you&apos;re building. We share your brief with
+                  the right operator on this list, copy you on the introduction email, and let
+                  you take it from there. No commission, no markup — just the connection.
                 </p>
                 <ol className="mt-5 grid gap-2 text-sm text-ink-muted sm:grid-cols-3">
                   <li className="rounded-md border border-border bg-bg/40 p-3">
                     <span className="font-mono text-xs text-brand">01</span>
-                    <p className="mt-1 text-ink">Upgrade to Pro</p>
+                    <p className="mt-1 text-ink">Book a consult</p>
                   </li>
                   <li className="rounded-md border border-border bg-bg/40 p-3">
                     <span className="font-mono text-xs text-brand">02</span>
-                    <p className="mt-1 text-ink">Email what you need</p>
+                    <p className="mt-1 text-ink">Tell us what you need</p>
                   </li>
                   <li className="rounded-md border border-border bg-bg/40 p-3">
                     <span className="font-mono text-xs text-brand">03</span>
@@ -126,12 +125,12 @@ export default function PartnersPage() {
               </div>
               <div className="flex flex-col gap-3">
                 <Button asChild size="lg">
-                  <Link href="/pricing">
-                    See Pro pricing <ArrowUpRight className="h-4 w-4" />
+                  <Link href="/consult">
+                    Book a consult <ArrowUpRight className="h-4 w-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <Link href="mailto:hello@bizbridge.et">Email a question</Link>
+                  <a href="mailto:cheridemeke7@gmail.com">Email a question</a>
                 </Button>
               </div>
             </div>

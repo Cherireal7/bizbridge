@@ -46,7 +46,7 @@ const TEMPLATE: Step[] = [
     id: 'bank-account',
     title: 'Open business bank account',
     description:
-      'Choose a private bank (CBE for diaspora foreign-currency accounts). Deposit minimum capital per business type.',
+      'Choose a private bank (CBE offers foreign-currency accounts if you need one). Deposit the minimum capital per business type.',
     where_to_go: 'Any commercial bank',
     estimated_days: 2,
   },

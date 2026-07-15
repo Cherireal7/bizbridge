@@ -103,7 +103,7 @@ export default async function BishoftuPage() {
           />
           <StatCard
             label="ETB / USD"
-            value={`₿ ${FX_HISTORY[FX_HISTORY.length - 1]?.toFixed(1)}`}
+            value={`Br ${FX_HISTORY[FX_HISTORY.length - 1]?.toFixed(1)}`}
             hint="Indicative interbank rate, 9-week trend"
             trend={{ value: 7.2, direction: 'up' }}
             visual={<Sparkline data={FX_HISTORY} color={3} />}
@@ -203,28 +203,21 @@ export default async function BishoftuPage() {
             <VitalCard label="Industrial parks" value="2" hint="Modjo Leather City · Eastern Industrial Zone" />
             <VitalCard label="Mean temp" value="19°C" hint="14–25°C year-round" />
           </div>
-          <div className="mt-12 grid gap-4 md:grid-cols-3">
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
             <Card className="p-6">
               <p className="text-xs uppercase tracking-wider text-brand">Why now</p>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-                Pre-airport land prices in the impact zone are already 3-4x 2022 levels but
-                still 60-70% below where they will trade once Phase 1 is operational. Window
-                closes fast for capital-light services.
-              </p>
-            </Card>
-            <Card className="p-6">
-              <p className="text-xs uppercase tracking-wider text-accent">Why diaspora</p>
-              <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-                Foreign currency inflows under the Investment Proclamation get preferential
-                treatment, and Bishoftu&apos;s proximity to Addis cuts the &quot;diaspora tax&quot;
-                that pure-rural sites carry.
+                Pre-airport land prices in the impact zone are already 3–4× 2022 levels but
+                still 60–70% below where they will trade once Phase 1 is operational. The
+                window closes fast for capital-light services.
               </p>
             </Card>
             <Card className="p-6">
               <p className="text-xs uppercase tracking-wider text-warn">Risks to price in</p>
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                 Currency volatility (ETB has slipped ~7% in 9 weeks), regional security, and
-                regulatory tempo. Premium subscribers see the full risk matrix per sector.
+                regulatory tempo. Weigh them against the airport-anchored upside — no site
+                has zero risk in Ethiopia right now.
               </p>
             </Card>
           </div>
@@ -236,25 +229,24 @@ export default async function BishoftuPage() {
           <Card className="relative overflow-hidden p-7 sm:p-12">
             <div className="grid gap-6 lg:grid-cols-[2fr_1fr] lg:items-center">
               <div>
-                <p className="text-xs uppercase tracking-wider text-brand">Bishoftu market research</p>
+                <p className="text-xs uppercase tracking-wider text-brand">Ready to move?</p>
                 <h2 className="mt-2 text-balance text-3xl font-semibold tracking-tightish sm:text-4xl">
-                  Get the full report — fees, timelines, partner intros, all sectors.
+                  Pick a sector, run the numbers, then talk it through.
                 </h2>
                 <p className="mt-4 text-pretty text-ink-muted">
-                  Everything you see above is the public preview. Standard unlocks 519 sector
-                  guides + the calculator + checklist. Pro adds a 30-minute lawyer consult and
-                  warm intros to our local partner network — Doxa Classic, Feeder Delivery, and
-                  more.
+                  Every sector on this site has the full setup process, cost estimate, and
+                  ministry approval chain — free to browse. When you want a second pair of eyes
+                  on which sector to pick or how to structure the entity, book a consult.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
                 <Button asChild size="lg">
-                  <Link href="/pricing">
-                    See pricing <ArrowRight className="h-4 w-4" />
+                  <Link href="/sectors">
+                    Browse sectors <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <Link href="/partners">Browse partners</Link>
+                  <Link href="/consult">Book a consult</Link>
                 </Button>
               </div>
             </div>

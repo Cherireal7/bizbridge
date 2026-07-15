@@ -146,9 +146,9 @@ export default async function ReportDetailPage({ params }: PageProps) {
             <div>
               <h2 className="text-xl font-semibold tracking-tightish text-ink">Who this is for</h2>
               <ul className="mt-3 space-y-2">
-                <li>· First-time entrepreneurs deciding whether this sector fits their capital</li>
-                <li>· Diaspora investors scoping Ethiopian market entry</li>
-                <li>· Consultants briefing clients on Bishoftu/Oromia opportunities</li>
+                <li>· First-time founders deciding whether this sector fits their capital</li>
+                <li>· Operators sizing an expansion into Ethiopia</li>
+                <li>· Consultants briefing clients on Bishoftu / Oromia opportunities</li>
               </ul>
             </div>
           </div>

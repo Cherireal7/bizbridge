@@ -215,6 +215,9 @@ export default async function HomePage() {
               Here&apos;s the distribution + a projection of where the next 6 years of new-business
               registrations are heading in Bishoftu.
             </p>
+            <p className="mt-3 text-2xs uppercase tracking-wider text-ink-faint">
+              Source: MOR Directive 17/2011, Annex 1 · projection is indicative
+            </p>
           </div>
           <HomeCharts categories={counts} />
         </div>

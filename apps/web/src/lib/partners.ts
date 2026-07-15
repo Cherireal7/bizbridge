@@ -49,7 +49,7 @@ export const PARTNERS: Partner[] = [
     description:
       'End-to-end product studio building web + mobile apps for Ethiopian operators. Design, engineering, and post-launch support under one roof.',
     category: 'software',
-    url: '#',
+    url: 'https://doxaplc.com',
     city: 'Bishoftu',
     initials: 'Dx',
     tint: 'brand',
@@ -60,9 +60,9 @@ export const PARTNERS: Partner[] = [
     name: 'BR Photography',
     tagline: 'Brand + event photography, Bishoftu & Addis',
     description:
-      'Product, brand, and event photography for hospitality and retail launches. Menu shoots, portraits, on-location work.',
+      'Product, brand, and event photography for hospitality and retail launches. Menu shoots, portraits, on-location work. Follow on Instagram / TikTok — no website.',
     category: 'marketing',
-    url: '#',
+    url: '',
     city: 'Bishoftu',
     initials: 'BR',
     tint: 'cool',

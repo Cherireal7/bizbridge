@@ -2,8 +2,6 @@ import Link from 'next/link'
 import { CommandPaletteProvider } from '@/components/command-palette/command-palette'
 import { CommandTrigger } from '@/components/command-palette/command-trigger'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
-import { CurrencyToggle } from '@/components/ui/currency-toggle'
-import { LangToggle } from '@/components/ui/lang-toggle'
 import { Button } from '@/components/ui/button'
 import { SupportWidget } from '@/components/support-widget'
 import { MobileNav } from '@/components/marketing/mobile-nav'
@@ -86,13 +84,10 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
                   BizBridge Ethiopia
                 </Link>
                 <p className="mt-3 max-w-sm text-sm text-ink-muted">
-                  Survey research and a clear process for opening a business in Bishoftu —
-                  applicable across Oromia and Ethiopia. A personal project.
+                  An independent guide to opening a business in Ethiopia — every MOR sector,
+                  every fee, every ministry approval. Built for Addis and Bishoftu, applicable
+                  across Oromia and federal Ethiopia.
                 </p>
-                <div className="mt-5 flex flex-wrap items-center gap-2">
-                  <CurrencyToggle />
-                  <LangToggle />
-                </div>
               </div>
 
               <FooterColumn
@@ -125,12 +120,29 @@ export default function MarketingLayout({ children }: { children: React.ReactNod
               />
             </div>
 
-            <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-ink-faint sm:flex-row sm:items-center">
-              <p>© {new Date().getFullYear()} BizBridge · Built for Bishoftu, applicable across Oromia and Ethiopia.</p>
-              <p>
-                Backed by{' '}
-                <span className="font-mono text-ink-muted">MOR Directive 17/2011</span> · 519 sectors
+            <div className="mt-12 border-t border-border pt-6 space-y-4 text-xs text-ink-faint">
+              <p className="rounded-md border border-border bg-bg/60 p-3 leading-relaxed text-ink-muted">
+                <strong className="text-ink">Independent civic-tech project.</strong>{' '}
+                BizBridge is not affiliated with the Government of Ethiopia, the Ministry of
+                Trade &amp; Regional Integration, MOR, or any official body. Sector data is
+                compiled from public documents and lived experience —{' '}
+                <a
+                  href="https://etrade.gov.et"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-brand hover:underline"
+                >
+                  verify current rules on eTrade
+                </a>{' '}
+                or with a licensed lawyer before you file anything.
               </p>
+              <div className="flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center">
+                <p>© {new Date().getFullYear()} BizBridge · A personal project by Cherinet Demeke.</p>
+                <p>
+                  Data source:{' '}
+                  <span className="font-mono text-ink-muted">MOR Directive 17/2011</span> · 519 sectors
+                </p>
+              </div>
             </div>
           </div>
         </footer>

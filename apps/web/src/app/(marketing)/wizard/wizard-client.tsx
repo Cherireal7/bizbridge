@@ -12,14 +12,12 @@ type City = 'bishoftu' | 'addis' | 'other-oromia' | 'other-ethiopia'
 type Capital = 'under_50k' | '50_500k' | '500k_5m' | 'over_5m'
 type Audience = 'local' | 'tourism' | 'export' | 'b2b'
 type Intensity = 'service' | 'mixed' | 'manufacturing' | 'agri'
-type UserType = 'local' | 'diaspora' | 'foreign'
 
 interface Answers {
   city?: City
   capital?: Capital
   audience?: Audience
   intensity?: Intensity
-  userType?: UserType
 }
 
 // Suggested sectors per intensity × audience combination — uses real MOR codes.
@@ -30,7 +28,7 @@ const SUGGESTIONS: Record<
   'service-tourism': [
     { mor: '64116', name: 'Lodge service', why: 'Bishoftu lakes + airport build = lodging demand surge' },
     { mor: '64114', name: 'Restaurant service', why: 'Lowest capital intensity in F&B' },
-    { mor: '72111', name: 'Tour operation services', why: 'Diaspora and domestic tourism both expanding' },
+    { mor: '72111', name: 'Tour operation services', why: 'Domestic + inbound tourism both expanding' },
   ],
   'service-local': [
     { mor: '94111', name: 'Hairdressing — men', why: 'Recurring revenue, low capital, fits any neighborhood' },
@@ -40,7 +38,7 @@ const SUGGESTIONS: Record<
   'service-b2b': [
     { mor: '86811', name: 'Advertising consultancy', why: 'SME demand is growing across Oromia' },
     { mor: '85211', name: 'Authorized accountant', why: 'High barrier, recurring revenue, audit cycle' },
-    { mor: '86114', name: 'Economic / business consultancy', why: 'Pairs with diaspora investor inbound' },
+    { mor: '86114', name: 'Economic / business consultancy', why: 'SME advisory demand rising in Bishoftu + Addis' },
   ],
   'mixed-tourism': [
     { mor: '64111', name: 'Star hotel service', why: 'Capital-heavy but airport-anchored long-term' },
@@ -120,15 +118,6 @@ const QUESTIONS = [
       { value: 'agri' as Intensity, label: 'Agriculture / agribusiness' },
     ],
   },
-  {
-    key: 'userType' as const,
-    prompt: 'Where do you live now?',
-    options: [
-      { value: 'local' as UserType, label: 'In Ethiopia' },
-      { value: 'diaspora' as UserType, label: 'Ethiopian diaspora abroad' },
-      { value: 'foreign' as UserType, label: 'Foreign investor' },
-    ],
-  },
 ]
 
 export function WizardClient() {
@@ -191,12 +180,12 @@ export function WizardClient() {
 
         <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="text-sm text-ink-muted">
-            Want a deeper dive? Standard ($29) unlocks the full guide for any sector.
+            Not sure which of these fits best? Book a consult — one call, no subscription.
           </div>
           <div className="flex flex-wrap gap-2">
             <Button asChild>
-              <Link href="/pricing">
-                See pricing <ArrowRight className="h-4 w-4" />
+              <Link href="/consult">
+                Book a consult <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
             <Button variant="ghost" onClick={reset}>
