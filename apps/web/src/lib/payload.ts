@@ -33,9 +33,9 @@ export async function tryPayload<T>(
     const payload = await getPayloadClient()
     return await fn(payload)
   } catch (err) {
-    if (process.env.NODE_ENV !== 'production') {
-      console.warn('[payload] query failed — likely DB not configured yet:', (err as Error).message)
-    }
+    // Always log — silent failure hid production issues at launch. Filter noise
+    // by keying on "connect" / "ECONNREFUSED" if this gets too chatty later.
+    console.warn('[payload] query failed:', (err as Error).message)
     return null
   }
 }

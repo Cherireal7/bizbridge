@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Chart } from '@/components/charts/chart'
 import { cn } from '@/lib/cn'
+import { humanizeSectorName } from '@/lib/humanize-sector-name'
 
 interface SectorHit {
   id: string | number
@@ -173,7 +174,9 @@ export function ChecklistClient({ initialSectorSlug }: { initialSectorSlug: stri
           <Card className="p-4">
             <div className="flex items-center gap-3">
               <Badge variant="mono">MOR {sector.mor_code}</Badge>
-              <p className="text-sm font-medium text-ink">{sector.name_en}</p>
+              <p className="text-sm font-medium leading-snug text-ink">
+                {humanizeSectorName(sector.mor_code, sector.name_en)}
+              </p>
             </div>
           </Card>
         ) : null}

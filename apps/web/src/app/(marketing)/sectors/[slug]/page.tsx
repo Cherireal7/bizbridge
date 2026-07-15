@@ -14,6 +14,7 @@ import {
   Users,
 } from 'lucide-react'
 import { tryPayload, getPayloadClient } from '@/lib/payload'
+import { humanizeSectorName } from '@/lib/humanize-sector-name'
 import { getCurrentUserTier } from '@/lib/auth-server'
 import { Badge } from '@/components/ui/badge'
 import { Card } from '@/components/ui/card'
@@ -53,11 +54,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return res.docs[0] ?? null
   })
   if (!sector) return { title: 'Sector not found' }
+  const cleanName = humanizeSectorName(sector.mor_code, sector.name_en)
   return {
-    title: `${sector.name_en} · MOR ${sector.mor_code}`,
+    title: `${cleanName} · MOR ${sector.mor_code}`,
     description:
       sector.description_short ??
-      `Complete setup guide for ${sector.name_en} in Ethiopia. MOR code ${sector.mor_code}.`,
+      `Complete setup guide for ${cleanName} in Ethiopia. MOR code ${sector.mor_code}.`,
   }
 }
 
@@ -198,8 +200,8 @@ export default async function SectorDetailPage({ params }: PageProps) {
                 {category ? <Badge variant="default">{category.name_en}</Badge> : null}
                 {sector.is_featured ? <Badge variant="accent">Featured</Badge> : null}
               </div>
-              <h1 className="mt-3 text-balance text-3xl font-semibold tracking-crisp text-ink sm:text-4xl">
-                {sector.name_en}
+              <h1 className="mt-3 text-balance text-3xl font-semibold tracking-crisp leading-tight text-ink sm:text-4xl">
+                {humanizeSectorName(sector.mor_code, sector.name_en)}
               </h1>
               {sector.name_am ? (
                 <p className="mt-1 font-amharic text-base text-ink-muted">{sector.name_am}</p>
@@ -534,8 +536,8 @@ export default async function SectorDetailPage({ params }: PageProps) {
                   className="group rounded-lg border border-border bg-surface p-4 transition-all hover:border-brand/40"
                 >
                   <Badge variant="mono">{r.mor_code}</Badge>
-                  <p className="mt-2 line-clamp-2 text-sm font-medium text-ink group-hover:text-brand">
-                    {r.name_en}
+                  <p className="mt-2 line-clamp-2 text-sm font-medium leading-snug text-ink group-hover:text-brand">
+                    {humanizeSectorName(r.mor_code, r.name_en)}
                   </p>
                 </Link>
               ))}

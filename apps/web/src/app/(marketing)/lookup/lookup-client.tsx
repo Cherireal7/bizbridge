@@ -7,6 +7,7 @@ import { toast } from 'sonner'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
+import { humanizeSectorName } from '@/lib/humanize-sector-name'
 
 interface SectorHit {
   id: string | number
@@ -163,8 +164,8 @@ export function LookupClient({
                       <Badge variant="default">{s.category.name_en}</Badge>
                     ) : null}
                   </div>
-                  <h3 className="mt-3 text-lg font-semibold tracking-tightish text-ink">
-                    {s.name_en}
+                  <h3 className="mt-3 text-lg font-semibold tracking-tightish leading-snug text-ink">
+                    {humanizeSectorName(s.mor_code, s.name_en)}
                   </h3>
                   {s.name_am ? (
                     <p className="mt-0.5 font-amharic text-sm text-ink-faint">{s.name_am}</p>

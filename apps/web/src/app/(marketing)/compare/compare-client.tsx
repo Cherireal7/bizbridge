@@ -13,6 +13,7 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 import { Input } from '@/components/ui/input'
+import { humanizeSectorName } from '@/lib/humanize-sector-name'
 
 interface SectorHit {
   id: string | number
@@ -320,7 +321,9 @@ function SectorSlot({
           <X className="h-4 w-4" />
         </button>
         <Badge variant="mono" className="mb-2">{sector.mor_code}</Badge>
-        <p className="text-sm font-semibold text-ink">{sector.name_en}</p>
+        <p className="text-sm font-semibold leading-snug text-ink">
+          {humanizeSectorName(sector.mor_code, sector.name_en)}
+        </p>
         {sector.name_am ? (
           <p className="mt-0.5 truncate font-amharic text-xs text-ink-faint">{sector.name_am}</p>
         ) : null}

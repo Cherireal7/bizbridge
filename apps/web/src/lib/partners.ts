@@ -1,9 +1,8 @@
 /**
- * Featured partner directory. These are real local Bishoftu/Oromia/Ethiopia operators
- * we send our customers to. Outbound links are good for them (SEO) and for us (trust).
+ * Featured partner directory. Real local operators we send our customers to.
  *
- * Edit this list to add/remove featured partners. When the Partners Payload collection
- * lands, swap this for a DB query.
+ * TODO: Cheri to confirm URLs for Doxa Innovations and BR Photography (marked
+ * "#" below) before public deploy. Fida Delivery URL is live.
  */
 
 export type PartnerCategory =
@@ -31,78 +30,43 @@ export interface Partner {
 
 export const PARTNERS: Partner[] = [
   {
-    slug: 'doxa-classic',
-    name: 'Doxa Classic Restaurant',
-    tagline: 'Highland dining, Bishoftu lakeside',
+    slug: 'fida-delivery',
+    name: 'Fida Delivery',
+    tagline: 'On-demand delivery across Bishoftu',
     description:
-      'Refined Ethiopian + continental kitchen overlooking Lake Hora. Our reference for hospitality-sector operators — they share what scaling F&B in Bishoftu actually takes.',
-    category: 'hospitality',
-    url: 'https://doxaclassic.example',
-    city: 'Bishoftu',
-    initials: 'Dx',
-    tint: 'brand',
-    featured: true,
-  },
-  {
-    slug: 'feeder-delivery',
-    name: 'Feeder Delivery',
-    tagline: 'Last-mile delivery, Bishoftu + Addis corridor',
-    description:
-      'Same-day delivery network covering Bishoftu, Modjo, and the Addis road. Our go-to logistics partner for new F&B and retail operators getting product out the door.',
+      'Bishoftu-first delivery network — food, retail, courier, and last-mile logistics for local operators. Customer + rider apps, live dispatch, SOS support.',
     category: 'logistics',
-    url: 'https://feederdelivery.example',
+    url: 'https://fidadelivery.et',
     city: 'Bishoftu',
     initials: 'Fd',
     tint: 'warm',
     featured: true,
   },
   {
-    slug: 'lake-tech-collective',
-    name: 'Lake Tech Collective',
-    tagline: 'Software & IT setup for Bishoftu SMEs',
+    slug: 'doxa-innovations',
+    name: 'Doxa Innovations',
+    tagline: 'Software, product design, and technical build-outs',
     description:
-      'POS, inventory, accounting software setup. Configures Loyverse / Wave / TallyPrime for local operators. Handles wifi, networking, and basic IT.',
+      'End-to-end product studio building web + mobile apps for Ethiopian operators. Design, engineering, and post-launch support under one roof.',
     category: 'software',
-    url: 'https://laketech.example',
+    url: '#',
     city: 'Bishoftu',
-    initials: 'Lt',
-    tint: 'cool',
-  },
-  {
-    slug: 'addis-business-law',
-    name: 'Addis Business Law',
-    tagline: 'Commercial registration, contracts, compliance',
-    description:
-      'Boutique business-law practice handling commercial registrations, foreign investor onboarding, and contract review. Our lawyer-consultation partner for Pro members.',
-    category: 'legal',
-    url: 'https://addisbizlaw.example',
-    city: 'Addis Ababa',
-    initials: 'AB',
+    initials: 'Dx',
     tint: 'brand',
+    featured: true,
   },
   {
-    slug: 'oromia-accounting',
-    name: 'Oromia Accounting Group',
-    tagline: 'Bookkeeping, tax, VAT registration',
+    slug: 'br-photography',
+    name: 'BR Photography',
+    tagline: 'Brand + event photography, Bishoftu & Addis',
     description:
-      'Local CPA-level firm specializing in new-business onboarding — TIN, VAT, payroll, and the first-year compliance cycle.',
-    category: 'accounting',
-    url: 'https://oromiaaccg.example',
-    city: 'Adama',
-    initials: 'OA',
-    tint: 'sand',
-  },
-  {
-    slug: 'bishoftu-marketing-co',
-    name: 'Bishoftu Marketing Co.',
-    tagline: 'Brand, social, web for local businesses',
-    description:
-      'Branding and social-media partner for hospitality and retail launches. Handles photography, menu design, Google Business setup, and the first 90 days of content.',
+      'Product, brand, and event photography for hospitality and retail launches. Menu shoots, portraits, on-location work.',
     category: 'marketing',
-    url: 'https://bishoftumarketing.example',
+    url: '#',
     city: 'Bishoftu',
-    initials: 'BM',
-    tint: 'warm',
+    initials: 'BR',
+    tint: 'cool',
+    featured: true,
   },
 ]
 

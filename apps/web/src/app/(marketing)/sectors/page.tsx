@@ -3,6 +3,7 @@ import type { Where } from 'payload'
 import Link from 'next/link'
 import { ArrowUpRight, Search } from 'lucide-react'
 import { tryPayload } from '@/lib/payload'
+import { humanizeSectorName } from '@/lib/humanize-sector-name'
 import { SectorSearch } from '@/components/sectors/sector-search'
 import { GeometricIcon } from '@/components/marketing/geometric-icon'
 import { GridBackdrop } from '@/components/marketing/grid-backdrop'
@@ -161,8 +162,8 @@ export default async function SectorBrowserPage({
                         <Badge variant="mono" className="mb-2">
                           {s.mor_code}
                         </Badge>
-                        <p className="line-clamp-2 text-sm font-medium text-ink group-hover:text-brand">
-                          {s.name_en}
+                        <p className="line-clamp-2 text-sm font-medium leading-snug text-ink group-hover:text-brand">
+                          {humanizeSectorName(s.mor_code, s.name_en)}
                         </p>
                         {s.name_am ? (
                           <p className="mt-0.5 truncate font-amharic text-xs text-ink-faint">

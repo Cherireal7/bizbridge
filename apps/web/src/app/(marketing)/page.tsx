@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, ArrowUpRight, Check, Code2, Handshake, MapPin, MessageCircle, Sparkles } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Check, Code2, FileText, Handshake, ListChecks, MapPin, MessageCircle, Sparkles } from 'lucide-react'
 import { tryPayload } from '@/lib/payload'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -11,6 +11,7 @@ import { Sparkline } from '@/components/charts/sparkline'
 import { HomeCharts } from '@/components/marketing/home-charts'
 import { PartnersLogoBar } from '@/components/marketing/partners-strip'
 import { CONSULT_TELEGRAM } from '@/lib/flags'
+import { humanizeSectorName } from '@/lib/humanize-sector-name'
 
 const FOUNDER_SECTOR_CODES = ['39141', '72131', '92191']
 
@@ -51,7 +52,9 @@ export default async function HomePage() {
       .catch(() => ({ docs: [] as Array<{ id: number; slug: string; title: string; excerpt: string | null; published_at: string | null }> }))
     const founderSectors = await payload.find({
       collection: 'business-sectors',
-      where: { mor_code: { in: FOUNDER_SECTOR_CODES } },
+      where: {
+        or: FOUNDER_SECTOR_CODES.map((code) => ({ mor_code: { equals: code } })),
+      },
       limit: FOUNDER_SECTOR_CODES.length,
       depth: 0,
     })
@@ -85,12 +88,13 @@ export default async function HomePage() {
               <Sparkles className="h-3 w-3" /> {totalSectors} sectors · MOR Directive 17/2011
             </Badge>
             <h1 className="text-balance text-4xl font-semibold tracking-crisp text-ink sm:text-6xl lg:text-7xl">
-              Open a business in Ethiopia.{' '}
-              <span className="text-ink-muted">No middlemen.</span>
+              Build a business without friction.{' '}
+              <span className="text-ink-muted">In Ethiopia.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-balance text-base text-ink-muted sm:text-lg lg:text-xl">
-              519 official sectors. Real fees, real timelines, and the ministry that actually
-              approves your licence — for Bishoftu, Oromia, and federal Ethiopia.
+              Every sector, every fee, every ministry. A clear step-by-step process,
+              a personal cost estimate, and a link straight through to eTrade —
+              so you spend your time building, not chasing paperwork.
             </p>
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3">
               <Button asChild size="lg" className="w-full sm:w-auto">
@@ -149,8 +153,8 @@ export default async function HomePage() {
                     <Badge variant="mono">{s.mor_code}</Badge>
                     <ArrowUpRight className="h-4 w-4 text-ink-faint transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
                   </div>
-                  <h3 className="mt-3 text-base font-semibold tracking-tightish text-ink group-hover:text-brand">
-                    {s.name_en}
+                  <h3 className="mt-3 text-base font-semibold tracking-tightish leading-snug text-ink group-hover:text-brand">
+                    {humanizeSectorName(s.mor_code, s.name_en)}
                   </h3>
                   {s.name_am ? (
                     <p className="mt-0.5 truncate font-amharic text-xs text-ink-faint">{s.name_am}</p>
@@ -187,10 +191,10 @@ export default async function HomePage() {
             />
             <StatCard
               label="City focus"
-              value="Bishoftu"
+              value="Addis + Bishoftu"
               hint={
                 <span className="inline-flex items-center gap-1">
-                  <MapPin className="h-3 w-3" /> Oromia · expanding from 2026
+                  <MapPin className="h-3 w-3" /> Addis Ababa & Debrezeit · Oromia-wide
                 </span>
               }
             />
@@ -257,7 +261,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* HOW IT WORKS — vertical timeline */}
       <section className="border-b border-border bg-surface">
         <div className="container-page py-16 sm:py-20">
           <div className="mb-12 max-w-2xl">
@@ -265,24 +269,42 @@ export default async function HomePage() {
             <h2 className="mt-2 text-3xl font-semibold tracking-tightish sm:text-4xl">
               Research, run, get intros. In that order.
             </h2>
+            <p className="mt-3 text-pretty text-ink-muted">
+              Everything on this site is free — the sector data, the process, the ministry
+              approvals, the cost estimates. When you want a second pair of eyes, book a consult.
+            </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            <HowStep
+
+          <ol className="relative mx-auto max-w-3xl">
+            {/* Vertical rail */}
+            <span
+              aria-hidden
+              className="absolute left-5 top-6 bottom-6 w-px bg-gradient-to-b from-brand/50 via-brand/30 to-transparent sm:left-6"
+            />
+
+            <TimelineStep
               num="01"
+              icon={FileText}
               title="Read the sector guide"
               body="Every sector page has the MOR code, the licensing ministry, the certificates you'll need, and the approval chain. Free to browse — no signup, no paywall."
+              cta={{ href: '/sectors', label: 'Browse sectors' }}
             />
-            <HowStep
+            <TimelineStep
               num="02"
+              icon={ListChecks}
               title="Follow the process"
               body="Built from MOR Directive 17/2011 and four years of Bishoftu fieldwork. Most operators finish in 4–8 weeks. Use the wizard if you're not sure which sector to pick."
+              cta={{ href: '/wizard', label: 'Run the wizard' }}
             />
-            <HowStep
+            <TimelineStep
               num="03"
+              icon={MessageCircle}
               title="Book a consult when you're stuck"
               body="Sector selection, business model sanity check, warm intros to our partner network (IT, legal, accounting, logistics). One-off, no subscription."
+              cta={{ href: '/consult', label: 'Book a consult' }}
+              last
             />
-          </div>
+          </ol>
         </div>
       </section>
 
@@ -312,8 +334,8 @@ export default async function HomePage() {
                     <Badge variant="mono">{s.mor_code}</Badge>
                     <ArrowUpRight className="h-4 w-4 text-ink-faint transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
                   </div>
-                  <h3 className="mt-3 text-base font-semibold tracking-tightish text-ink group-hover:text-brand">
-                    {s.name_en}
+                  <h3 className="mt-3 text-base font-semibold tracking-tightish leading-snug text-ink group-hover:text-brand">
+                    {humanizeSectorName(s.mor_code, s.name_en)}
                   </h3>
                   {s.name_am ? (
                     <p className="mt-0.5 truncate font-amharic text-xs text-ink-faint">{s.name_am}</p>
@@ -328,58 +350,60 @@ export default async function HomePage() {
         </section>
       ) : null}
 
-      {/* BLOG FEATURED */}
-      <section className="border-b border-border">
-        <div className="container-page py-16 sm:py-20">
-          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-xs uppercase tracking-wider text-brand">Writing</p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tightish sm:text-4xl">
-                Notes from the field
-              </h2>
-              <p className="mt-2 max-w-xl text-pretty text-ink-muted">
-                Long-form on the Bishoftu economy, the airport build, and the boring-but-critical
-                bits of opening a business in Ethiopia.
-              </p>
-            </div>
-            <Link href="/blog" className="text-sm font-medium text-brand hover:underline self-start sm:self-end">
-              All writing →
-            </Link>
-          </div>
-
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {(blogPosts.length > 0 ? blogPosts : MOCK_BLOG).map((p) => (
-              <Link
-                key={p.id}
-                href={`/blog/${p.slug}`}
-                className="group flex flex-col overflow-hidden rounded-lg border border-border bg-surface transition-all hover:border-brand/40 hover:shadow-glow"
-              >
-                <div className="aspect-[16/9] bg-gradient-to-br from-brand-muted via-surface-2 to-surface" />
-                <div className="flex flex-1 flex-col gap-2 p-5">
-                  {p.published_at ? (
-                    <p className="text-2xs uppercase tracking-wider text-ink-faint">
-                      {new Date(p.published_at).toLocaleDateString('en-US', {
-                        month: 'short',
-                        day: 'numeric',
-                        year: 'numeric',
-                      })}
-                    </p>
-                  ) : null}
-                  <h3 className="text-lg font-semibold tracking-tightish text-ink group-hover:text-brand">
-                    {p.title}
-                  </h3>
-                  {p.excerpt ? (
-                    <p className="line-clamp-3 text-sm text-ink-muted">{p.excerpt}</p>
-                  ) : null}
-                  <span className="mt-auto inline-flex items-center gap-1 text-xs font-medium text-brand pt-2">
-                    Read <ArrowRight className="h-3 w-3" />
-                  </span>
-                </div>
+      {/* BLOG FEATURED — only rendered when real posts exist in Payload */}
+      {blogPosts.length > 0 ? (
+        <section className="border-b border-border">
+          <div className="container-page py-16 sm:py-20">
+            <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs uppercase tracking-wider text-brand">Writing</p>
+                <h2 className="mt-2 text-3xl font-semibold tracking-tightish sm:text-4xl">
+                  Notes from the field
+                </h2>
+                <p className="mt-2 max-w-xl text-pretty text-ink-muted">
+                  Long-form on the Bishoftu economy, the airport build, and the boring-but-critical
+                  bits of opening a business in Ethiopia.
+                </p>
+              </div>
+              <Link href="/blog" className="text-sm font-medium text-brand hover:underline self-start sm:self-end">
+                All writing →
               </Link>
-            ))}
+            </div>
+
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {blogPosts.map((p) => (
+                <Link
+                  key={p.id}
+                  href={`/blog/${p.slug}`}
+                  className="group flex flex-col overflow-hidden rounded-lg border border-border bg-surface transition-all hover:border-brand/40 hover:shadow-glow"
+                >
+                  <div className="aspect-[16/9] bg-gradient-to-br from-brand-muted via-surface-2 to-surface" />
+                  <div className="flex flex-1 flex-col gap-2 p-5">
+                    {p.published_at ? (
+                      <p className="text-2xs uppercase tracking-wider text-ink-faint">
+                        {new Date(p.published_at).toLocaleDateString('en-US', {
+                          month: 'short',
+                          day: 'numeric',
+                          year: 'numeric',
+                        })}
+                      </p>
+                    ) : null}
+                    <h3 className="text-lg font-semibold tracking-tightish text-ink group-hover:text-brand">
+                      {p.title}
+                    </h3>
+                    {p.excerpt ? (
+                      <p className="line-clamp-3 text-sm text-ink-muted">{p.excerpt}</p>
+                    ) : null}
+                    <span className="mt-auto inline-flex items-center gap-1 text-xs font-medium text-brand pt-2">
+                      Read <ArrowRight className="h-3 w-3" />
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       {/* BISHOFTU CALLOUT */}
       <section className="border-b border-border">
@@ -482,39 +506,45 @@ export default async function HomePage() {
   )
 }
 
-function HowStep({ num, title, body }: { num: string; title: string; body: string }) {
+function TimelineStep({
+  num,
+  icon: Icon,
+  title,
+  body,
+  cta,
+  last,
+}: {
+  num: string
+  icon: React.ComponentType<{ className?: string }>
+  title: string
+  body: string
+  cta?: { href: string; label: string }
+  last?: boolean
+}) {
   return (
-    <div className="rounded-lg border border-border bg-bg/50 p-6 sm:p-7">
-      <p className="font-mono text-xs tracking-widest text-brand">{num}</p>
-      <h3 className="mt-3 text-lg font-semibold tracking-tightish text-ink">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-ink-muted">{body}</p>
-    </div>
+    <li className={last ? 'relative pl-14 sm:pl-16' : 'relative pl-14 pb-10 sm:pl-16 sm:pb-12'}>
+      <span
+        aria-hidden
+        className="absolute left-0 top-0 flex h-11 w-11 items-center justify-center rounded-full border border-brand/30 bg-bg text-brand shadow-sm sm:h-12 sm:w-12"
+      >
+        <Icon className="h-5 w-5" />
+      </span>
+      <div className="rounded-xl border border-border bg-bg/60 p-5 sm:p-6">
+        <p className="font-mono text-xs tracking-widest text-brand">{num}</p>
+        <h3 className="mt-2 text-lg font-semibold tracking-tightish text-ink sm:text-xl">
+          {title}
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-ink-muted sm:text-base">{body}</p>
+        {cta ? (
+          <Link
+            href={cta.href}
+            className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand hover:underline"
+          >
+            {cta.label} <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        ) : null}
+      </div>
+    </li>
   )
 }
 
-const MOCK_BLOG = [
-  {
-    id: 'mock-1',
-    slug: 'opening-a-cafe-in-bishoftu',
-    title: 'Opening a cafe in Bishoftu: the actual 8-week timeline',
-    excerpt:
-      'From TIN to first espresso pull — every office visit, every form, every queue. The version nobody publishes.',
-    published_at: new Date(Date.now() - 1000 * 60 * 60 * 24 * 4).toISOString(),
-  },
-  {
-    id: 'mock-2',
-    slug: 'airport-build-impact',
-    title: 'How the $12.5B Bishoftu airport will reshape five sectors',
-    excerpt:
-      'Tourism, F&B, logistics, construction supply, and last-mile delivery. The capital window closes by 2027.',
-    published_at: new Date(Date.now() - 1000 * 60 * 60 * 24 * 11).toISOString(),
-  },
-  {
-    id: 'mock-3',
-    slug: 'mor-17-2011-explained',
-    title: 'MOR Directive 17/2011, explained for first-time operators',
-    excerpt:
-      'The 519-sector code system. Which categories matter, which are decorative, and how to read the 5-digit codes.',
-    published_at: new Date(Date.now() - 1000 * 60 * 60 * 24 * 21).toISOString(),
-  },
-] as Array<{ id: string; slug: string; title: string; excerpt: string; published_at: string }>

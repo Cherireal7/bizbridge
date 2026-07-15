@@ -1,5 +1,80 @@
 # PROGRESS
 
+## 2026-07-15 (later) — Launch-ready polish
+
+Second session same day, after previewing the site in prod mode. Cheri asked
+for the site to feel less like a scaffold and more like a launch.
+
+### Content
+
+- **Hero:** H1 rewritten to *"Build a business without friction. In Ethiopia."*
+  Subhead names the four value props (sectors, process, cost estimate,
+  eTrade link).
+- **City focus stat card:** *"Addis + Bishoftu"* — the site's real coverage
+  isn't Bishoftu-only.
+- **Partners marquee:** placeholder businesses (Doxa Classic, Lake Tech, etc.)
+  removed. Real partners in place: **Fida Delivery**, **Doxa Innovations**,
+  **BR Photography** (`apps/web/src/lib/partners.ts`). Fida Delivery URL is
+  live (`fidadelivery.et`); Doxa + BR URLs marked `#` pending Cheri
+  confirmation.
+- **Writing section:** `MOCK_BLOG` constant deleted; homepage section now only
+  renders when Payload returns real posts. "No placeholders" for launch.
+
+### Structure & data
+
+- **How it works** rebuilt as a **vertical timeline** with connecting rail,
+  lucide-react icons (`FileText`, `ListChecks`, `MessageCircle`), and a CTA per
+  step. Copy no longer mentions $29 / $149.
+- **Home charts overhauled** (`apps/web/src/components/marketing/home-charts.tsx`):
+  distinct per-category color palette keyed by slug, larger donut (h=420),
+  bigger total, richer legend markers, bar chart with short display labels
+  (`CATEGORY_SHORT` map) and 220px yaxis maxWidth so nothing truncates,
+  colored bars per category, growth chart cleaned. Layout is now two equal
+  panels `lg:grid-cols-2` with the growth chart full-width below.
+
+### Sector name spacing
+
+- **New helper `apps/web/src/lib/humanize-sector-name.ts`**: `OVERRIDES` map
+  for high-traffic MOR codes (39141, 72131, 92191, plus 5 computer/wholesale
+  codes) + heuristic greedy-longest-match against a ~200-word MOR-domain
+  dictionary + punctuation spacing + CamelCase split.
+- Applied at **9 render sites** across homepage, `/sectors`, `/sectors/[slug]`
+  (header + metadata + related), `/compare`, `/checklist`, `/lookup`.
+- Verified: `/sectors/[…]-39141` renders H1 and `<title>` as
+  *"Software development (including design, enrichment, and implementation)"*.
+
+### Full access (no paywall on content)
+
+- **`GatedSection` short-circuited** to always render children
+  (`apps/web/src/components/marketing/gated-section.tsx`). Removes all
+  "$29 unlocks / Pro upgrade" curtains from sector detail pages in one line
+  instead of editing 5 call sites. Preserves the component signature so
+  gating can be re-enabled cleanly when the paid tier is ready.
+
+### Perf / DX
+
+- Added `loading.tsx` skeletons for `/sectors` and `/sectors/[slug]` — Suspense
+  fallback renders instantly on client-side navigation, so the site no longer
+  feels frozen while Payload queries Neon.
+- `tryPayload` now always logs failures in production (was silent) — masked a
+  Payload `in`-operator issue on the founder-sectors query. Swapped `in` for
+  `or`+`equals` for portability.
+- Verified: `pnpm --filter @bizbridge/web typecheck` clean;
+  `pnpm --filter @bizbridge/web build` clean; prod smoke test on `:3000`
+  confirms hero H1, partners, founder band, humanized sector detail all render
+  correctly. Static pages 4–25ms; Neon-backed pages 3–7s locally (Vercel +
+  same-region Neon will drop these to ~500ms–1.5s).
+
+### Follow-ups still open
+
+- Doxa Innovations + BR Photography URLs — waiting on Cheri.
+- Real blog posts + Media collection with R2 (currently hidden, no
+  placeholders shown).
+- Category icons (lucide swap for `GeometricIcon` on the category grid) —
+  scoped but not yet built.
+- Fastify api (`apps/api`) is untouched and not deployed. Every server-side
+  route in `apps/web` uses Payload directly.
+
 ## 2026-07-15 — Public-content pivot + feature flag
 
 **Decision (Cherinet):** Real-world demand right now is people asking how to open **design and software companies** in Ethiopia. They want guides — not a signup wall. Paid tier ($29 / $149) and lawyer consult path stay in the code but are gated behind a feature flag so they can be turned back on later without a rewrite.
