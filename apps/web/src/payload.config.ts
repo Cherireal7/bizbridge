@@ -23,7 +23,6 @@ import { Media } from './payload/collections/Media'
 import { Admins } from './payload/collections/Admins'
 
 import { SiteSettings } from './payload/globals/SiteSettings'
-import { PricingConfig } from './payload/globals/PricingConfig'
 import { HomepageContent } from './payload/globals/HomepageContent'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -64,7 +63,7 @@ export default buildConfig({
     BlogPosts,
     Media,
   ],
-  globals: [SiteSettings, PricingConfig, HomepageContent],
+  globals: [SiteSettings, HomepageContent],
   editor: lexicalEditor(),
   sharp,
   secret: process.env.PAYLOAD_SECRET || 'dev-only-secret-do-not-use-in-prod',

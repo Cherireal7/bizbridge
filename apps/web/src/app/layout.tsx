@@ -1,10 +1,18 @@
 import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { Noto_Sans_Ethiopic } from 'next/font/google'
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { CurrencyProvider } from '@/components/providers/currency-provider'
 import { Toaster } from 'sonner'
 import './globals.css'
+
+const notoEthiopic = Noto_Sans_Ethiopic({
+  subsets: ['ethiopic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-ethiopic',
+  display: 'swap',
+})
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'
 
@@ -17,8 +25,8 @@ export const metadata: Metadata = {
     'Every MOR sector, every fee, every ministry approval. A free, independent guide to opening a business in Ethiopia — with cost estimates, an eTrade link-out, and a one-off consult when you want a second pair of eyes.',
   metadataBase: new URL(APP_URL),
   applicationName: 'BizBridge Ethiopia',
-  authors: [{ name: 'Cherinet Demeke', url: 'https://github.com/Cherireal7' }],
-  creator: 'Cherinet Demeke',
+  authors: [{ name: '@cherireal7', url: 'https://t.me/Cherireal7' }],
+  creator: '@cherireal7',
   publisher: 'BizBridge (independent project)',
   keywords: [
     'Ethiopia',
@@ -88,7 +96,7 @@ const jsonLd = {
   url: APP_URL,
   description:
     'Independent civic-tech project providing a free guide to opening a business in Ethiopia — 519 MOR sectors, real fees, ministry approvals, and a consult booking.',
-  founder: { '@type': 'Person', name: 'Cherinet Demeke' },
+  founder: { '@type': 'Person', name: '@cherireal7', url: 'https://t.me/Cherireal7' },
   areaServed: [
     { '@type': 'Country', name: 'Ethiopia' },
     { '@type': 'AdministrativeArea', name: 'Oromia Region' },
@@ -106,7 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable} ${notoEthiopic.variable}`}
       style={
         {
           ['--font-sans' as string]: GeistSans.style.fontFamily,

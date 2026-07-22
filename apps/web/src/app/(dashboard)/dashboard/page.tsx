@@ -56,9 +56,7 @@ export default async function DashboardPage() {
             <h1 className="mt-1 text-3xl font-semibold tracking-tightish">Overview</h1>
           </div>
           {user ? (
-            <Badge variant={user.tier === 'free' ? 'outline' : 'brand'}>
-              {user.tier.toUpperCase()} TIER
-            </Badge>
+            <Badge variant="brand">Full access</Badge>
           ) : (
             <Badge variant="outline">Guest mode</Badge>
           )}
@@ -86,10 +84,8 @@ export default async function DashboardPage() {
         />
         <StatCard
           label="Partner intros sent"
-          value={user?.tier === 'pro' ? '3' : '—'}
-          hint={
-            user?.tier === 'pro' ? 'Doxa Classic, Feeder Delivery, +1' : 'Pro tier benefit'
-          }
+          value="3"
+          hint="Doxa Classic, Feeder Delivery, +1"
         />
       </div>
 
@@ -132,47 +128,30 @@ export default async function DashboardPage() {
 
       <section className="grid gap-6 lg:grid-cols-3">
         <Card className="lg:col-span-2 p-6">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-brand">Your plan</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-brand">
+            Everything unlocked
+          </h2>
           <div className="mt-3 flex items-end justify-between gap-3">
             <div>
               <p className="text-2xl font-semibold tracking-tightish text-ink">
-                {user?.tier === 'pro'
-                  ? 'Pro · lifetime'
-                  : user?.tier === 'basic'
-                    ? 'Standard · lifetime'
-                    : 'Free tier'}
+                Free — for everyone
               </p>
               <p className="mt-1 text-sm text-ink-muted">
-                {user?.tier === 'free' || !user
-                  ? 'Browse 519 sectors, MOR lookup, wizard, basic data.'
-                  : user?.tier === 'pro'
-                    ? 'Full access · lawyer consult slot · partner intros.'
-                    : 'Full sector guides + 3 research reports included.'}
+                All 519 sectors, full setup process, cost calculator, wizard,
+                downloadable resources, and partner directory. No paywall.
               </p>
             </div>
             <Button asChild>
-              <Link href="/pricing">
-                {user?.tier === 'pro' ? 'Manage' : 'Upgrade'} <ArrowRight className="h-4 w-4" />
+              <Link href="/consult">
+                Book a consult <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
           </div>
           <div className="mt-6 space-y-3">
             <FeatureUsage label="Sector overviews" value={100} cap="Unlimited" />
-            <FeatureUsage
-              label="Full setup process"
-              value={user?.tier === 'free' || !user ? 12 : 100}
-              cap={user?.tier === 'free' || !user ? 'Standard unlocks all' : 'All steps unlocked'}
-            />
-            <FeatureUsage
-              label="Lawyer consult slot"
-              value={user?.tier === 'pro' ? 100 : 0}
-              cap={user?.tier === 'pro' ? '1 slot available · book anytime' : 'Pro tier only'}
-            />
-            <FeatureUsage
-              label="Partner introductions"
-              value={user?.tier === 'pro' ? 60 : 0}
-              cap={user?.tier === 'pro' ? '3 of 5 used' : 'Pro tier only'}
-            />
+            <FeatureUsage label="Full setup process" value={100} cap="All steps unlocked" />
+            <FeatureUsage label="Lawyer consult slot" value={100} cap="Book anytime" />
+            <FeatureUsage label="Partner introductions" value={100} cap="Unlimited" />
           </div>
         </Card>
 
@@ -202,7 +181,7 @@ export default async function DashboardPage() {
             <Recommendation
               icon={Users}
               title="Talk to a lawyer"
-              body="Pro · 30-min call slot"
+              body="Book a 30-min consult"
               href="/lawyer"
             />
           </div>

@@ -1,162 +1,79 @@
-# DEPLOY
+# Deploy — BizBridge Ethiopia
 
-Hand-off notes for the person deploying BizBridge Ethiopia on a VPS.
+Vercel + Neon. Everything else is optional.
 
-## What you're deploying
+## What's deployed
 
-- **Next.js 15** app with **Payload CMS v3** embedded (admin at `/admin`).
-- Postgres lives on **Neon** (managed, external) — no DB to run on the VPS.
-- **Fastify API** in `apps/api` is not deployed for now (accounts/paywall are
-  hidden by feature flag).
+Only `apps/web`. It bundles:
 
-## Requirements on the VPS
+- Next 15 marketing site + `/dashboard` + `/sectors` + all tools (`/wizard`, `/calculator`, `/checklist`, `/compare`, `/lookup`, `/suggest`).
+- Payload v3 admin at `/admin`, mounted inside Next.
+- Better Auth mounted at `/api/auth/*` as a Next route handler.
 
-- Ubuntu 22.04 or 24.04 (any Linux with Docker works)
-- 2 vCPU · 2 GB RAM minimum (4 GB comfortable — Next build peaks ~2 GB)
-- 10 GB disk
-- Docker + Docker Compose
-- A reverse proxy for TLS: Caddy (easiest), nginx, or Traefik
-- A domain (or subdomain) pointed at the VPS
+`apps/api` (Fastify) is **not required** for production. It's kept in the monorepo for future mobile/third-party use; it does not need to be deployed for the free launch.
 
-## Step 1 — Install Docker + Caddy (once)
+## Prerequisites
 
-```bash
-# Docker
-curl -fsSL https://get.docker.com | sh
-sudo usermod -aG docker "$USER" && newgrp docker
+1. **Neon Postgres** — a project with a single database. Copy the pooled connection string (`?sslmode=require` at the end).
+2. **Vercel** account with this repo connected.
+3. Two `openssl rand -hex 32` secrets — one for Payload, one for Better Auth.
 
-# Caddy — auto-HTTPS reverse proxy
-sudo apt update && sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
-sudo apt update && sudo apt install -y caddy
-```
+## Vercel env vars
 
-## Step 2 — Get the code
+Set these in **Project → Settings → Environment Variables** for the Production environment:
 
-```bash
-git clone https://github.com/Cherireal7/bizbridge.git /opt/bizbridge
-cd /opt/bizbridge
-```
+| Name | Value | Notes |
+|---|---|---|
+| `NEXT_PUBLIC_APP_URL` | `https://bizbridge.et` | Prod URL. Used by sitemap.xml, robots.txt, JSON-LD, Better Auth trusted origins. |
+| `DATABASE_URL` | Neon pooled URL | Both Payload and Better Auth read from this. |
+| `PAYLOAD_SECRET` | `openssl rand -hex 32` | Session encryption for Payload admin. |
+| `BETTER_AUTH_SECRET` | `openssl rand -hex 32` | Auth signing key. |
+| `NEXT_PUBLIC_CONSULT_EMAIL` | `cheridemeke777@gmail.com` | Default public email. Optional — falls back to this in code. |
+| `NEXT_PUBLIC_CONSULT_TELEGRAM` | `https://t.me/Cherireal7` | Optional fallback. |
 
-## Step 3 — Environment file
+**Optional (leave unset to disable):**
 
-Create `/opt/bizbridge/.env.production` with these five vars:
+- `GOOGLE_CLIENT_ID` + `GOOGLE_CLIENT_SECRET` — Google OAuth via Better Auth.
+- `NEXT_PUBLIC_CONSULT_FORMSUBMIT` — Formsubmit endpoint for the consult form.
 
-```env
-DATABASE_URL=postgresql://neondb_owner:PASSWORD@ep-XXXX-pooler.eu-west-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require
-PAYLOAD_SECRET=64-hex-char-string
-BETTER_AUTH_SECRET=64-hex-char-string
-BETTER_AUTH_URL=https://your-domain.com
-NEXT_PUBLIC_APP_URL=https://your-domain.com
-```
+## Vercel project settings
 
-Cheri will hand you the actual `DATABASE_URL` and secrets separately. Generate
-random secrets locally if needed:
+- **Root directory:** repo root.
+- **Framework preset:** Next.js.
+- **Build command:** `pnpm --filter @bizbridge/web build`.
+- **Install command:** `pnpm install --frozen-lockfile`.
+- **Output directory:** default (`.next`).
+- **Node version:** 20.11+.
 
-```bash
-openssl rand -hex 32
-```
+## First-deploy checklist
 
-Do **not** commit this file. `.env.production` is already covered by
-`.dockerignore` and `.gitignore`.
+1. Push `main` to GitHub.
+2. Import the repo in Vercel.
+3. Set the env vars above.
+4. First build will fail if the DB schema is behind — apply migrations locally against the prod DB *before* deploying:
 
-## Step 4 — Build + run
+   ```bash
+   cd apps/web
+   DATABASE_URL='...prod-url...' echo y | pnpm migrate
+   ```
 
-```bash
-cd /opt/bizbridge
-docker compose build
-docker compose up -d
-docker compose logs -f web    # watch it boot; wait for "Ready in Xms"
-```
+5. Seed sector content once (idempotent):
 
-The container listens on `127.0.0.1:3000` (localhost only) — Caddy proxies
-`:443` in front of it.
+   ```bash
+   cd apps/web
+   DATABASE_URL='...prod-url...' pnpm seed:mor
+   DATABASE_URL='...prod-url...' pnpm seed:all-bilingual
+   DATABASE_URL='...prod-url...' pnpm seed:pilot-bilingual
+   ```
 
-## Step 5 — Caddy reverse proxy + auto-TLS
+6. Redeploy from Vercel dashboard.
+7. Visit `https://bizbridge.et/admin`, create the first admin, log in.
 
-Edit `/etc/caddy/Caddyfile`:
+## After launch
 
-```caddy
-your-domain.com {
-    encode zstd gzip
-    reverse_proxy 127.0.0.1:3000
-    header {
-        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-        X-Content-Type-Options "nosniff"
-        Referrer-Policy "strict-origin-when-cross-origin"
-    }
-}
-```
-
-Then:
-
-```bash
-sudo systemctl reload caddy
-```
-
-Caddy auto-provisions Let's Encrypt certs on first hit — takes ~30 seconds.
-
-## Step 6 — First-run DB migration + seed (once)
-
-The Neon DB Cheri hands you is already migrated and seeded. **Skip this step
-unless you're deploying against a fresh Neon branch.**
-
-If against a fresh DB:
-
-```bash
-docker compose run --rm web sh -c "cd /app && node apps/web/node_modules/payload/dist/bin.js migrate"
-# then seed the 519 MOR sectors:
-docker compose run --rm web sh -c "cd /app && node apps/web/dist/seed/mor.js"
-```
-
-## Step 7 — Verify
-
-```bash
-curl -I https://your-domain.com/                              # 200
-curl -I https://your-domain.com/sectors                       # 200
-curl -I https://your-domain.com/login                         # 404 (accounts hidden by design)
-```
-
-Open the site in a browser. Homepage, `/sectors`, `/services`, `/consult` all
-render. `/admin` is Payload's CMS (first visit creates the admin user).
-
-## Updates
-
-```bash
-cd /opt/bizbridge
-git pull
-docker compose build web
-docker compose up -d
-```
-
-Rolling deploy — container restarts, ~5–10 s of downtime.
-
-## Troubleshooting
-
-- **`Ready in Xms` never appears** → check `docker compose logs web`. Usually
-  a missing env var or DNS-unreachable `DATABASE_URL`.
-- **Homepage returns 200 but no sector data** → Neon compute is suspended;
-  the first request wakes it (~500 ms), subsequent requests are fast. If it
-  never wakes, DB URL is stale — get a fresh one from Neon.
-- **Payload boot OOM** on smaller VPS → the build step needs ~2 GB RAM. Run
-  `docker compose build` on a workstation instead and push the image to a
-  registry, then `docker pull` on the VPS.
-
-## What's not covered here
-
-- **Domain / DNS** — you'll set an A record pointing your domain at the VPS's
-  public IP. That's on you / whoever owns the DNS.
-- **Backups** — Neon handles DB backups (point-in-time restore). Nothing to
-  back up on the VPS itself (stateless container).
-- **CI/CD** — no pipeline yet. Deploys are manual `git pull` + rebuild for
-  now.
-- **Fastify API (`apps/api`)** — not deployed. Only becomes relevant when
-  accounts are re-enabled (flip `NEXT_PUBLIC_ENABLE_ACCOUNTS=true`).
-- **Cloudflare R2** for uploads — not wired. Media collection works locally
-  but production uploads need R2 env vars set + volume mount for local
-  fallback. Ask Cheri if you need it.
+- Set `NEXT_PUBLIC_APP_URL` to the custom domain the moment you attach it — sitemap.xml falls back to `http://localhost:3000` when the env var is missing, which is wrong for crawlers.
+- Any change to `apps/web/src/payload/collections/**` needs a fresh migration file — see the pattern in `apps/web/src/payload/migrations/20260722_*`. Payload's interactive `migrate:create` needs a TTY; hand-writing the migration works too.
 
 ## Contact
 
-Cheri: `cheridemeke7@gmail.com` · Telegram `@Cherireal7`
+- Cheri: [`cheridemeke777@gmail.com`](mailto:cheridemeke777@gmail.com) · Telegram [`@Cherireal7`](https://t.me/Cherireal7)

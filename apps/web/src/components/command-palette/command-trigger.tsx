@@ -24,15 +24,15 @@ export function CommandTrigger({ className }: { className?: string }) {
       type="button"
       onClick={fire}
       className={
-        'group inline-flex h-9 items-center gap-2 rounded-md border border-border bg-surface-2 px-2.5 text-sm text-ink-muted transition hover:border-brand/50 hover:text-ink ' +
+        'group inline-flex h-8 items-center gap-2 rounded-md border border-border/70 bg-surface/60 px-2.5 font-mono text-[11px] text-ink-muted transition-colors hover:border-border-strong hover:bg-surface hover:text-ink ' +
         (className ?? '')
       }
       aria-label="Search sectors and navigate"
     >
-      <Search className="h-4 w-4 text-ink-faint group-hover:text-brand" />
-      <span className="hidden md:inline">Search sectors…</span>
-      <kbd className="ml-2 hidden md:inline-flex h-5 select-none items-center gap-0.5 rounded border border-border bg-surface px-1.5 font-mono text-2xs text-ink-faint">
-        {mac ? '⌘' : 'Ctrl'} K
+      <Search className="h-3.5 w-3.5 text-ink-faint group-hover:text-ink" />
+      <span className="hidden md:inline">search sectors…</span>
+      <kbd className="ml-4 hidden md:inline-flex h-5 select-none items-center gap-0.5 rounded border border-border/70 bg-bg/60 px-1.5 font-mono text-[10px] text-ink-faint">
+        {mac ? '⌘' : 'ctrl'} k
       </kbd>
     </button>
   )

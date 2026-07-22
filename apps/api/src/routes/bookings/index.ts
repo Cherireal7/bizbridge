@@ -6,13 +6,13 @@ const notImplemented = (action: string) => ({
 })
 
 export const bookingRoutes: FastifyPluginAsync = async (app) => {
-  app.get('/', { preHandler: app.requireAuth }, async (_req, reply) =>
+  app.get('/', async (_req, reply) =>
     reply.code(501).send(notImplemented('GET /api/bookings')),
   )
-  app.get('/:id', { preHandler: app.requireAuth }, async (_req, reply) =>
+  app.get('/:id', async (_req, reply) =>
     reply.code(501).send(notImplemented('GET /api/bookings/:id')),
   )
-  app.post('/:id/cancel', { preHandler: app.requireAuth }, async (_req, reply) =>
+  app.post('/:id/cancel', async (_req, reply) =>
     reply.code(501).send(notImplemented('POST /api/bookings/:id/cancel')),
   )
 }

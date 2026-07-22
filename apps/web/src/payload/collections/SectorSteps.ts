@@ -6,7 +6,7 @@ export const SectorSteps: CollectionConfig = {
   admin: {
     useAsTitle: 'title',
     group: 'Sector Data',
-    defaultColumns: ['step_number', 'title', 'sector', 'tier_required'],
+    defaultColumns: ['step_number', 'title', 'sector'],
   },
   access: {
     read: anyone,
@@ -40,16 +40,6 @@ export const SectorSteps: CollectionConfig = {
       name: 'cost_reference',
       type: 'relationship',
       relationTo: 'sector-costs',
-    },
-    {
-      name: 'tier_required',
-      type: 'select',
-      required: true,
-      defaultValue: 'premium',
-      options: [
-        { label: 'Free', value: 'free' },
-        { label: 'Premium', value: 'premium' },
-      ],
     },
   ],
 }

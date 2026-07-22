@@ -41,12 +41,12 @@ export default function PartnersPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild>
-              <Link href="/pricing">
-                Get Pro for warm intros <ArrowRight className="h-4 w-4" />
+              <Link href="/consult">
+                Request a warm intro <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="secondary">
-              <Link href="mailto:hello@bizbridge.et?subject=Become a BizBridge partner">
+              <Link href="mailto:cheridemeke777@gmail.com?subject=Become a BizBridge partner">
                 <Mail className="h-4 w-4" /> Become a partner
               </Link>
             </Button>
@@ -130,7 +130,7 @@ export default function PartnersPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="secondary" size="lg">
-                  <a href="mailto:cheridemeke7@gmail.com">Email a question</a>
+                  <a href="mailto:cheridemeke777@gmail.com">Email a question</a>
                 </Button>
               </div>
             </div>

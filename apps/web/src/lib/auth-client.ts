@@ -1,16 +1,13 @@
 /**
- * Better Auth React client.
- *
- * Points at the Fastify API (apps/api) so signup/login/session calls hit the
- * same auth instance that issues tokens. Use from Client Components only:
+ * Better Auth React client. Points at Next.js's own /api/auth routes — no
+ * cross-origin API server needed. Use from Client Components:
  *
  *   const { signIn, signOut, useSession } = authClient
  */
-
 import { createAuthClient } from 'better-auth/react'
 
 export const authClient = createAuthClient({
-  baseURL: process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000',
+  baseURL: process.env.NEXT_PUBLIC_APP_URL,
 })
 
 export const { signIn, signUp, signOut, useSession, getSession } = authClient

@@ -133,7 +133,7 @@ export default function AboutPage() {
                 </Link>
               </Button>
               <Button asChild variant="secondary" className="mt-2 w-full">
-                <a href="mailto:cheridemeke7@gmail.com">
+                <a href="mailto:cheridemeke777@gmail.com">
                   <Mail className="h-4 w-4" /> Email me
                 </a>
               </Button>

@@ -1,10 +1,7 @@
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
 import { ArrowLeft, MapPin } from 'lucide-react'
-import { ENABLE_ACCOUNTS } from '@/lib/flags'
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
-  if (!ENABLE_ACCOUNTS) notFound()
   return (
     <div className="grid min-h-screen lg:grid-cols-2">
       {/* Form side */}

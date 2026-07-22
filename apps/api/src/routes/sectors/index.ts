@@ -7,26 +7,19 @@ const notImplemented = (action: string) => ({
 
 export const sectorRoutes: FastifyPluginAsync = async (app) => {
   app.get('/', async (_req, reply) => reply.code(501).send(notImplemented('GET /api/sectors')))
-  app.get('/:slug', async (_req, reply) => reply.code(501).send(notImplemented('GET /api/sectors/:slug')))
-
-  app.get(
-    '/:slug/full',
-    { preHandler: app.requireTier('basic') },
-    async (_req, reply) => reply.code(501).send(notImplemented('GET /api/sectors/:slug/full')),
+  app.get('/:slug', async (_req, reply) =>
+    reply.code(501).send(notImplemented('GET /api/sectors/:slug')),
   )
-  app.get(
-    '/:slug/steps',
-    { preHandler: app.requireTier('basic') },
-    async (_req, reply) => reply.code(501).send(notImplemented('GET /api/sectors/:slug/steps')),
+  app.get('/:slug/full', async (_req, reply) =>
+    reply.code(501).send(notImplemented('GET /api/sectors/:slug/full')),
   )
-  app.get(
-    '/:slug/costs',
-    { preHandler: app.requireTier('basic') },
-    async (_req, reply) => reply.code(501).send(notImplemented('GET /api/sectors/:slug/costs')),
+  app.get('/:slug/steps', async (_req, reply) =>
+    reply.code(501).send(notImplemented('GET /api/sectors/:slug/steps')),
   )
-  app.get(
-    '/:slug/documents',
-    { preHandler: app.requireTier('basic') },
-    async (_req, reply) => reply.code(501).send(notImplemented('GET /api/sectors/:slug/documents')),
+  app.get('/:slug/costs', async (_req, reply) =>
+    reply.code(501).send(notImplemented('GET /api/sectors/:slug/costs')),
+  )
+  app.get('/:slug/documents', async (_req, reply) =>
+    reply.code(501).send(notImplemented('GET /api/sectors/:slug/documents')),
   )
 }

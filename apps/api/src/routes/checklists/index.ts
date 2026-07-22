@@ -6,19 +6,16 @@ const notImplemented = (action: string) => ({
 })
 
 export const checklistRoutes: FastifyPluginAsync = async (app) => {
-  app.get('/', { preHandler: app.requireAuth }, async (_req, reply) =>
+  app.get('/', async (_req, reply) =>
     reply.code(501).send(notImplemented('GET /api/checklists')),
   )
-  app.post('/', { preHandler: app.requireAuth }, async (_req, reply) =>
+  app.post('/', async (_req, reply) =>
     reply.code(501).send(notImplemented('POST /api/checklists')),
   )
-  app.get('/:id', { preHandler: app.requireAuth }, async (_req, reply) =>
+  app.get('/:id', async (_req, reply) =>
     reply.code(501).send(notImplemented('GET /api/checklists/:id')),
   )
-  app.patch(
-    '/:id/items/:itemId',
-    { preHandler: app.requireAuth },
-    async (_req, reply) =>
-      reply.code(501).send(notImplemented('PATCH /api/checklists/:id/items/:itemId')),
+  app.patch('/:id/items/:itemId', async (_req, reply) =>
+    reply.code(501).send(notImplemented('PATCH /api/checklists/:id/items/:itemId')),
   )
 }

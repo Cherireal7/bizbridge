@@ -58,7 +58,8 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
-        amharic: ['Noto Sans Ethiopic', 'Abyssinica SIL', 'serif'],
+        display: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        amharic: ['var(--font-ethiopic)', 'Noto Sans Ethiopic', 'Abyssinica SIL', 'serif'],
       },
       fontSize: {
         '2xs': ['0.6875rem', { lineHeight: '1rem' }],

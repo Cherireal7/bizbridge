@@ -85,26 +85,22 @@ export default async function ReportDetailPage({ params }: PageProps) {
             </div>
 
             <Card className="p-6 lg:sticky lg:top-24 h-fit">
-              <p className="text-xs uppercase tracking-wider text-brand">Price</p>
-              <p className="mt-2 text-4xl font-semibold tracking-crisp">
-                ${typeof report.price_usd === 'number' ? report.price_usd : 0}
-                <span className="ml-2 text-sm font-normal text-ink-faint">USD</span>
-              </p>
+              <p className="text-xs uppercase tracking-wider text-brand">Free download</p>
+              <p className="mt-2 text-4xl font-semibold tracking-crisp">Free</p>
               <p className="mt-1 text-xs text-ink-faint">
-                or ETB {(typeof report.price_birr === 'number' ? report.price_birr : 0).toLocaleString()}
-                {' '}· one-time
+                No signup required for preview · account for full PDF
               </p>
 
               <div className="mt-6 space-y-3">
                 <Button asChild size="lg" className="w-full">
-                  <Link href={`/checkout?type=report&slug=${report.slug}`}>
-                    Buy report
+                  <Link href={`/reports/${report.slug}#download`}>
+                    <Download className="h-4 w-4" /> Download PDF
                   </Link>
                 </Button>
                 {report.preview ? (
                   <Button asChild variant="secondary" className="w-full">
                     <Link href="#preview">
-                      <Download className="h-4 w-4" /> Free preview
+                      <FileText className="h-4 w-4" /> Preview
                     </Link>
                   </Button>
                 ) : null}
@@ -112,10 +108,10 @@ export default async function ReportDetailPage({ params }: PageProps) {
 
               <ul className="mt-6 space-y-2 text-xs text-ink-muted">
                 <li className="flex items-start gap-2">
-                  <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" /> Pay once · lifetime download
+                  <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" /> No paywall · always free
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" /> Chapa · TeleBirr · Remitly
+                  <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" /> Sources cited on every page
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" /> 14-day data-accuracy refund

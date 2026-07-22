@@ -13,7 +13,7 @@ export const SectorDocuments: CollectionConfig = {
   admin: {
     useAsTitle: 'title',
     group: 'Sector Data',
-    defaultColumns: ['title', 'sector', 'file_type', 'tier_required', 'download_count'],
+    defaultColumns: ['title', 'sector', 'file_type', 'download_count'],
   },
   access: {
     read: anyone,
@@ -40,16 +40,6 @@ export const SectorDocuments: CollectionConfig = {
         { label: 'PDF', value: 'pdf' },
         { label: 'DOCX', value: 'docx' },
         { label: 'XLSX', value: 'xlsx' },
-      ],
-    },
-    {
-      name: 'tier_required',
-      type: 'select',
-      required: true,
-      defaultValue: 'premium',
-      options: [
-        { label: 'Free', value: 'free' },
-        { label: 'Premium', value: 'premium' },
       ],
     },
     {

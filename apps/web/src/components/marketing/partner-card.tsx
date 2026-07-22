@@ -17,11 +17,13 @@ interface PartnerCardProps {
 }
 
 export function PartnerCard({ partner, category, size = 'md' }: PartnerCardProps) {
+  const href = partner.url || partner.telegram || partner.instagram || '#'
+  const hasLink = Boolean(partner.url || partner.telegram || partner.instagram)
   return (
     <a
-      href={partner.url}
-      target="_blank"
-      rel="noopener external"
+      href={href}
+      target={hasLink ? '_blank' : undefined}
+      rel={hasLink ? 'noopener external' : undefined}
       className="group flex flex-col gap-4 rounded-lg border border-border bg-surface p-5 transition-all hover:border-brand/40 hover:shadow-glow"
     >
       <div className="flex items-start justify-between gap-3">

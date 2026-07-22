@@ -6,21 +6,22 @@ import rateLimit from '@fastify/rate-limit'
 
 import { env } from './env.js'
 import { dbPlugin } from './plugins/db.js'
-import { authPlugin } from './plugins/auth.js'
-import { tierAccessPlugin } from './plugins/tier-access.js'
 
-import { authRoutes } from './routes/auth/index.js'
 import { sectorRoutes } from './routes/sectors/index.js'
 import { reportRoutes } from './routes/reports/index.js'
-import { subscriptionRoutes } from './routes/subscriptions/index.js'
-import { paymentRoutes } from './routes/payments/index.js'
 import { expertRoutes } from './routes/experts/index.js'
 import { bookingRoutes } from './routes/bookings/index.js'
 import { checklistRoutes } from './routes/checklists/index.js'
 import { calculatorRoutes } from './routes/calculator/index.js'
-import { userRoutes } from './routes/user/index.js'
-import { checkoutRoutes } from './routes/checkout/index.js'
 
+/**
+ * Fastify API — optional companion to the Next.js web app. Auth lives in
+ * Next.js (Better Auth on `/api/auth/*`). This service exposes read-only
+ * business endpoints (sectors, reports, experts, calculator, checklists,
+ * bookings). It's not required for the free launch — apps/web reads the same
+ * data directly from Payload — but the service is kept around for any future
+ * mobile / third-party client.
+ */
 export async function buildApp(): Promise<FastifyInstance> {
   const app = Fastify({
     logger: {
@@ -36,29 +37,22 @@ export async function buildApp(): Promise<FastifyInstance> {
 
   await app.register(helmet, { contentSecurityPolicy: false })
   await app.register(cors, {
-    origin: [env.FRONTEND_URL, env.BETTER_AUTH_URL].filter(Boolean),
+    origin: [env.FRONTEND_URL].filter(Boolean),
     credentials: true,
   })
   await app.register(sensible)
   await app.register(rateLimit, { max: 200, timeWindow: '1 minute' })
 
   await app.register(dbPlugin)
-  await app.register(authPlugin)
-  await app.register(tierAccessPlugin)
 
   app.get('/health', async () => ({ status: 'ok', service: 'bizbridge-api' }))
 
-  await app.register(authRoutes, { prefix: '/api/auth' })
   await app.register(sectorRoutes, { prefix: '/api/sectors' })
   await app.register(reportRoutes, { prefix: '/api/reports' })
-  await app.register(subscriptionRoutes, { prefix: '/api/subscriptions' })
-  await app.register(paymentRoutes, { prefix: '/api/webhooks' })
   await app.register(expertRoutes, { prefix: '/api/experts' })
   await app.register(bookingRoutes, { prefix: '/api/bookings' })
   await app.register(checklistRoutes, { prefix: '/api/checklists' })
   await app.register(calculatorRoutes, { prefix: '/api/calculator' })
-  await app.register(userRoutes, { prefix: '/api/user' })
-  await app.register(checkoutRoutes, { prefix: '/api/checkout' })
 
   app.setErrorHandler((err: FastifyError, _req, reply) => {
     app.log.error(err)

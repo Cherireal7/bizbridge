@@ -56,12 +56,33 @@ export const BusinessSectors: CollectionConfig = {
       type: 'textarea',
       required: true,
       maxLength: 600,
-      label: 'Short description (free tier teaser, 2–3 sentences)',
+      label: 'Short description (2–3 sentences)',
     },
     {
       name: 'description_full',
       type: 'richText',
-      label: 'Full description (premium content)',
+      label: 'Full description',
+    },
+    {
+      name: 'legacy_codes',
+      type: 'array',
+      label: 'Legacy MOR codes',
+      admin: {
+        description: 'Previous codes that map to this sector under Directive 17/2011.',
+      },
+      fields: [{ name: 'code', type: 'text', required: true }],
+    },
+    {
+      name: 'permitted_operations_am',
+      type: 'array',
+      label: 'Permitted operations (Amharic, from MoR directive)',
+      fields: [{ name: 'text', type: 'textarea', required: true }],
+    },
+    {
+      name: 'permitted_operations_en',
+      type: 'array',
+      label: 'Permitted operations (English translation)',
+      fields: [{ name: 'text', type: 'textarea', required: true }],
     },
     {
       name: 'is_featured',

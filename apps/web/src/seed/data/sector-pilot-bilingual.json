@@ -1,0 +1,413 @@
+{
+  "note": "Pilot batch of 25 diaspora / investor priority sectors. Amharic sourced from MOR Directive 17/2011 Explanation Manual (docs/mor/MOR-Directive-17-2011-Explanation-Amharic.pdf). English translations authored for BizBridge; each entry needs owner review before promotion. Structure: name_am/name_en override strings on the sector, legacy_codes as array, permitted_operations as {am, en} pairs.",
+  "sectors": [
+    {
+      "mor_code": "11115",
+      "name_am": "ቡናና ሻይ ቅጠል ማልማት",
+      "name_en": "Coffee and tea cultivation",
+      "legacy_codes": ["11120", "11140"],
+      "permitted_operations": [
+        {
+          "am": "የቡና እና የሻይ ቅጠል ችግኝ የመትከልና የማልማትን ያካትታል።",
+          "en": "Includes planting and cultivating coffee and tea seedlings."
+        },
+        {
+          "am": "ሌላ ቦታ ያልተጠቀሱ የቡና እና የሻይ ቅጠል ማልማትና ተጓዳኝ የእንክብካቤ ስራዎችን ሁሉ ያካትታል።",
+          "en": "Includes any other coffee and tea cultivation and related care activities not specified elsewhere."
+        }
+      ]
+    },
+    {
+      "mor_code": "11117",
+      "name_am": "አበባ ማልማት",
+      "name_en": "Floriculture",
+      "legacy_codes": ["11170"],
+      "permitted_operations": [
+        {
+          "am": "የተለያዩ የአበባ አይነቶች የሚለሙ ሲሆን ለጌጥነት የሚሆኑ ሳሮች እና ፅድ እንዲሁም ሌሎች ለግቢ ማስዋቢያነት የሚያገለግሉ አበቦችና ሌሎች እፅዋቶችን እና ችግኞችን ማልማት ያጠቃልላል።",
+          "en": "Covers cultivation of every type of flower, ornamental grasses, cypress, and any other decorative flowers, plants, and seedlings used for landscaping."
+        }
+      ]
+    },
+    {
+      "mor_code": "31111",
+      "name_am": "ሥጋና የስጋ ዉጤቶች ማቀነባበርና መጠበቅ",
+      "name_en": "Meat and meat products processing and preservation",
+      "legacy_codes": ["30111", "30112", "30113", "30114", "30119"],
+      "permitted_operations": [
+        {
+          "am": "የቄራ አገልግሎትን ጨምሮ የስጋ እና የስጋ ውጤቶች ማቀነባበርና መጠበቅ ስራዎችን ያካትታል።",
+          "en": "Includes abattoir services and the processing and preservation of meat and meat products."
+        }
+      ]
+    },
+    {
+      "mor_code": "33112",
+      "name_am": "አልበሳትን መፈብረክ (የፀጉር አልባሳትን ጨምሮ)",
+      "name_en": "Manufacture of apparel (including fur clothing)",
+      "legacy_codes": ["31211", "31230", "31310", "31390", "31118"],
+      "permitted_operations": [
+        {
+          "am": "ለልብስነት አገልግሎት የሚውሉ ዘመናዊ እና ባህላዊ አልባሳትን መፈብረክ።",
+          "en": "Manufacture of modern and traditional apparel for clothing use."
+        },
+        {
+          "am": "የመኪና አልባሳት፣ የሶፋ አልባሳት፣ ብርድልብስ፣ አንሶላ እና ሌሎች ተዛማጅ ምርቶችን ማምረት ያካትታል።",
+          "en": "Includes car covers, sofa covers, blankets, bedsheets and other related textile products."
+        }
+      ]
+    },
+    {
+      "mor_code": "35311",
+      "name_am": "ለሰዉ አገልግሎት የሚዉሉ የህክምና የመድኃኒትና ኬሚካሎችን መፈብረክ",
+      "name_en": "Manufacture of pharmaceuticals and medicinal chemicals for human use",
+      "legacy_codes": ["33431"],
+      "permitted_operations": [
+        {
+          "am": "የመድሀኒት ወህዶች፣ ቫይታሚኖች፣ አንቲባዮቲክስ፣ ሳሊሳየክሊክ አሲድ፣ ቫክሲን፣ የሆርሞንና የርግዝና መከላከያ፣ ኮንዶም እና የመሳሰሉት የመድኃኒት ወህዶችን (ኬሚካሎችን) መቀመም እና ማዘጋጀት።",
+          "en": "Compounding and preparing pharmaceutical compounds (chemicals) including vitamins, antibiotics, salicylic acid, vaccines, hormones, contraceptives, condoms, and similar products."
+        },
+        {
+          "am": "የተለያዩ የመድሃኒት ኬሚካሎችን ማቀናበርና መፈብረክ እና ለሰው አገልግሎት የሚውሉ ተዛማጅ መድሃኒቶችን ማዘጋጀት።",
+          "en": "Processing, formulating and manufacturing various medicinal chemicals and related medicines intended for human use."
+        }
+      ]
+    },
+    {
+      "mor_code": "39141",
+      "name_am": "ሶፍትዌር መፈብረክ (ዲዛይን ማድረግ፣ ማበልጸግና ትግበራን ያካትታል)",
+      "name_en": "Software development (includes design, enhancement and implementation)",
+      "legacy_codes": ["86100", "86200"],
+      "permitted_operations": [
+        {
+          "am": "ይህ የስራ ዘርፍ ሶፍትዌር ዲዛይን ከማድረግ ጀምሮ ማምረት፣ ማበልፀግ እና ተግባር ላይ እንዲውል የማድረግ ስራዎችን ያካትታል።",
+          "en": "This sector covers the full software lifecycle: design, build, enhancement, and putting software into production."
+        },
+        {
+          "am": "የኮምፒውተር ኔትዎርክ ዲዛይንና ዝርጋታንም ያጠቃልላል።",
+          "en": "Also includes computer network design and rollout."
+        }
+      ]
+    },
+    {
+      "mor_code": "51112",
+      "name_am": "የህንጻ ስራ ተቋራጭነት",
+      "name_en": "Building works contractor",
+      "legacy_codes": ["50210", "50290", "50230"],
+      "permitted_operations": [
+        {
+          "am": "የብረት ተገጣጣሚ ህንጻዎች እና ተዛማጅ ግንባታዎች፣ የመኖሪያ ቤት ስራ (ቪላ ቤት)፣ የሆቴል ህንጻዎች፣ የመንግስት ህንጻዎች፣ የዩኒቨርስቲ እና ትምህርት ቤቶች፣ ካምፖች፣ ጊዜያዊ መጠለያዎች፣ ሪል ስቴቶች እና ሌሎች ያልተጠቀሱ የህንጻና ተዛማጅ ስራዎችን ያጠቃልላል።",
+          "en": "Covers steel-frame buildings and related construction, residential works (villas), hotels, government buildings, universities and schools, camps, temporary shelters, real-estate developments, and any other unspecified building work."
+        },
+        {
+          "am": "ለምሳሌ አነስተኛና ግዙፍ ስታዲዮም ግንባታ የመሳሰሉትን ስራዎችም ያካትታል።",
+          "en": "For example, includes small- and large-scale stadium construction."
+        }
+      ]
+    },
+    {
+      "mor_code": "61211",
+      "name_am": "የብርዕ እና የአገዳ ሰብሎች ጅምላ ንግድ",
+      "name_en": "Wholesale of cereals",
+      "legacy_codes": [],
+      "permitted_operations": [
+        {
+          "am": "የብርዕ እና የአገዳ ሰብሎችን (በቆሎ፣ ማሽላ፣ ጤፍ፣ ገብስ፣ አጃ፣ ስንዴ፣ ዳጉሳ፣ ሩዝ እና የመሳሰሉት) በጅምላ የመሸጥ ስራን ያካትታል።",
+          "en": "Wholesale trade in cereals (maize, sorghum, teff, barley, oats, wheat, dagusa, rice and similar grains)."
+        }
+      ]
+    },
+    {
+      "mor_code": "61216",
+      "name_am": "የቡናና ሻይ ጅምላ ንግድ",
+      "name_en": "Wholesale of coffee and tea",
+      "legacy_codes": [],
+      "permitted_operations": [
+        {
+          "am": "ቡና እና ሻይ ቅጠልን በጅምላ የመሸጥ ስራን ያካትታል።",
+          "en": "Wholesale trade in coffee beans and tea leaves."
+        }
+      ]
+    },
+    {
+      "mor_code": "62111",
+      "name_am": "የገበያ ማዕከል (ሞል)",
+      "name_en": "Department store / Mall",
+      "legacy_codes": ["62110"],
+      "permitted_operations": [
+        {
+          "am": "ይህ የስራ አይነት የተለያዩ ስራዎችን የሚያጠቃልል ሲሆን የተለያዩ ነጋዴዎች በተለያዩ የስራ አይነቶች ተሰማርተው በአንድ ማዕከል የተለያዩ ስራዎች የሚከናወኑበት የስራ አይነት ነው።",
+          "en": "A shopping-center concept in which multiple traders operate under one roof across a range of retail and service lines."
+        }
+      ]
+    },
+    {
+      "mor_code": "62113",
+      "name_am": "ሱፐር ማርኬት",
+      "name_en": "Supermarket",
+      "legacy_codes": ["62120"],
+      "permitted_operations": [
+        {
+          "am": "ይህ የስራ አይነት የችርቻሮ ንግድ የሚካሄድበት ሲሆን ትልልቅ መደብሮች ተብለው ከሚመደቡት መካከል ይመደባል።",
+          "en": "A retail-trade format classified as a large-format store."
+        },
+        {
+          "am": "አቅም ካለው በትልልቅ መደብሮች የሚሰሩትን ስራዎች መስራት ይችላል።",
+          "en": "May carry out the full range of activities performed by large-format retailers where capacity allows."
+        }
+      ]
+    },
+    {
+      "mor_code": "62513",
+      "name_am": "ኮምፒዩተር፣ የኮምፒዩተር መሳሪያዎችና ተዛማጅ ዕቃዎች ችርቻሮ ንግድ",
+      "name_en": "Retail of computers, computer equipment and related accessories",
+      "legacy_codes": ["62803", "62804", "62809", "62384"],
+      "permitted_operations": [
+        {
+          "am": "የኮምፒውተር እና የኮምፒውተር ተዛማጅ ዕቃዎች፣ መለዋወጫዎችና የመገልገያ መሳሪያዎችን (ሶፍትዌር፣ ፍላሽ፣ ሀርድ ዲስክ፣ ሲዲ፣ ካሴቶች፣ ኔትወርክ ኬብል እና ሌሎች) በችርቻሮ የመሸጥ ስራን ያካትታል።",
+          "en": "Retail sale of computers, computer-related items, spare parts and peripherals — including software, flash drives, hard disks, CDs, cassettes, network cables and similar items."
+        },
+        {
+          "am": "በጅምላ ንግድ ስር የተጠቀሱት ተመሳሳይ ምርቶች በችርቻሮ መሸጥንም ያካትታል።",
+          "en": "Also covers retail sale of the same categories of products listed under the wholesale trade code."
+        }
+      ]
+    },
+    {
+      "mor_code": "64111",
+      "name_am": "ባለ ኮከብ ሆቴል አገልግሎት",
+      "name_en": "Star hotel services",
+      "legacy_codes": ["64111", "64140"],
+      "permitted_operations": [
+        {
+          "am": "የካፌ፣ የአልጋ፣ የባር እና የምግብ አገልግሎቶችን መስጠት የሚችል የስራ አይነት ነው።",
+          "en": "May provide cafe, lodging, bar, and food services under a single license."
+        },
+        {
+          "am": "ለተለያዩ አገልግሎቶች የሚውሉ የአዳራሽ ኪራይ አገልግሎትን ያካትታል።",
+          "en": "Includes rental of function halls for events and meetings."
+        },
+        {
+          "am": "አለም አቀፍ ስታንዳርድን የጠበቀ አገልግሎት እና ሌሎች ተዛማጅ አገልግሎቶችን ጨምሮ ማቅረብ ግዴታ አለበት።",
+          "en": "Must operate in line with international-standard service, including any related services not explicitly listed."
+        }
+      ]
+    },
+    {
+      "mor_code": "64112",
+      "name_am": "የሆቴል አገልግሎት",
+      "name_en": "Hotel service",
+      "legacy_codes": ["64112", "64129", "64130", "64117"],
+      "permitted_operations": [
+        {
+          "am": "የካፌ፣ የአልጋ፣ የባር እና የምግብ አገልግሎቶችን መስጠት የሚችል ነው።",
+          "en": "May provide cafe, lodging, bar and food services."
+        },
+        {
+          "am": "የአልጋ አገልግሎት የማይሰጥ ድርጅት ሆቴል ሊባል አይችልም።",
+          "en": "An establishment that does not offer lodging cannot be classified as a hotel."
+        },
+        {
+          "am": "በደረጃው መሰረት ህብረተሰቡን ያማከለ አገልግሎት ይሰጣል።",
+          "en": "Delivers community-oriented service at the star rating it holds."
+        }
+      ]
+    },
+    {
+      "mor_code": "64113",
+      "name_am": "ባለ ኮከብ የሬስቶራንት አገልግሎት",
+      "name_en": "Star restaurant service",
+      "legacy_codes": ["64211", "64123", "64220"],
+      "permitted_operations": [
+        {
+          "am": "ከሆቴል የሚለየው የአልጋ አገልግሎት መስጠት አለመቻሉ ነው።",
+          "en": "Distinguished from a hotel by not being permitted to provide lodging."
+        },
+        {
+          "am": "የትኩስ መጠጦች (ሻይ፣ ቡና)፣ የምግብ ቤት፣ የባህላዊ ምግብ ቤት፣ የባህላዊ መጠጥ እና የመጠጥ ቤት አገልግሎቶችን ሊሰጥ ይችላል።",
+          "en": "May offer hot beverages (tea, coffee), restaurant service, traditional-food service, traditional-drink service, and drink-house service."
+        },
+        {
+          "am": "ለሚሰራው ስራ እንደ ስራው አይነት ተጨማሪ የንግድ ስራ ፈቃድ ማውጣት ይኖርበታል፤ ደረጃውም አለም አቀፍ ስታንዳርድ የጠበቀ መሆን አለበት።",
+          "en": "Depending on the activity, an additional trade license may be required, and operations must meet international standards."
+        }
+      ]
+    },
+    {
+      "mor_code": "64114",
+      "name_am": "የሬስቶራንት አገልግሎት",
+      "name_en": "Restaurant service",
+      "legacy_codes": ["64211", "64212", "64213", "64215", "64218", "64219"],
+      "permitted_operations": [
+        {
+          "am": "ከሆቴል የሚለየው የአልጋ አገልግሎት መስጠት አለመቻሉ ነው።",
+          "en": "Distinguished from a hotel by not being permitted to provide lodging."
+        },
+        {
+          "am": "የትኩስ መጠጦች (ሻይ፣ ቡና) እና የመሳሰሉት፣ የምግብ ቤት እና የመጠጥ ቤት አገልግሎቶችን፣ ባህላዊ መጠጦችን መሸጥ ሊሰጥ ይችላል።",
+          "en": "May provide hot beverages (tea, coffee), food service, drink-house service, and sale of traditional beverages."
+        },
+        {
+          "am": "ለሚሰራው ስራ እንደ ስራው አይነት ተጨማሪ የንግድ ስራ ፈቃድ ማውጣት ይኖርበታል።",
+          "en": "Depending on the activity, an additional trade license may be required."
+        }
+      ]
+    },
+    {
+      "mor_code": "64118",
+      "name_am": "የካፌና የቁርስ ቤት አገልግሎት",
+      "name_en": "Cafe and breakfast-house service",
+      "legacy_codes": ["64127", "64126", "64214", "64216", "64217"],
+      "permitted_operations": [
+        {
+          "am": "የአልኮል መጠጦችን እና የአልጋ አገልግሎቶችን መስጠት አይችልም።",
+          "en": "May not serve alcoholic beverages or provide lodging."
+        },
+        {
+          "am": "የጀበና ቡና በዚህ ክፍል ይካተታል።",
+          "en": "Jebena coffee (traditional coffee ceremony) is covered under this class."
+        },
+        {
+          "am": "የምግብ አቅርቦትንም ያጠቃልላል።",
+          "en": "Includes food service."
+        }
+      ]
+    },
+    {
+      "mor_code": "66111",
+      "name_am": "የብርዕ እና የአገዳ ሰብሎች ላኪነት",
+      "name_en": "Export of cereals",
+      "legacy_codes": ["66111"],
+      "permitted_operations": [
+        {
+          "am": "ሸንኮራ አገዳ፣ በቆሎ፣ ማሽላ፣ ጤፍ፣ ገብስ፣ አጃ፣ ስንዴ፣ ዳጉሳ፣ ሩዝ እና ሌሎች የብዕር እና የአገዳ ሰብሎችን ወደ ውጭ የመላክ ስራን ያካትታል።",
+          "en": "Covers export of sugarcane, maize, sorghum, teff, barley, oats, wheat, dagusa, rice and other cereal and cane crops."
+        },
+        {
+          "am": "በማልማት ስራ ስር የተዘረዘሩ ሰብሎችንም ያካትታል።",
+          "en": "Also covers any of the crops listed under the corresponding cultivation code."
+        }
+      ]
+    },
+    {
+      "mor_code": "66117",
+      "name_am": "የአበባ እና ሌሎች የዕጽዋት ምርቶች ላኪነት",
+      "name_en": "Export of cut flowers and other plant products",
+      "legacy_codes": ["66117"],
+      "permitted_operations": [
+        {
+          "am": "የተፈጥሮና ሰው ሰራሽ አበቦችን፣ የተፈጥሮ አበባ፣ ለግቢ ማስዋቢያነት የሚያገለግሉ ዛፎችና ችግኞች (ለምሳሌ ፅድ፣ ሳር) ወደ ውጭ የመላክ ስራን ያካትታል።",
+          "en": "Covers the export of natural and artificial flowers, natural cut flowers, and ornamental trees and seedlings (for example cypress and grasses)."
+        },
+        {
+          "am": "የዕፀ ጣዕም ያላቸው (ቅጠል እና አበባ ነክ የሆኑ) ዕፅዋትን፣ አበባን፣ የጎማ ዛፍን እና ሌሎች ተዛማጅ የዕጽዋት ምርቶችን ወደ ውጭ የመላክ ስራንም ያጠቃልላል።",
+          "en": "Also covers export of aromatic plants (leaf- and flower-based), flowers, rubber trees, and other related plant products."
+        }
+      ]
+    },
+    {
+      "mor_code": "66141",
+      "name_am": "የተዘጋጀ ቡና እና የቡና ቅጠል ላኪነት",
+      "name_en": "Export of processed coffee and coffee leaves",
+      "legacy_codes": ["66156", "66173"],
+      "permitted_operations": [
+        {
+          "am": "የተዘጋጁ ቡናዎችን እና ለምግብነት የሚውሉ የቡና እና ሻይ ቅጠሎችን ወደ ውጭ የመላክ አገልግሎት ስራዎችን ያካትታል።",
+          "en": "Covers the export of processed coffees and edible coffee and tea leaves."
+        }
+      ]
+    },
+    {
+      "mor_code": "72112",
+      "name_am": "የጉዞ አገልግሎት ውክልና ስራዎች",
+      "name_en": "Travel agency representation activity",
+      "legacy_codes": ["74142", "74149"],
+      "permitted_operations": [
+        {
+          "am": "የጉዞ አገልግሎት ወኪልነት እንደ ተሰጠው የውክልና አይነት ሊሰራ ይችላል።",
+          "en": "May act as a travel-service agent within the scope of the representation authority granted."
+        }
+      ]
+    },
+    {
+      "mor_code": "85124",
+      "name_am": "የዳታ ሴንተር (ሆስቲንግ) አገልግሎት ስራዎች",
+      "name_en": "Data center (hosting) services",
+      "legacy_codes": ["86500"],
+      "permitted_operations": [
+        {
+          "am": "የዳታ ሴንተር (ሆስቲንግ) አገልግሎት ስራዎችን እና ተዛማጅ ስራዎችን ማከናወን ያካትታል።",
+          "en": "Covers data-center (hosting) service operations and related activities."
+        }
+      ]
+    },
+    {
+      "mor_code": "85211",
+      "name_am": "የተፈቀደለት የሂሳብ አዋቂ",
+      "name_en": "Authorized accountant",
+      "legacy_codes": ["88111", "88121", "88122", "88130"],
+      "permitted_operations": [
+        {
+          "am": "የንግድ ድርጅቶችን ወይም ሌሎች የንግድ እንቅስቃሴዎችን መመዝገብ፣ የሂሳብ አካውንት ማዘጋጀት፣ የግልና የግብር ገቢ ተመላሾችን ማዘጋጀት።",
+          "en": "Registering commercial enterprises and other business activities, preparing accounting records, and preparing personal and corporate income-tax returns."
+        },
+        {
+          "am": "የፋይናንስ ኦዲቲንግ እና የማጠናቀቅ ስራ፣ የሂሳብ አያያዝ፣ የፋይናንስ አድሚኒስትሬሽን ስራ እና ሌሎች ተዛማጅ አገልግሎቶችን ያካትታል።",
+          "en": "Includes financial auditing and closing work, bookkeeping, financial administration, and other related professional services."
+        }
+      ]
+    },
+    {
+      "mor_code": "86114",
+      "name_am": "በኢኮኖሚ፣ ቢዝነስና ኢንቨስትመንት ልማት የማማከር አገልግሎት",
+      "name_en": "Consultancy service for economic development, business and investment",
+      "legacy_codes": ["88214", "88217", "87220", "89610"],
+      "permitted_operations": [
+        {
+          "am": "በኢኮኖሚ፣ ቢዝነስና ኢንቨስትመንት ልማት ላይ የማማከር አገልግሎት እና ጉዳይ ማስፈጸምን ጨምሮ ያካትታል።",
+          "en": "Advisory services on economics, business, and investment development — including matter representation on behalf of clients."
+        }
+      ]
+    },
+    {
+      "mor_code": "86211",
+      "name_am": "የሆቴልና ቱሪዝም የማማከር አገልግሎት",
+      "name_en": "Hotel and tourism consultancy service",
+      "legacy_codes": ["88310"],
+      "permitted_operations": [
+        {
+          "am": "የሆቴልና ቱሪዝም እና ተዛማጅ ስራዎች ላይ የማማከር አገልግሎት መስጠትን ያካትታል።",
+          "en": "Advisory services on hotels, tourism, and related activities."
+        }
+      ]
+    },
+    {
+      "mor_code": "86311",
+      "name_am": "በጤና የማማከር አገልግሎት",
+      "name_en": "Health consultancy service",
+      "legacy_codes": ["88221", "87240", "87130"],
+      "permitted_operations": [
+        {
+          "am": "በሰው ጤና፣ በመድሃኒት እና በህክምና ዘዴዎች ላይ ጥናት፣ ሙከራ፣ ማልማት እና የማማከር ስራን ያካትታል።",
+          "en": "Covers research, testing, development, and advisory work on human health, medicines, and medical methods."
+        }
+      ]
+    },
+    {
+      "mor_code": "21123",
+      "name_am": "የማዕድን የማውጣት ስራዎች",
+      "name_en": "Quarrying of minerals",
+      "legacy_codes": ["26100", "26200", "26300", "26900", "24500"],
+      "permitted_operations": [
+        {
+          "am": "ከፍተኛ፣ አነስተኛ እና በባህላዊ መንገድ ማዕድን የማውጣት ስራዎችን ያካትታል።",
+          "en": "Covers large-scale, small-scale, and traditional (artisanal) mineral extraction."
+        },
+        {
+          "am": "ሌላ ቦታ ያልተገለጹ የኮንስትራክሽን ማዕድናትን የማውጣት ስራዎችንም ያካትታል።",
+          "en": "Also includes extraction of construction-grade minerals not specified elsewhere."
+        }
+      ]
+    }
+  ]
+}

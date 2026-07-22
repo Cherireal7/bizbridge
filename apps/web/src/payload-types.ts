@@ -115,12 +115,10 @@ export interface Config {
   fallbackLocale: null;
   globals: {
     'site-settings': SiteSetting;
-    'pricing-config': PricingConfig;
     'homepage-content': HomepageContent;
   };
   globalsSelect: {
     'site-settings': SiteSettingsSelect<false> | SiteSettingsSelect<true>;
-    'pricing-config': PricingConfigSelect<false> | PricingConfigSelect<true>;
     'homepage-content': HomepageContentSelect<false> | HomepageContentSelect<true>;
   };
   locale: null;
@@ -212,6 +210,27 @@ export interface BusinessSector {
     };
     [k: string]: unknown;
   } | null;
+  /**
+   * Previous codes that map to this sector under Directive 17/2011.
+   */
+  legacy_codes?:
+    | {
+        code: string;
+        id?: string | null;
+      }[]
+    | null;
+  permitted_operations_am?:
+    | {
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  permitted_operations_en?:
+    | {
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
   is_featured?: boolean | null;
   is_active?: boolean | null;
   updatedAt: string;
@@ -341,7 +360,6 @@ export interface SectorStep {
     | null;
   estimated_days?: number | null;
   cost_reference?: (number | null) | SectorCost;
-  tier_required: 'free' | 'premium';
   updatedAt: string;
   createdAt: string;
 }
@@ -355,7 +373,6 @@ export interface SectorDocument {
   title: string;
   description?: string | null;
   file_type: 'pdf' | 'docx' | 'xlsx';
-  tier_required: 'free' | 'premium';
   download_count?: number | null;
   updatedAt: string;
   createdAt: string;
@@ -543,7 +560,6 @@ export interface MarketResearch {
     | null;
   source?: string | null;
   collected_at: string;
-  tier_required: 'free' | 'premium';
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -775,6 +791,24 @@ export interface BusinessSectorsSelect<T extends boolean = true> {
   category?: T;
   description_short?: T;
   description_full?: T;
+  legacy_codes?:
+    | T
+    | {
+        code?: T;
+        id?: T;
+      };
+  permitted_operations_am?:
+    | T
+    | {
+        text?: T;
+        id?: T;
+      };
+  permitted_operations_en?:
+    | T
+    | {
+        text?: T;
+        id?: T;
+      };
   is_featured?: T;
   is_active?: T;
   updatedAt?: T;
@@ -872,7 +906,6 @@ export interface SectorStepsSelect<T extends boolean = true> {
       };
   estimated_days?: T;
   cost_reference?: T;
-  tier_required?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -885,7 +918,6 @@ export interface SectorDocumentsSelect<T extends boolean = true> {
   title?: T;
   description?: T;
   file_type?: T;
-  tier_required?: T;
   download_count?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -970,7 +1002,6 @@ export interface MarketResearchSelect<T extends boolean = true> {
   structured_data?: T;
   source?: T;
   collected_at?: T;
-  tier_required?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -1123,49 +1154,6 @@ export interface SiteSetting {
   createdAt?: string | null;
 }
 /**
- * One-time tier prices and FX rate. Editable without redeploy.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "pricing-config".
- */
-export interface PricingConfig {
-  id: number;
-  one_time: {
-    standard: {
-      usd: number;
-      etb: number;
-      label?: string | null;
-    };
-    pro: {
-      usd: number;
-      etb: number;
-      label?: string | null;
-    };
-  };
-  reports_default?: {
-    min_usd?: number | null;
-    max_usd?: number | null;
-  };
-  /**
-   * Used by cost calculator and price conversions.
-   */
-  fx_rate_birr_per_usd?: number | null;
-  payment_methods?: {
-    chapa_enabled?: boolean | null;
-    telebirr_enabled?: boolean | null;
-    bank_transfer_enabled?: boolean | null;
-    bank_details?: {
-      bank_name?: string | null;
-      account_name?: string | null;
-      account_number?: string | null;
-      swift?: string | null;
-      instructions?: string | null;
-    };
-  };
-  updatedAt?: string | null;
-  createdAt?: string | null;
-}
-/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "homepage-content".
  */
@@ -1215,56 +1203,6 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         whatsapp?: T;
       };
   support_email?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  globalType?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "pricing-config_select".
- */
-export interface PricingConfigSelect<T extends boolean = true> {
-  one_time?:
-    | T
-    | {
-        standard?:
-          | T
-          | {
-              usd?: T;
-              etb?: T;
-              label?: T;
-            };
-        pro?:
-          | T
-          | {
-              usd?: T;
-              etb?: T;
-              label?: T;
-            };
-      };
-  reports_default?:
-    | T
-    | {
-        min_usd?: T;
-        max_usd?: T;
-      };
-  fx_rate_birr_per_usd?: T;
-  payment_methods?:
-    | T
-    | {
-        chapa_enabled?: T;
-        telebirr_enabled?: T;
-        bank_transfer_enabled?: T;
-        bank_details?:
-          | T
-          | {
-              bank_name?: T;
-              account_name?: T;
-              account_number?: T;
-              swift?: T;
-              instructions?: T;
-            };
-      };
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

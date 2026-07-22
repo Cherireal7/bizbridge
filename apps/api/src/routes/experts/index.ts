@@ -14,9 +14,7 @@ export const expertRoutes: FastifyPluginAsync = async (app) => {
   app.get('/:id/availability', async (_req, reply) =>
     reply.code(501).send(notImplemented('GET /api/experts/:id/availability')),
   )
-  app.post(
-    '/:id/book',
-    { preHandler: app.requireAuth },
-    async (_req, reply) => reply.code(501).send(notImplemented('POST /api/experts/:id/book')),
+  app.post('/:id/book', async (_req, reply) =>
+    reply.code(501).send(notImplemented('POST /api/experts/:id/book')),
   )
 }

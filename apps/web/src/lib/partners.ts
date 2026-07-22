@@ -1,8 +1,5 @@
 /**
  * Featured partner directory. Real local operators we send our customers to.
- *
- * TODO: Cheri to confirm URLs for Doxa Innovations and BR Photography (marked
- * "#" below) before public deploy. Fida Delivery URL is live.
  */
 
 export type PartnerCategory =
@@ -19,7 +16,11 @@ export interface Partner {
   tagline: string
   description: string
   category: PartnerCategory
+  /** External site — empty string when the operator has no site; UI hides the link. */
   url: string
+  /** Optional contact endpoints when there's no external URL. */
+  telegram?: string
+  instagram?: string
   city: string
   /** Initials shown as a brand mark when we don't have a real logo asset. */
   initials: string
@@ -60,9 +61,10 @@ export const PARTNERS: Partner[] = [
     name: 'BR Photography',
     tagline: 'Brand + event photography, Bishoftu & Addis',
     description:
-      'Product, brand, and event photography for hospitality and retail launches. Menu shoots, portraits, on-location work. Follow on Instagram / TikTok — no website.',
+      'Product, brand, and event photography for hospitality and retail launches. Menu shoots, portraits, on-location work. Reach out via Telegram.',
     category: 'marketing',
     url: '',
+    telegram: 'https://t.me/Cherireal7',
     city: 'Bishoftu',
     initials: 'BR',
     tint: 'cool',

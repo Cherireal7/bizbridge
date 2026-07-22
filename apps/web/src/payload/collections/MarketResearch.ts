@@ -6,7 +6,7 @@ export const MarketResearch: CollectionConfig = {
   admin: {
     useAsTitle: 'title',
     group: 'Content',
-    defaultColumns: ['title', 'city', 'category', 'tier_required', '_status'],
+    defaultColumns: ['title', 'city', 'category', '_status'],
   },
   access: {
     read: publishedOrAdmin,
@@ -45,16 +45,6 @@ export const MarketResearch: CollectionConfig = {
       type: 'date',
       required: true,
       admin: { date: { pickerAppearance: 'dayOnly' } },
-    },
-    {
-      name: 'tier_required',
-      type: 'select',
-      required: true,
-      defaultValue: 'free',
-      options: [
-        { label: 'Free', value: 'free' },
-        { label: 'Premium', value: 'premium' },
-      ],
     },
   ],
   timestamps: true,

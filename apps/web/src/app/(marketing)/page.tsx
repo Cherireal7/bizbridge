@@ -79,41 +79,134 @@ export default async function HomePage() {
 
   return (
     <div>
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-border">
-        <GridBackdrop />
-        <div className="container-page pt-16 pb-16 sm:pt-24 sm:pb-20 lg:pt-32 lg:pb-24">
-          <div className="mx-auto max-w-3xl text-center">
-            <Badge variant="brand" className="mb-6 inline-flex">
-              <Sparkles className="h-3 w-3" /> {totalSectors} sectors · MOR Directive 17/2011
-            </Badge>
-            <h1 className="text-balance text-4xl font-semibold tracking-crisp text-ink sm:text-6xl lg:text-7xl">
-              Build a business without friction.{' '}
-              <span className="text-ink-muted">In Ethiopia.</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-balance text-base text-ink-muted sm:text-lg lg:text-xl">
-              Every sector, every fee, every ministry. A clear step-by-step process,
-              a personal cost estimate, and a link straight through to eTrade —
-              so you spend your time building, not chasing paperwork.
-            </p>
-            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3">
-              <Button asChild size="lg" className="w-full sm:w-auto">
-                <Link href="/sectors">
-                  Browse {totalSectors} sectors <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="secondary" size="lg" className="w-full sm:w-auto">
-                <Link href="/wizard">
-                  Find my sector <ArrowUpRight className="h-4 w-4" />
-                </Link>
-              </Button>
+      {/* HERO — Basedash-inspired BI aesthetic */}
+      <section className="relative overflow-hidden border-b border-border/70">
+        {/* Grid mesh backdrop */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 grid-mesh" />
+
+        {/* Bento tile backdrop */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 hidden md:block"
+        >
+          <div className="container-page relative h-full">
+            {/* Top-left donut tile */}
+            <div className="tile absolute left-0 top-16 hidden w-56 p-4 opacity-70 md:block">
+              <p className="tile-label">sectors</p>
+              <div className="mt-3 flex items-center gap-3">
+                <div className="relative h-16 w-16">
+                  <svg viewBox="0 0 40 40" className="h-full w-full -rotate-90">
+                    <circle cx="20" cy="20" r="16" fill="none" stroke="rgb(var(--border-strong))" strokeWidth="4" />
+                    <circle
+                      cx="20" cy="20" r="16" fill="none"
+                      stroke="rgb(var(--brand))" strokeWidth="4"
+                      strokeDasharray="100.5"
+                      strokeDashoffset="18"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p className="tile-value">{totalSectors}</p>
+                  <p className="mt-1 font-mono text-[10px] text-ink-faint">+15% coverage</p>
+                </div>
+              </div>
             </div>
+
+            {/* Top-right bar tile */}
+            <div className="tile absolute right-0 top-16 hidden w-56 p-4 opacity-70 md:block">
+              <p className="tile-label">ministry approvals</p>
+              <p className="mt-3 tile-value">475</p>
+              <div className="mt-3 flex items-end gap-1 h-10">
+                {[42, 68, 30, 88, 55, 74, 62].map((h, i) => (
+                  <span
+                    key={i}
+                    style={{ height: `${h}%` }}
+                    className="w-full rounded-sm bg-brand/40"
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Middle-left line tile */}
+            <div className="tile absolute left-0 top-72 hidden w-64 p-4 opacity-60 lg:block">
+              <p className="tile-label">coffee exports (est.)</p>
+              <p className="mt-3 tile-value">USD 1.4B</p>
+              <svg viewBox="0 0 100 32" className="mt-3 w-full h-10">
+                <polyline
+                  points="0,26 12,22 25,28 38,18 52,20 65,10 80,14 100,6"
+                  fill="none"
+                  stroke="rgb(var(--brand))"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+
+            {/* Middle-right categories tile */}
+            <div className="tile absolute right-0 top-72 hidden w-56 p-4 opacity-60 lg:block">
+              <p className="tile-label">categories</p>
+              <p className="mt-3 tile-value">9</p>
+              <p className="mt-1 font-mono text-[11px] text-ink-muted">agri · ind · trade · services</p>
+            </div>
+
+            {/* Bottom small tiles */}
+            <div className="tile absolute bottom-8 left-16 hidden w-40 p-3 opacity-50 xl:block">
+              <p className="tile-label">languages</p>
+              <p className="mt-2 font-mono text-lg text-ink">አማ · EN</p>
+            </div>
+            <div className="tile absolute bottom-8 right-16 hidden w-40 p-3 opacity-50 xl:block">
+              <p className="tile-label">signup</p>
+              <p className="mt-2 font-mono text-lg text-ink">free</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative container-page pt-24 pb-20 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-28">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border/70 bg-surface/50 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-ink-muted backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand animate-pulse" />
+              live · mor directive 17/2011
+            </div>
+            <h1 className="text-balance font-display text-[2.75rem] font-medium leading-[1.02] tracking-[-0.03em] text-ink sm:text-6xl lg:text-[5rem]">
+              Regulatory Intelligence
+              <br />
+              <span className="text-ink-muted">for Ethiopian business.</span>
+            </h1>
+            <p className="mx-auto mt-8 max-w-2xl text-balance font-mono text-[13px] leading-relaxed text-ink-muted sm:text-[15px]">
+              Every MOR sector · every fee · every ministry approval · every permitted operation,
+              in Amharic and English. Free for foreigners, diaspora, and Ethiopian founders.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-2.5">
+              <Link
+                href="/sectors"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-ink px-5 py-3 font-mono text-[13px] tracking-tight text-bg transition-opacity hover:opacity-90"
+              >
+                Explore {totalSectors} sectors <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/wizard"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-border-strong bg-transparent px-5 py-3 font-mono text-[13px] tracking-tight text-ink transition-colors hover:bg-surface"
+              >
+                Find my sector <ArrowUpRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/resources"
+                className="inline-flex items-center justify-center gap-2 rounded-md px-4 py-3 font-mono text-[12px] tracking-tight text-ink-muted transition-colors hover:text-ink"
+              >
+                Read the resources →
+              </Link>
+            </div>
+            <p className="mt-10 font-mono text-[10px] uppercase tracking-[0.18em] text-ink-faint">
+              Bishoftu-first · Oromia-wide · Ethiopia-focused
+            </p>
           </div>
 
           {/* Quiet partner marquee — social proof, no big rectangles */}
-          <div className="mx-auto mt-16 max-w-5xl">
-            <p className="mb-4 text-center text-2xs uppercase tracking-wider text-ink-faint">
-              Local partners
+          <div className="mx-auto mt-20 max-w-5xl">
+            <p className="mb-5 text-center font-mono text-[10px] uppercase tracking-[0.16em] text-ink-faint">
+              Working with local operators
             </p>
             <PartnersLogoBar />
           </div>

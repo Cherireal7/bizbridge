@@ -11,16 +11,15 @@ import {
   Landmark,
   ListChecks,
   ScrollText,
+  ShieldCheck,
   Users,
 } from 'lucide-react'
 import { tryPayload, getPayloadClient } from '@/lib/payload'
 import { humanizeSectorName } from '@/lib/humanize-sector-name'
-import { getCurrentUserTier } from '@/lib/auth-server'
 import { Badge } from '@/components/ui/badge'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { GeometricIcon } from '@/components/marketing/geometric-icon'
-import { GatedSection } from '@/components/marketing/gated-section'
 import { StatCard } from '@/components/marketing/stat-card'
 
 export const revalidate = 3600
@@ -65,7 +64,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function SectorDetailPage({ params }: PageProps) {
   const { slug } = await params
-  const userTier = await getCurrentUserTier()
 
   const data = await tryPayload(async (payload) => {
     const sectorRes = await payload.find({
@@ -263,7 +261,7 @@ export default async function SectorDetailPage({ params }: PageProps) {
           <StatCard
             label="Documented fees"
             value={officialFeeCount > 0 ? officialFeeCount : '—'}
-            hint={officialFeeCount > 0 ? 'Official + estimates' : 'Premium adds full fee schedule'}
+            hint={officialFeeCount > 0 ? 'Official + estimates' : 'Fee schedule pending'}
           />
         </div>
       </section>
@@ -272,6 +270,74 @@ export default async function SectorDetailPage({ params }: PageProps) {
       <section className="container-page pb-20">
         <div className="grid gap-10 lg:grid-cols-[1fr_240px]">
           <main className="space-y-12 min-w-0">
+            {Array.isArray(sector.permitted_operations_am) &&
+            sector.permitted_operations_am.length > 0 ? (
+              <SectorSection
+                id="operations"
+                icon={<ShieldCheck />}
+                title="Permitted operations under this license"
+              >
+                {(() => {
+                  const enOps = Array.isArray(sector.permitted_operations_en)
+                    ? sector.permitted_operations_en
+                    : []
+                  const hasEn = enOps.some((o) => o?.text && o.text.length > 0)
+                  return (
+                    <>
+                      <p className="mb-4 text-sm text-ink-muted">
+                        What a licence holder in this sector is allowed to do — source:{' '}
+                        <span className="font-mono text-[12px]">
+                          MoR Directive 17/2011 Explanation Manual
+                        </span>
+                        . Amharic is the primary source of truth.
+                      </p>
+                      {!hasEn ? (
+                        <p className="mb-4 rounded-lg border border-dashed border-border/70 bg-surface/40 p-3 font-mono text-[11px] text-ink-muted">
+                          English translation pending for this sector.{' '}
+                          <Link
+                            href="/consult"
+                            className="text-brand hover:underline"
+                          >
+                            Contribute a translation →
+                          </Link>
+                        </p>
+                      ) : null}
+                      <div className="grid gap-3">
+                        {sector.permitted_operations_am.map((op, i) => {
+                          const enOp = enOps[i]
+                          return (
+                            <Card key={op.id ?? i} className="p-5">
+                              <div className="flex items-start gap-3">
+                                <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full border border-brand/40 bg-brand/10 font-mono text-[10px] text-brand">
+                                  {i + 1}
+                                </span>
+                                <div className="flex-1 space-y-3">
+                                  <p className="font-amharic text-[15px] leading-relaxed text-ink">
+                                    {op.text}
+                                  </p>
+                                  {enOp?.text ? (
+                                    <p className="border-t border-border pt-3 text-sm leading-relaxed text-ink-muted">
+                                      {enOp.text}
+                                    </p>
+                                  ) : null}
+                                </div>
+                              </div>
+                            </Card>
+                          )
+                        })}
+                      </div>
+                      {Array.isArray(sector.legacy_codes) && sector.legacy_codes.length > 0 ? (
+                        <p className="mt-4 font-mono text-[11px] text-ink-faint">
+                          <span className="uppercase tracking-[0.14em]">Legacy codes:</span>{' '}
+                          <span>{sector.legacy_codes.map((c) => c.code).join(', ')}</span>
+                        </p>
+                      ) : null}
+                    </>
+                  )
+                })()}
+              </SectorSection>
+            ) : null}
+
             <SectorSection id="licenses" icon={<ScrollText />} title="Licenses required">
               {licenses.length > 0 ? (
                 <div className="grid gap-3">
@@ -306,52 +372,18 @@ export default async function SectorDetailPage({ params }: PageProps) {
                 <>
                   <ApprovalRow approval={approvals[0]!} index={0} />
                   {approvals.length > 1 ? (
-                    <GatedSection
-                      userTier={userTier}
-                      required="basic"
-                      className="mt-3"
-                      teaser={{
-                        title: `+${approvals.length - 1} more approval${
-                          approvals.length === 2 ? '' : 's'
-                        }`,
-                        description:
-                          'Full chain of ministry approvals with processing windows and required documents.',
-                        bullets: [
-                          'Sequence order and dependencies',
-                          'Processing windows (min/max days)',
-                          'Specific documents each office needs',
-                        ],
-                      }}
-                    >
-                      <div className="space-y-3">
-                        {approvals.slice(1).map((a, i) => (
-                          <ApprovalRow key={a.id} approval={a} index={i + 1} />
-                        ))}
-                      </div>
-                    </GatedSection>
+                    <div className="mt-3 space-y-3">
+                      {approvals.slice(1).map((a, i) => (
+                        <ApprovalRow key={a.id} approval={a} index={i + 1} />
+                      ))}
+                    </div>
                   ) : null}
                 </>
               )}
             </SectorSection>
 
             <SectorSection id="costs" icon={<Calculator />} title="Cost breakdown">
-              <GatedSection
-                userTier={userTier}
-                required="basic"
-                teaser={{
-                  title: 'Real fees in ETB and USD',
-                  description:
-                    costs.length > 0
-                      ? `${costs.length} fee line items including official government fees and our estimates.`
-                      : 'Premium subscribers see the full fee schedule once published.',
-                  bullets: [
-                    'Government fees (verified)',
-                    'Estimates for ancillary costs (notary, translations, courier)',
-                    'Last-verified date on every row',
-                  ],
-                }}
-              >
-                {costs.length > 0 ? (
+              {costs.length > 0 ? (
                   <Card className="overflow-hidden">
                     <table className="w-full text-sm">
                       <thead className="bg-surface-2 text-xs uppercase tracking-wider text-ink-faint">
@@ -385,7 +417,6 @@ export default async function SectorDetailPage({ params }: PageProps) {
                 ) : (
                   <p className="text-sm text-ink-muted">Fee schedule pending data collection.</p>
                 )}
-              </GatedSection>
             </SectorSection>
 
             <SectorSection id="steps" icon={<ListChecks />} title="Setup process">
@@ -393,21 +424,11 @@ export default async function SectorDetailPage({ params }: PageProps) {
                 <>
                   <StepRow step={steps[0]!} />
                   {steps.length > 1 ? (
-                    <GatedSection
-                      userTier={userTier}
-                      required="basic"
-                      className="mt-4"
-                      teaser={{
-                        title: `${steps.length - 1} more steps`,
-                        description: 'The full ordered process with required documents per step.',
-                      }}
-                    >
-                      <div className="space-y-3">
-                        {steps.slice(1).map((s) => (
-                          <StepRow key={s.id} step={s} />
-                        ))}
-                      </div>
-                    </GatedSection>
+                    <div className="mt-4 space-y-3">
+                      {steps.slice(1).map((s) => (
+                        <StepRow key={s.id} step={s} />
+                      ))}
+                    </div>
                   ) : null}
                 </>
               ) : (
@@ -424,17 +445,7 @@ export default async function SectorDetailPage({ params }: PageProps) {
                 icon={<CheckCircle2 />}
                 title="Certificates of competency"
               >
-                <GatedSection
-                  userTier={userTier}
-                  required="basic"
-                  teaser={{
-                    title: `${certificates.length} certificate${
-                      certificates.length === 1 ? '' : 's'
-                    }`,
-                    description: 'Issuing bodies, mandatory vs optional, and processing windows.',
-                  }}
-                >
-                  <div className="grid gap-3">
+                <div className="grid gap-3">
                     {certificates.map((c) => (
                       <Card key={c.id} className="p-5">
                         <div className="flex items-start justify-between gap-3">
@@ -454,23 +465,12 @@ export default async function SectorDetailPage({ params }: PageProps) {
                       </Card>
                     ))}
                   </div>
-                </GatedSection>
               </SectorSection>
             ) : null}
 
             {documents.length > 0 ? (
               <SectorSection id="documents" icon={<FileText />} title="Document templates">
-                <GatedSection
-                  userTier={userTier}
-                  required="basic"
-                  teaser={{
-                    title: `${documents.length} downloadable document${
-                      documents.length === 1 ? '' : 's'
-                    }`,
-                    description: 'Sector-specific forms, contracts, and checklists.',
-                  }}
-                >
-                  <div className="grid gap-2">
+                <div className="grid gap-2">
                     {documents.map((d) => (
                       <Card key={d.id} className="flex items-center justify-between gap-3 p-4">
                         <div className="flex items-center gap-3">
@@ -488,7 +488,6 @@ export default async function SectorDetailPage({ params }: PageProps) {
                       </Card>
                     ))}
                   </div>
-                </GatedSection>
               </SectorSection>
             ) : null}
 
@@ -518,6 +517,10 @@ export default async function SectorDetailPage({ params }: PageProps) {
               <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-ink-faint">
                 On this page
               </p>
+              {Array.isArray(sector.permitted_operations_am) &&
+              sector.permitted_operations_am.length > 0 ? (
+                <TocLink href="#operations">Permitted operations</TocLink>
+              ) : null}
               <TocLink href="#licenses">Licenses</TocLink>
               <TocLink href="#approvals">Approvals ({approvals.length})</TocLink>
               <TocLink href="#costs">Costs</TocLink>

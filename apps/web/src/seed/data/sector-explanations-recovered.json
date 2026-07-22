@@ -1,0 +1,379 @@
+{
+  "generated_at": "2026-07-22T08:24:00.170Z",
+  "note": "Fuzzy-matched sectors whose mor_code was missing from sector-explanations.json. Match score is char-set overlap of name_am against the best-scoring prefix candidate.",
+  "recovered": [
+    {
+      "original_code": "21212",
+      "matched_code": "21211",
+      "name_en": "Stonecarvings, clay, sand, andsimilarminingand quarrying",
+      "name_am": "የድንጋይ ካባ ፤",
+      "legacy_codes": [
+        "21000",
+        "21100"
+      ],
+      "operations_am": [
+        "ጥርብ ድንጋይ (ግራናይት፤ ዕብነበረድ…)፣የድንጋይ ከሰል፣ ሸክላ፤ አሸዋና 25110፣25120፣ ላይምስቶንና የኖራ ስራዎች ድንጋይ መፍጨት እና ሌሎች ተመሳሳይ የማዕድን 25190 ተመሳሳይ የማዕድን ቁፋሮዎችና ኳሪይንግ ስራዎችን ጨምሮ ቁፋሮዎችና ኳሪይንግ"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "21222",
+      "matched_code": "21221",
+      "name_en": "Diggingofchemicalsand fertilizers",
+      "name_am": "የኬሚካልና",
+      "legacy_codes": [
+        "25310"
+      ],
+      "operations_am": [
+        "የኬሚካልና የማዳበሪያ ማዕድን ቁፋሮ የማዳበሪያ ማዕድን ቁፋሮ"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "21232",
+      "matched_code": "21231",
+      "name_en": "Extractionandevaporation ofsalt",
+      "name_am": "ጨዉ ማውጣት",
+      "legacy_codes": [
+        "25320"
+      ],
+      "operations_am": [
+        "ለሰው ምግብነት የምንጠቀመው ጨው ማውጣትና በማትነን ማምረት፣ ለእንስሳት አገልግሎት የሚውል ጨው ማውጣት እና ሌሎች ተመሳሳይ አገልግሎቶችን ጨምሮ ለምሳሌ፡ ለኢንዱስትሪ አገልግሎት የሚውል ጨው ማውጣትና ሌሎች ተዛማጅ ስራዎችንም ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "21242",
+      "matched_code": "21241",
+      "name_en": "Miningsupportiveactivities",
+      "name_am": "የማዕድናት ደጋፊ",
+      "legacy_codes": [
+        "22130",
+        "27000"
+      ],
+      "operations_am": [
+        "የምርምር፣ስልጠና፣በተፈጥሮ የሚገኙ የጨረር አመንጭ ዎች ስራዎች ቁጥጥር ስራ እና ሌሎች ከማእድን ጋር ተያያዥ የሆኑ ስራዎችን አገልግሎቶች መስራት ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "41314",
+      "matched_code": "41311",
+      "name_en": "Watercollection, clearance anddistributionservice",
+      "name_am": "ውኃ የመሰብሰብ፣",
+      "legacy_codes": [
+        "42000",
+        "89400"
+      ],
+      "operations_am": [
+        "ከተለያዩ ምንጮች የተገኘ ውሃ በማሰባሰብ እና በማከም የማጥራትና 88410 ለተለያዩ ገልግሎቶች እንዲውሉ የማድረግ ስራን ይሰራል ይህ የማከፋፈል ክፍል ለቤት ውስጥ እና ለግላዊ ፍላጎቶች የውኃ አገልግሎት ማጠራቀሚያ, ህክምና እና ስርጭትን ያካትታል እንዲሁም በተለያየ መንገድ ማከፋፈል ይካተታል፡፡ በተጨማሪም ከኢንዱስትሪ የሚወገዱ ውሀዎችን፣ ከዝናብ የሚገኙ ውሀዎችን፣ ከተቋማት የሚገኙ ውሀወችን በመሰብሰብ ወይም በማቆር አክሞ ለተለያዩ አገልግሎቶች እንዲውሉ የማድረግ ስራን ይሰራል ለምሳሌ፡- ለመስኖ የመስኖ መስመር ዝርጋታን ይሰራል እንዲሁም ተጓዳኝ የሆኑ ስራዎችን ያጠቃልላል፡፡"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "61816",
+      "matched_code": "61811",
+      "name_en": "Wholesaletradeinsolid, liquidand gaseousfuelsandrelated products",
+      "name_am": "ጥጥር፣ ፈሳሽ፣",
+      "legacy_codes": [
+        "61411",
+        "61419"
+      ],
+      "operations_am": [
+        "የድንጋይ ከሰል ፣ኮክና ባለ ቅርጽ ከሰል ጅምላ ንግድ ነዳጅ ጋዞችና ፔትሮልየም፣የፔትሮልየም ውጤቶችና ተዛማጅ ምርቶች ጅምላ ተዛማጅ ምርቶች ንግድ የተፈጥሮ እና ሰው ሰራሽ ጋዝ ጅምላ ንግድ ጅምላ ንግድ እና ሌሎች ሌላ ቦታ ያልተጠቀሱ ጥጥር፣ ፈሳሽ፣ ነዳጅና ተዛማጅ ምርቶችን በጅምላ መሸጥን ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "62216",
+      "matched_code": "62211",
+      "name_en": "Retailtradeinagricultural products",
+      "name_am": "የእህል ምርት",
+      "legacy_codes": [
+        "62201",
+        "62202"
+      ],
+      "operations_am": [
+        "የብዕርና የአገዳ ሰብሎች ለምሳሌ፡በቆሎ፣ማሽላ፣ጤፍ፣ገብስ፣አጃ፣ስንዴ ዉጤቶች ችርቻሮ 62203፣62204፣ ፣ዳጉሳ፣ሩዝየቅባት እህሎች ለምሳሌ፡ ንግድ 62205፣62206፣ ሰሊጥ፣ኑግ፣ተልባ፣ለውዝ፣ሱፍ፣ጐመንዘር፣ዱባ ፍሬ፣ጐሎ ፍሬ 62207፣62208፣ የጥራጥሬ እህሎች ለምሳሌ፡ አኩሪ አተር ፤ዥንጉርጉር 62209፣62269፣ ቦሎቄ፤ሽምብራ፤ማሾ፤ባቄላ፤ ግብጦ፤ ፒንቶቢን፤ፒገንቢን፤ጓያ 62221፣62222፣ የበርበሬና ቅመማ ቅመም ለምሳሌ፡ ዛላ 62265 በርበሬ፤ዝንጅብል፤ኮረሪማ፤ጥቁር አዝሙድ፤ነጭ አዝሙድ እና ሌሎችንም በማዘጋጀት የመስራት ስራን የሚያጠቃልል ሲሆን የባልትና ውጤቶች፣ዱቄት፣ሸንኮራ አገዳ እና ታማጅ በጅምላ ላይ የተጠቀው በችርቻሮ ላይም ተግባራዊ ይሆናል፡፡"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "62236",
+      "matched_code": "62231",
+      "name_en": "Retailtradeinanimal feeds",
+      "name_am": "የእንሰሳት መኖ እና",
+      "legacy_codes": [
+        "62250",
+        "62263"
+      ],
+      "operations_am": [
+        "የዘይት ፋጉሎና መኖ፣ የተዘጋጁ የእንሰሳት(የቁም እንስሳት፣ ጥሬ እቃ ችርቻሮ የአዋፋት፣ የባህር እና የዱር ውስጥ እንስሳት) መኖ ንግድ ችርቻሮ፣የእንስሳት ምግብ መቸርቸር, የውሾች, የድመቶች, የወፎች, የዓሳ ወዘተ.እንዲሁም የቁም እንስሳት ችርቻሮን የተቀናበረና ያልተቀናበሩ የእንሰሳ ምግብ ምርቶችን በችርቻሮ መሸጥን ያጠቃልላል"
+      ],
+      "score": 0.89
+    },
+    {
+      "original_code": "62346",
+      "matched_code": "62341",
+      "name_en": "Retailtradeofequipment andaccessoriesfor medical, surgicalandbone treatment",
+      "name_am": "ለህክምና፣ ቀዶ ይህ ይራ ዘርፍ እንደተጠቀው ለየትኛውም አይነት ህክምና ያሚውሉ ጥገና ህክምና መሳሪያዎችን እና መለዋዎጫዎችን በችርቻሮ መሸጥን ያጠቃልላል ለአጥንት ህክምና የሚያገለግሉ መሣሪያዎችና መለዋወጫዎች ችርቻሮ ንግድ",
+      "legacy_codes": [],
+      "operations_am": [],
+      "score": 1
+    },
+    {
+      "original_code": "62356",
+      "matched_code": "62351",
+      "name_en": "Retailtradeof entertainmentand Musical Equipment",
+      "name_am": "የመዝናኛና የሙዚቃ",
+      "legacy_codes": [
+        "62340"
+      ],
+      "operations_am": [
+        "ባዶና የተቀዱ ካሴቶች፣ ሲዲዎች፣ቪሲዲ እና ዲቪዲዎች፣ መሣሪያዎች አሻንጉሊቶችና ማጫወቻዎች፣ የኮምፒውተር ማጫወቻዎች ችርቻሮ ንግድ ኤሌክትሮኒክ እና ቪዲዮ ጌሞች ማሲንቆ፣ ክራር፣ ቫይዎሌት፣ከበሮ፣ ጊታር፣ ዋሽንት እና የመሳሰሉት የሙዚቃ መሳሪያዎችና መገልገያዎችን ያጠቃልላል፡፡ እንዲሁም በጅምላ የተዘረዘሩት በችርቻሮ ላይ ተግባራዊ ይደረጋሉ"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "65346",
+      "matched_code": "65341",
+      "name_en": "Importtradeinprecious minerals, jewelryand silverwaregoods",
+      "name_am": "የከበሩ ማዕድናት",
+      "legacy_codes": [
+        "65392"
+      ],
+      "operations_am": [
+        "አልማዝ፣ ወርቅ፣ብር፣ነሀስ፣ ታንታለም እና ሌሎችም ከከበሩ እና ከማዕድን ማዕድናት የተሰሩ ልዩ ልዩ እቃዎችና ጌጣጌጦችን ጨምሮ የተዘጋጁ ዕቃዎች የማስመጣት ስራዎችን ያጠቃልላል አስመጪ"
+      ],
+      "score": 0.78
+    },
+    {
+      "original_code": "65426",
+      "matched_code": "65421",
+      "name_en": "Importofelectricity",
+      "name_am": "የአሌክትሪክ ኃይል",
+      "legacy_codes": [
+        "65414"
+      ],
+      "operations_am": [
+        "የኤሌክትሪክ ሀይል የማስመጣት ስራን የሚራ ሲሆን ሀይሉ ከተለያዩ አስመጪነት ግብአቶች ሊሆን ይችላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "72127",
+      "matched_code": "72121",
+      "name_en": "Specialevent Organization activities",
+      "name_am": "ልዩ ዝግጅት",
+      "legacy_codes": [
+        "74150",
+        "74151"
+      ],
+      "operations_am": [
+        "ልዩ ዝግጅት ማስተባበር )የኪነ-ጥበብ ውድድር፣ ሽልማት የማስተባበር 74160፣96147፣ (የሙዚቃ፣ የፊልም ትያትር፣ሲኒማ፣ የስእል እና ሌሎች)ማዘጋጀት ስራዎች 96149፣99150፣ የፋሽን እና የቁንጅና ትርዒት ስራዎች 96146 በስፖርት ልዩ ዝግጅት ማስተባበር የንግድ ፕሮሞሽንና ልዩ ዝግጅት ማስተባበር አገልግሎት ሌሎች ሌላ ቦታ ያልተገለጹ ልዩ ዝግጅት የማስተባበር ስራዎች ለምሳሌ፡ እንደ ባዛር አይነቶችንም ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73117",
+      "matched_code": "73111",
+      "name_en": "Postalandfastcarrier serviceactivities",
+      "name_am": "የፖስታ እና ፈጣን",
+      "legacy_codes": [
+        "75110",
+        "75120"
+      ],
+      "operations_am": [
+        "ብሄራዊ የፖስታ አገልገሎት የመልእክት 75190 ከብሄራዊ የፖስታ አገልገሎት ውጪ የፈጣን መልአክት አገልግሎት መጓጓዣ አገልግሎት ለምሳሌ፡ የሚፈልጉትን እቃ ባሉበት የማድረስ በሞተር ወይም ተግባራት በመኪና ሊሆን ይችላል ሌሎች ሌላ ቦታ ያልተጠቀሱ የፖስታና ፈጣን መልክት አገለግሎቶችን እና ተዛማጅ ስራዎችን ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73127",
+      "matched_code": "73121",
+      "name_en": "Nationaltelecommunication services",
+      "name_am": "ብሔራዊ",
+      "legacy_codes": [
+        "75200"
+      ],
+      "operations_am": [
+        "ቴሌ ኮሚኒኬሽን ኮርፖሬሽን የሚሰራቸው ስራዎችን የሚያጠቃልል የቴሌኮሙኒኬሽን አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73137",
+      "matched_code": "73131",
+      "name_en": "Telecenterservice",
+      "name_am": "የቴሌ ሴንተር",
+      "legacy_codes": [
+        "75210"
+      ],
+      "operations_am": [
+        "ስልክ ወደ ሀገር ውስጥ እና ወደ ውጪ ሀገር በመደበኛም ሆን አገልገሎት በተንቀሳቃሽ ስልክ የማስደወል አገልግሎት ሌሎች ሌላ ቦታ ያልተገለጹ የቴሌ ሴንተርና ተዛማጅ ስራዎችንም ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73147",
+      "matched_code": "73141",
+      "name_en": "Internetcafeservice",
+      "name_am": "የኢንተርኔት ካፌ",
+      "legacy_codes": [
+        "75220"
+      ],
+      "operations_am": [
+        "ይህ የስራ ዘርፍ የኢንተርኔት አገልግሎትን ብቻ ነው መስጠት አገልግሎት የሚችለው እና ከኢንተርኔት ጋር የተያያዙ አገልግሎቶችን ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73157",
+      "matched_code": "73151",
+      "name_en": "Telecommunicationinside cablesetup, installation andmaintenanceworks",
+      "name_am": "የቴሌ ኮሙኒኬሽን",
+      "legacy_codes": [
+        "75230",
+        "75240"
+      ],
+      "operations_am": [
+        "የስልክ መስመር የመዘርጋት፣ የመትከል የውጭ እና የውስጥ የውስጥ ኬብል መስመር የመዘርጋትና የመጠገን ስራዎችን ያጠቃልላል ዝርጋታ፣ ተከላና ጥገና ስራዎች"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73167",
+      "matched_code": "73161",
+      "name_en": "Telecommunication exchange installationand maintenanceservice",
+      "name_am": "የቴሌኮሙኒኬሽን",
+      "legacy_codes": [
+        "75250"
+      ],
+      "operations_am": [
+        "የቴሌኮሙኒኬሽን የማዞሪያ ተከላና ጥገና አገልግሎት እና ተዛማጅ የማዞሪያ ተከላና ስራዎች ጥገና አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73177",
+      "matched_code": "73171",
+      "name_en": "Telecommunication terminal equipmentmaintenance service",
+      "name_am": "የቴሌኮሙኒኬሽን",
+      "legacy_codes": [
+        "75260"
+      ],
+      "operations_am": [
+        "የቴሌኮሙኒኬሽን ተርሚናል እቃዎች ጥገና አገልግሎት እና ተዛማጅ ተርሚናል እቃዎች ስራዎች ጥገና አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "73187",
+      "matched_code": "73181",
+      "name_en": "Telecommunicationvalue addedservice",
+      "name_am": "የቴሌኮሙኒኬሽን",
+      "legacy_codes": [
+        "75270"
+      ],
+      "operations_am": [
+        "ለምሳሌ የኤስ ኤም ኤስ አገልግሎት የስልክ አገልግሎት እና ቫልዩ አድድ ሌሎችንም ያልተጠቀሱትን ያጠቃልላል እና ተዛማጅ ስራዎች አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "74117",
+      "matched_code": "74111",
+      "name_en": "Customsstorageand bondedwarehousing service",
+      "name_am": "በጉምሩክ",
+      "legacy_codes": [
+        "74121"
+      ],
+      "operations_am": [
+        "የተለያዩ እቃዎች ከውጭ ሀገር ሲመጡ ወይም ወደ ውጭ ሲላኩ የማከማቻና መጋዘን እቃዎችን ለማቆየት የሚያስችል ማቆያ መጋዘን ሲሆን መኪናንም አገልግሎት የማቆየት ስራን ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "74127",
+      "matched_code": "74121",
+      "name_en": "General Storageand warehousingservice",
+      "name_am": "የንግድ ዕቃዎች",
+      "legacy_codes": [
+        "74122"
+      ],
+      "operations_am": [
+        "ይህ የስራ አይነት የተለያ የንግድ እቃዎችን ለማከማቸት የሚያስችል ማከማቻና መጋዘን አገልግሎት ነው አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "74137",
+      "matched_code": "74131",
+      "name_en": "Vehiclesparkinglots service",
+      "name_am": "የመኪና ማቆያ",
+      "legacy_codes": [
+        "74131",
+        "74132"
+      ],
+      "operations_am": [
+        "የመኪና መጠበቅ አገልግሎት፣ የተራ ማስከበር አገልግሎት፣ እና (ፓርኪንግ) 99195፣99199 መኪና የማሳደር እና ብልሽት የማስተካከል አገልግሎቶችን ጨምሮ አገልግሎት መስራትን ያጠቃልላል"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "86516",
+      "matched_code": "86541",
+      "name_en": "Consultancyservice metrology",
+      "name_am": "በስነልክ ዙሪያ",
+      "legacy_codes": [
+        "88760"
+      ],
+      "operations_am": [
+        "በስነልክ ዙሪያ የማማከር አገልግሎት እና ተዛማጅ ስራዎች የማማከር አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "86528",
+      "matched_code": "86521",
+      "name_en": "Consultancyserviceon informationand communicationtechnology",
+      "name_am": "በኢንፎርሜሽንና",
+      "legacy_codes": [
+        "86600",
+        "88740"
+      ],
+      "operations_am": [
+        "በኢንፎርሜሽንና ኮሙኒኬሽን ቴክኖሎጂ ዙሪያ ኮሙኒኬሽን 87180 ጥናት፣ምርምር፣ማልማትና የማማከር አገልግሎት እና ተዛማጅ ቴክኖሎጂ የማማከር ስራዎችን ያጠቃልላ፡፡ አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "86538",
+      "matched_code": "86531",
+      "name_en": "Consultancyserviceon scientificmachineries selection, installation, commissioning, maintenanceanddisposal",
+      "name_am": "በሳይንሳዊ",
+      "legacy_codes": [
+        "88750"
+      ],
+      "operations_am": [
+        "በሳይንሳዊ መሳሪያዎች መረጣ፣ ተከላ፣ ጥገናና አወጋገድ ዙሪያ መሳሪያዎች የማማከር አገልግሎት እና ተዛማጅ ስራዎች መረጣ፣ ተከላ፣ ጥገናና አወጋገድ ዙሪያ የማማከር አገልግሎት"
+      ],
+      "score": 1
+    },
+    {
+      "original_code": "86824",
+      "matched_code": "86825",
+      "name_en": "Geo-spatial (earth information) service",
+      "name_am": "የጂኦ ስፔሻል",
+      "legacy_codes": [
+        "89671",
+        "89672"
+      ],
+      "operations_am": [
+        "የቅየሳ ስራዎች አገልግሎት (የምድር መረጃ) 89673፣89674፣ የካርታ ስራዎች አገልግሎት አገልግሎት 89675 የሪሞት ሴንሲንግ ስራዎች አገልግሎት ጂ.አይ.ኤስ ስራዎች አገልግሎት የጂኦ -ኢንፎርሜሽ ምርትና አገልግሎት የጥራት ተቆጣጣሪ"
+      ],
+      "score": 1
+    }
+  ],
+  "truly_missing": []
+}

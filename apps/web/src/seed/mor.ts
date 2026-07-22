@@ -45,7 +45,7 @@ function slugify(name: string): string {
 }
 
 function shortDescription(name_en: string): string {
-  return `Opening a ${name_en.toLowerCase()} business in Ethiopia. This guide covers the official MOR licensing category, required ministry approvals, certificates of competency, fees, and step-by-step setup. Free overview below; premium subscribers get the full process.`
+  return `Opening a ${name_en.toLowerCase()} business in Ethiopia. This guide covers the official MOR licensing category, permitted operations under the license (Amharic + English), required ministry approvals, certificates of competency, fees, and step-by-step setup — always free.`
 }
 
 async function chunkedMap<T, R>(

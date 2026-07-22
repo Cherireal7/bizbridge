@@ -1,125 +1,276 @@
 /**
- * The MOR Directive 17/2011 source PDF has word-glued English sector names
- * like "Softwaredevelopment(includingdesign,enrichmentand implementation)".
- * This helper renders a readable version at display time — no DB rewrite.
+ * MOR Directive 17/2011 English sector names come out of the PDF word-glued
+ * ("Growingofcereals", "Softwaredevelopment(includingdesign,enrichmentand
+ * implementation)"). This helper reconstructs proper spacing.
  *
  * Two mechanisms:
- * 1. OVERRIDES — hand-cleaned strings keyed by mor_code for high-traffic
- *    sectors we know will get the most eyeballs.
- * 2. Heuristic — greedy longest-match against a curated MOR-domain word list,
- *    plus punctuation spacing. Not perfect for every sector, but reduces the
- *    word-salad effect meaningfully across all 519.
+ *  1. OVERRIDES — hand-cleaned strings keyed by mor_code.
+ *  2. Heuristic split with strict validation: prefer intact tokens; only
+ *     accept a split when every resulting fragment is either a known word or
+ *     ≥ 3 chars. Prevents "Floriculture" → "Fl or iculture" and similar.
  */
 
 const OVERRIDES: Record<string, string> = {
   '39141': 'Software development (including design, enrichment, and implementation)',
   '72131': 'Computer network design and cable installation',
-  '92191': 'Services of theater, music, film, modeling, dance, video, and photography — design works, etc.',
+  '92191': 'Services of theater, music, film, modeling, dance, video, and photography',
   '62111': 'Wholesale of photo, graphics, and visual equipment',
   '62222': 'Import trade in communication, computer, and related equipment',
-  '62223': 'Export trade in communication, computers, computer peripheral equipment, and accessories',
-  '62224': 'Wholesale trade in communication, computer hardware, and peripheral equipment',
-  '63124': 'Retail trade of computer, computer equipment, and related appliances',
+  '62223': 'Export trade in communication, computers, and computer peripherals',
+  '62224': 'Wholesale trade in communication and computer hardware',
+  '63124': 'Retail trade of computers, computer equipment, and related appliances',
 }
 
-// Ordered longest-first so greedy match prefers "development" over "develop"
-// and "software" over "soft". Only include words that plausibly appear in the
-// MOR directive — no need for a full English dictionary.
-const DICTIONARY = [
-  // 12+ chars
-  'photojournalism', 'transportation', 'implementation', 'communication', 'construction',
-  'establishment', 'installation', 'manufacturing', 'international', 'professional',
-  'accommodation', 'refrigeration', 'distribution', 'confectionery', 'entertainment',
-  'commissioning', 'consultation', 'preservation', 'commercialisation', 'commercialization',
-  'certification', 'registration', 'authorization', 'organization', 'preparation',
-  'refinishing', 'photography', 'pharmaceutical', 'restaurants', 'agricultural',
-  'accessories', 'photograph', 'engineering', 'processing', 'production', 'operations',
-  'management', 'maintenance', 'accounting', 'marketing', 'compliance', 'insurance',
-  'consulting', 'consultants', 'consultant', 'automotive', 'electronic', 'residential',
-  'commercial', 'industrial', 'traditional', 'renovation', 'stationery', 'workshops',
-  'livestock', 'medicinal', 'medicines', 'chemicals', 'including', 'additional',
-  'community', 'household', 'furniture', 'furnishing', 'appliance', 'appliances',
-  'equipment', 'personnel', 'facility', 'facilities', 'ministries', 'authority',
-  'authorities', 'certificate', 'certificates', 'documents', 'templates', 'installation',
-  'delegating',
-
-  // 9-10 chars
-  'agricultural', 'wholesale', 'personal', 'services', 'activity', 'products',
+// Vocabulary the MOR directive actually uses. Sorted longest-first for greedy
+// left-to-right matching. Words are lowercase; case is preserved from input.
+const WORDS: string[] = [
+  // 12+
+  'commercialization', 'commercialisation', 'transportation', 'implementation',
+  'confectionery', 'certification', 'refrigeration', 'entertainment',
+  'authorization', 'organization', 'preparation', 'communication', 'installation',
+  'construction', 'establishment', 'international', 'professional', 'accommodation',
+  'distribution', 'photojournalism', 'commissioning', 'consultation', 'preservation',
+  'registration',
+  // 10-11
+  'photography', 'manufacture', 'manufacturing', 'pharmaceutical', 'agricultural', 'consultancy',
+  'engineering', 'accessories', 'stationery', 'commercial', 'residential',
+  'industrial', 'traditional', 'renovation', 'automotive', 'electronic',
+  'management', 'maintenance', 'processing', 'production', 'operations',
+  'consulting', 'compliance', 'insurance', 'medicines', 'medicinal',
+  'community', 'household', 'furniture', 'furnishing', 'facilities',
+  'refinishing', 'contractor', 'contractors', 'quarrying', 'ministries',
+  'certificate', 'certificates', 'consultant', 'consultants', 'containers',
+  'appliances',
+  // 8-9
+  'wholesale', 'personal', 'services', 'activity', 'activities', 'products',
   'container', 'transport', 'planting', 'catering', 'training', 'delivery',
-  'shipping', 'lighting', 'plumbing', 'painting', 'flooring', 'roofing', 'welding',
-  'clothing', 'garments', 'footwear', 'textiles', 'ceramics', 'plastics', 'graphics',
-  'workshop', 'domestic', 'fisheries', 'beverages', 'medicine', 'traditional',
-  'brokerage', 'brokerage', 'brokerage', 'related', 'various', 'general', 'specific',
-
-  // 6-8 chars
-  'software', 'hardware', 'business', 'company', 'design', 'growing', 'raising',
-  'breeding', 'fishing', 'hunting', 'mining', 'quarrying', 'trading', 'export',
-  'import', 'sales', 'buying', 'selling', 'service', 'repair', 'rental', 'agency',
-  'freight', 'goods', 'items', 'foods', 'grains', 'cereals', 'wheat', 'barley',
-  'coffee', 'sugar', 'honey', 'water', 'power', 'energy', 'metal', 'metals',
-  'iron', 'steel', 'wood', 'timber', 'paper', 'glass', 'stone', 'rubber',
-  'plastic', 'leather', 'cotton', 'silk', 'wool', 'small', 'large', 'medium',
-  'micro', 'store', 'shop', 'shops', 'market', 'office', 'factory', 'plant',
-  'hotel', 'motel', 'lodge', 'resort', 'restaurant', 'cafe', 'bar', 'bakery',
-  'clinic', 'hospital', 'school', 'college', 'video', 'photo', 'film', 'movie',
-  'audio', 'music', 'dance', 'theater', 'model', 'modeling', 'network', 'cable',
-  'system', 'systems', 'centre', 'center', 'centers', 'boat', 'boats', 'ship',
-  'trucks', 'buses', 'motor', 'motors', 'vehicle', 'vehicles', 'wear', 'wears',
-  'stone', 'stones', 'brick', 'bricks', 'tile', 'tiles', 'sand', 'gravel',
-  'dairy', 'butter', 'cheese', 'yogurt', 'meat', 'poultry', 'fish', 'seafood',
-  'fruit', 'fruits', 'vegetable', 'vegetables', 'flower', 'flowers', 'plant',
-  'plants', 'seed', 'seeds', 'oil', 'oils', 'balance', 'scale', 'weight',
-  'measure', 'measures', 'measuring', 'load', 'unload', 'loading', 'unloading',
-  'collect', 'collection', 'collecting', 'delegate', 'delegating', 'other', 'others',
-
-  // 4-5 chars
-  'trade', 'grain', 'salt', 'tea', 'nuts', 'jute',
-  'from', 'with', 'into', 'onto', 'upon', 'that', 'this', 'each', 'both',
-  'more', 'less', 'high', 'low',
-
-  // 3 chars (careful — sort last so longer matches take priority)
+  'shipping', 'lighting', 'plumbing', 'painting', 'flooring', 'roofing',
+  'welding', 'clothing', 'garments', 'footwear', 'textiles', 'ceramics',
+  'plastics', 'graphics', 'workshop', 'workshops', 'domestic', 'fisheries',
+  'beverages', 'medicine', 'brokerage', 'delegate', 'delegating',
+  'agriculture', 'animals', 'livestock', 'petroleum', 'minerals', 'chemicals',
+  'equipment', 'personnel', 'facility', 'authority', 'authorities',
+  'accounting', 'auditing', 'marketing', 'stadium', 'extraction', 'evaporation',
+  'excavation', 'exploration', 'digging', 'trapping', 'propagation',
+  'producing', 'processing', 'preserving', 'edible',
+  'fertilizers', 'fertilizer', 'support', 'related', 'similar', 'except',
+  'seafood', 'ordinary', 'husbandry', 'husbandery', 'hunting', 'fishing',
+  'cattle', 'sheep', 'goat', 'goats', 'camel', 'camels', 'donkey', 'donkeys',
+  'silkworm', 'silkworms', 'poultry', 'pack', 'sea', 'their', 'fast',
+  'animal', 'fodder', 'bird', 'game', 'yarn', 'yarns',
+  'development', 'developments', 'starches', 'starch', 'noodles', 'macaroni',
+  'pasta', 'cocoa', 'chocolate', 'candy', 'chewing', 'biscuits', 'biscuit',
+  'bakery', 'confectionery', 'noodle', 'couscous', 'gum',
+  'potable', 'alcohol', 'tobacco',
+  'dairy', 'grinding', 'ground',
+  'article', 'articles', 'spinning', 'weaving', 'apparel', 'textile',
+  'fur', 'carpet', 'carpets', 'rugs', 'mat', 'mats',
+  'tanning', 'finishing', 'hide', 'hides',
+  'artificial', 'substitute', 'substitutes', 'wearing', 'wearings',
+  'printing', 'pulp', 'paperboard', 'paperboards',
+  'wooden', 'wood', 'bag', 'bags', 'sack', 'sacks',
+  'wrap', 'wrapping', 'rapping', 'pack', 'packing', 'packaging',
+  'material', 'materials', 'product', 'knitted', 'crocheted',
+  'fabric', 'fabrics', 'salt', 'flour', 'grinding', 'ground',
+  'made', 'make', 'used', 'basic', 'coke', 'oven',
+  'primary', 'purpose', 'purposes', 'general', 'special',
+  'plastics', 'plastic', 'synthetic', 'rubber', 'tires', 'tire',
+  'batteries', 'battery', 'pesticides', 'pesticide', 'agrochemical',
+  'paints', 'paint', 'varnish', 'varnishes', 'coating', 'coatings',
+  'ink', 'inks', 'mastic', 'precursor',
+  'cleaning', 'cosmetics', 'input', 'inputs', 'concrete',
+  'cement', 'lime', 'plaster', 'glass', 'glasses',
+  'metal', 'metals', 'metallic', 'nonmetallic',
+  'nonferrous', 'ferrous', 'precious', 'aluminum', 'zinc', 'lid',
+  'tantalum', 'nickel', 'copper',
+  'structural', 'forging', 'pressing', 'stamping', 'metallurgy',
+  'powder', 'roll', 'formingof', 'formed', 'forming',
+  'weapons', 'ammunition', 'electrical', 'utility', 'utilities',
+  'apparatus', 'machinery', 'machineries', 'machine', 'machines',
+  'spare', 'parts', 'radiation', 'emitting', 'radioactive', 'source',
+  'sources', 'radio', 'photographic', 'optical', 'instrument', 'instruments',
+  'medical', 'appliance', 'appliances',
+  'bicycle', 'bicycles', 'carriage', 'carriages',
+  'trailer', 'trailers', 'railway', 'tramway', 'locomotive', 'locomotives',
+  'rolling', 'stock', 'aircraft', 'spacecraft', 'aerospace',
+  'produce', 'spring', 'springs', 'sponge', 'sponges', 'foam',
+  'computer', 'computers', 'recreational', 'handicrafts', 'handicraft',
+  'souvenir', 'souvenirs', 'artifact', 'artifacts', 'jewelry', 'jewelries',
+  'stationary', 'stationery', 'button', 'buttons', 'buckle', 'buckles',
+  'slide', 'fastener', 'fasteners', 'number', 'plate', 'plates',
+  'sign', 'signs', 'display', 'displays', 'advertising',
+  'recycling', 'waste', 'scrap', 'scraps',
+  'brush', 'brushes', 'broom', 'brooms',
+  'educational', 'chicken', 'checking',
+  'generating', 'electricity', 'transmission', 'sale', 'electric', 'extending',
+  'lines', 'transferring',
+  'sanitary', 'perfumery', 'surgical', 'bone', 'controlling', 'navigation',
+  'navigational', 'precision', 'measurement', 'measurements',
+  'laboratory', 'kerosene', 'lubricants', 'lubricant', 'fuel', 'sporting',
+  'sports', 'logs', 'log', 'greenhouse', 'greenhouses', 'geomembrane',
+  'administration', 'operation', 'operations', 'road', 'roads', 'toll',
+  'tollroad', 'tollroads', 'cable', 'cables', 'setup', 'storage',
+  'warehousing', 'warehouse', 'customs', 'bonded',
+  'finance', 'financing', 'institution', 'institutions',
+  'removing', 'removal', 'bleach', 'contaminant', 'contaminants',
+  'nitrogen', 'compound', 'compounds', 'agricultural',
+  'inside', 'outside', 'inner', 'outer', 'value', 'added',
+  'human', 'health', 'supplies', 'supply', 'medical', 'scientific',
+  'testing', 'test', 'tests', 'testing',
+  'wars', 'wear', 'goods', 'except', 'retail', 'food', 'education',
+  'trades', 'crops', 'security', 'securities', 'dealing',
+  'estimate', 'estimates', 'damage', 'damages', 'fixed', 'mobile',
+  'property', 'properties', 'estimated',
+  'assets', 'asset',
+  'occupational', 'safety', 'health', 'protection', 'environmental',
+  'per', 'pre', 'primary', 'secondary', 'tertiary', 'higher',
+  'lower', 'centre', 'centres', 'college', 'colleges', 'boundary',
+  'cross', 'short', 'long', 'term', 'terms', 'training',
+  'technical', 'vocational', 'kindergarten', 'kg',
+  'local', 'abroad', 'recruitment', 'linkage', 'linkages',
+  'labor', 'labour', 'diagnostic', 'imaging',
+  'clinic', 'clinics', 'supplementary', 'care',
+  'legal', 'commercial', 'security',
+  'raising', 'growing',
+  'houses', 'house', 'housing', 'including', 'included',
+  'cultivation', 'cultivating', 'cultivate',
+  'renovation', 'recreation', 'operation', 'operational',
+  'documentation', 'representation', 'representative',
+  'application', 'foundation', 'orientation',
+  'demonstration', 'transformation',
+  'preparation', 'presentation', 'protection', 'production',
+  'promotion', 'promotional', 'promotions',
+  'reception', 'inspection', 'connection',
+  'installation', 'situation',
+  'combination', 'coordination',
+  'television', 'program', 'programs', 'programme', 'programmes',
+  'studio', 'studios', 'recording', 'records',
+  'films', 'film', 'theatre', 'theater',
+  'wildlife', 'taxidermy',
+  'book', 'books', 'bookstore', 'library', 'libraries',
+  'historic', 'building', 'buildings', 'cite', 'cites', 'sites',
+  'recreation', 'recreations',
+  'men', 'women', 'ladies', 'boys', 'girls',
+  'hair', 'hairdressing', 'dressing',
+  'different', 'differences', 'event', 'events', 'decorating',
+  'decoration', 'decorations', 'decorative',
+  'green', 'inside', 'outside', 'machine', 'machines',
+  // 6-7
+  'raising', 'growing', 'breeding', 'fishing', 'hunting', 'planting',
+  'mining', 'trading', 'export', 'import', 'buying', 'selling',
+  'service', 'repair', 'rental', 'agency', 'freight', 'related',
+  'various', 'general', 'specific', 'network', 'system', 'systems',
+  'centre', 'center', 'design', 'apparel', 'jewelry', 'jewellery',
+  'garment', 'leather', 'cotton', 'coffee', 'sugarcane', 'pulses',
+  'pepper', 'spices', 'flower', 'flowers', 'birds', 'poultry',
+  'fisheries', 'seafood', 'grains', 'cereals', 'fruits', 'fruit',
+  'vegetable', 'vegetables', 'plants', 'floriculture', 'beekeeping',
+  'silkworm', 'silkworms', 'hatcheries', 'forestry', 'natural', 'crude',
+  'exploration', 'quarry', 'stone', 'stones', 'brick', 'bricks',
+  'tile', 'tiles', 'sand', 'gravel', 'metals', 'metal',
+  'iron', 'steel', 'timber', 'paper', 'rubber', 'plastic',
+  'software', 'hardware', 'business', 'company', 'refined', 'refinery',
+  'refineries', 'balance', 'measure', 'measures', 'measuring', 'balance',
+  'ordinary', 'special', 'operational',
+  // 5
+  'trade', 'grain', 'sugar', 'honey', 'water', 'power', 'energy',
+  'wheat', 'barley', 'goods', 'items', 'foods', 'nuts',
+  'store', 'shop', 'shops', 'market', 'office', 'motor', 'motors',
+  'vehicle', 'vehicles', 'video', 'photo', 'movie', 'audio', 'music',
+  'dance', 'model', 'plant', 'seed', 'seeds', 'salt', 'wear', 'wears',
+  'small', 'large', 'medium', 'micro', 'metal', 'boats', 'ships',
+  'buses', 'trucks', 'load', 'unload', 'loading', 'unloading',
+  'collect', 'collection', 'delegate', 'other', 'others', 'crops',
+  'meats',
+  // 4
+  'hotel', 'motel', 'lodge', 'resort', 'shop', 'cafe',
+  'wood', 'iron', 'silk', 'wool', 'meat', 'fish', 'oil', 'oils',
+  'sale', 'sales', 'rent', 'ship', 'boat', 'gold', 'tour',
+  'from', 'with', 'into', 'onto', 'upon', 'that', 'this', 'each',
+  'both', 'more', 'less', 'high', 'best', 'high',
+  // 3 — connectors + short domain words
   'and', 'the', 'for', 'new', 'raw', 'own', 'net',
-
-  // 2 chars — the tiny connectors that show up in MOR names constantly
+  'tea', 'ore', 'gas', 'egg', 'car', 'bus', 'air',
+  // 2 — only connectors, guarded by the length-3+ rule below
   'of', 'in', 'on', 'at', 'to', 'by', 'as', 'or', 'up',
-].sort((a, b) => b.length - a.length)
+]
 
+const DICTIONARY = [...new Set(WORDS)].sort((a, b) => b.length - a.length)
+const WORD_SET = new Set(DICTIONARY)
+const CONNECTORS = new Set(['of', 'in', 'on', 'at', 'to', 'by', 'as', 'or', 'and', 'the', 'for'])
+
+/**
+ * Segment a stuck token into words using dynamic programming to find the
+ * lowest-cost segmentation. Every fragment must be either a known dictionary
+ * word or ≥ 4 chars of pure unknown; short non-connector fragments carry a
+ * high penalty. Returns the token unchanged if no valid segmentation exists.
+ */
 function splitStuckToken(token: string): string {
   const lower = token.toLowerCase()
-  if (lower.length <= 3) return token
+  if (lower.length <= 4) return token
+  if (WORD_SET.has(lower)) return token
 
-  const out: string[] = []
-  let i = 0
-  let carry = ''
+  const n = lower.length
+  // dp[i] = { cost, prev, wordLen } for best segmentation of lower[0..i]
+  const dp: Array<{ cost: number; prev: number; wordLen: number } | null> = new Array(n + 1).fill(null)
+  dp[0] = { cost: 0, prev: -1, wordLen: 0 }
 
-  while (i < lower.length) {
-    let matched: string | null = null
-    for (const w of DICTIONARY) {
-      if (w.length > lower.length - i) continue
-      if (lower.substring(i, i + w.length) === w) {
-        matched = w
-        break
+  const cost = (frag: string): number => {
+    if (WORD_SET.has(frag)) {
+      // Bonus for known words — the longer the better.
+      if (CONNECTORS.has(frag)) return -0.5
+      return -1 - Math.min(1, frag.length / 12)
+    }
+    // Unknown fragment: reject short ones outright (< 4 chars). Longer ones
+    // carry a moderate positive cost so DP still prefers segmentations with
+    // more known-word fragments.
+    if (frag.length < 4) return 999
+    return 3
+  }
+
+  for (let i = 1; i <= n; i++) {
+    for (let j = 0; j < i; j++) {
+      const prev = dp[j]
+      if (!prev) continue
+      const frag = lower.substring(j, i)
+      const c = prev.cost + cost(frag)
+      if (dp[i] === null || c < dp[i]!.cost) {
+        dp[i] = { cost: c, prev: j, wordLen: i - j }
       }
     }
-    if (matched) {
-      if (carry) out.push(carry)
-      out.push(token.substring(i, i + matched.length))
-      carry = ''
-      i += matched.length
-    } else {
-      carry += token[i]
-      i++
-    }
   }
-  if (carry) out.push(carry)
-  return out.join(' ')
+
+  const best = dp[n]
+  if (!best) return token
+  // If total cost is huge, the segmentation is bad — leave the token intact.
+  if (best.cost > 50) return token
+
+  // Reconstruct segments
+  const spans: { start: number; end: number }[] = []
+  let cur = n
+  while (cur > 0) {
+    const step = dp[cur]!
+    spans.unshift({ start: step.prev, end: cur })
+    cur = step.prev
+  }
+
+  // Reject single-fragment (no split) as unchanged.
+  if (spans.length <= 1) return token
+
+  // Reject if any fragment is < 3 chars AND not a connector.
+  for (const s of spans) {
+    const frag = lower.substring(s.start, s.end)
+    if (frag.length < 3 && !CONNECTORS.has(frag)) return token
+  }
+
+  return spans.map((s) => token.substring(s.start, s.end)).join(' ')
 }
 
 export function humanizeSectorName(morCode: string | null | undefined, name: string): string {
   if (!name) return ''
   if (morCode && OVERRIDES[morCode]) return OVERRIDES[morCode]
 
-  // Normalise punctuation spacing first
+  // Normalise punctuation spacing first.
   let s = name
     .replace(/\s+/g, ' ')
     .replace(/([(])\s*/g, ' $1')
@@ -128,13 +279,14 @@ export function humanizeSectorName(morCode: string | null | undefined, name: str
     .replace(/\s+/g, ' ')
     .trim()
 
-  // Handle any explicit CamelCase (rare here but harmless)
+  // Handle any explicit CamelCase.
   s = s.replace(/([a-z])([A-Z])/g, '$1 $2')
 
-  // Split any remaining stuck-word tokens using the dictionary
-  const tokens = s.split(/(\s+|[(),])/)
+  // Split any remaining stuck-word tokens using the dictionary. Also treat
+  // `/` and `-` as splitters that don't get consumed themselves.
+  const tokens = s.split(/(\s+|[(),/-])/)
   const rebuilt = tokens
-    .map((t) => (/^[\s(),]+$/.test(t) ? t : splitStuckToken(t)))
+    .map((t) => (/^[\s(),/-]+$/.test(t) ? t : splitStuckToken(t)))
     .join('')
     .replace(/\s+/g, ' ')
     .replace(/\(\s+/g, '(')
@@ -142,6 +294,6 @@ export function humanizeSectorName(morCode: string | null | undefined, name: str
     .replace(/\s+([,;:])/g, '$1')
     .trim()
 
-  // Capitalise the first letter for headings
+  // Capitalise the first letter for headings.
   return rebuilt.charAt(0).toUpperCase() + rebuilt.slice(1)
 }

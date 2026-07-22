@@ -48,12 +48,30 @@ export default async function BlogIndexPage() {
       </section>
 
       {posts.length === 0 ? (
-        <section className="container-page py-20">
-          <Card className="p-12 text-center">
-            <p className="text-sm font-medium text-ink">No posts published yet</p>
-            <p className="mt-1 text-sm text-ink-muted">
-              Editorial pipeline lives in the Payload admin. First posts ship soon.
-            </p>
+        <section className="container-page py-16 sm:py-20">
+          <Card className="overflow-hidden border-dashed">
+            <div className="grid gap-6 p-8 md:grid-cols-[1fr_auto] md:items-center">
+              <div>
+                <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-faint">
+                  editorial · coming soon
+                </p>
+                <h2 className="mt-2 text-2xl font-semibold tracking-tightish sm:text-3xl">
+                  Long-form ships after launch.
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-muted">
+                  In the meantime, the <Link href="/resources" className="text-brand hover:underline">legal resources shelf</Link>{' '}
+                  has curated Amharic explainers from local lawyers, official portals, and forms.
+                  If you want to be pinged when the first post lands, drop a note via the consult
+                  form.
+                </p>
+              </div>
+              <Link
+                href="/resources"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-ink px-5 py-2.5 font-mono text-[12px] text-bg hover:opacity-90"
+              >
+                Read resources <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </Card>
         </section>
       ) : (
