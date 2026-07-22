@@ -2,18 +2,13 @@ packages:
   - "apps/*"
   - "packages/*"
 
-allowBuilds:
-  esbuild: set this to true or false
-  msgpackr-extract: set this to true or false
-  sharp: set this to true or false
-  unrs-resolver: set this to true or false
-
 # Build-script allowlist (pnpm v10+ requires explicit opt-in for native postinstalls).
-# All four are required for the apps to function:
-#   - sharp        — Payload v3 image processing (Media collection)
-#   - esbuild      — tsx (seed runner) + Next.js dev bundler
-#   - msgpackr-extract — Payload internal caching
-#   - unrs-resolver    — Next 15 / TS path-mapping resolver
+# All are required for the apps to function:
+#   - sharp             — Payload v3 image processing (Media collection)
+#   - esbuild           — tsx (seed runner) + Next.js dev bundler
+#   - msgpackr-extract  — Payload internal caching
+#   - unrs-resolver     — Next 15 / TS path-mapping resolver
+#   - turbo             — Turborepo runner
 onlyBuiltDependencies:
   - esbuild
   - msgpackr-extract
