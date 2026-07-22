@@ -4,9 +4,9 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@bizbridge/shared', '@bizbridge/ui'],
-  // Emits .next/standalone with a self-contained server bundle — required for
-  // the Dockerfile at the repo root.
-  output: 'standalone',
+  // Keep server-only auth modules out of the client + server bundlers so
+  // Next doesn't try to resolve their optional peer adapters (kysely, etc.).
+  serverExternalPackages: ['better-auth', '@better-auth/core', '@better-auth/kysely-adapter'],
   experimental: {
     reactCompiler: false,
   },
