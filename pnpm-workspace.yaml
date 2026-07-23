@@ -9,9 +9,9 @@ packages:
 #   - msgpackr-extract  — Payload internal caching
 #   - unrs-resolver     — Next 15 / TS path-mapping resolver
 #   - turbo             — Turborepo runner
-onlyBuiltDependencies:
-  - esbuild
-  - msgpackr-extract
-  - sharp
-  - turbo
-  - unrs-resolver
+allowBuilds:
+  esbuild: true
+  msgpackr-extract: true
+  sharp: true
+  turbo: true
+  unrs-resolver: true
